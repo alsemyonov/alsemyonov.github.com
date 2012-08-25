@@ -1,9 +1,9 @@
 [submodule "vk"]
 	path = vk
-	url = https://github.com/alsemyonov/vk.git
+	url = git://github.com/alsemyonov/vk.git
 [submodule "xommelier"]
 	path = xommelier
-	url = https://github.com/alsemyonov/xommelier.git
+	url = git://github.com/alsemyonov/xommelier.git
 [submodule "als_typograf"]
 	path = als_typograf
-	url = https://github.com/alsemyonov/als_typograf.git
+	url = git://github.com/alsemyonov/als_typograf.git
