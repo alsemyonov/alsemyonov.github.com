@@ -31,6 +31,14 @@
   stargazers_count: 0
   forks: 0
   watchers: 0
+- name: giteaucrat
+  description: The Git Bureaucrat
+  full_name: alsemyonov/giteaucrat
+  language: Ruby
+  visible: true
+  stargazers_count: 2
+  forks: 0
+  watchers: 2
 - name: vk
   description: API wrapper for vk.com
   visible: true
@@ -58,6 +66,14 @@
   stargazers_count: 14
   forks: 5
   watchers: 14
+- name: unboolean
+  description: Boolean is too boring. Maybe we should add maybe value?
+  full_name: alsemyonov/unboolean
+  visible: true
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
 - name: activeadmin-globalize
   description: ''
   full_name: alsemyonov/activeadmin-globalize
@@ -90,7 +106,7 @@
   description: ":gem: A collection of awesome Ruby libraries, tools, frameworks and
     software"
   full_name: alsemyonov/awesome-ruby
-  language: 
+  language:
   stargazers_count: 0
   forks: 0
   watchers: 0
@@ -234,13 +250,6 @@
   description: Provides fake gem as a therubyracer (or other gem) replacement without
     functionality
   full_name: alsemyonov/fucktherubyracer
-  language: Ruby
-  stargazers_count: 2
-  forks: 0
-  watchers: 2
-- name: giteaucrat
-  description: The Git Bureaucrat
-  full_name: alsemyonov/giteaucrat
   language: Ruby
   stargazers_count: 2
   forks: 0
@@ -496,13 +505,6 @@
   stargazers_count: 1
   forks: 1
   watchers: 1
-- name: unboolean
-  description: Boolean is too boring. Maybe we should add maybe value?
-  full_name: alsemyonov/unboolean
-  language: Ruby
-  stargazers_count: 0
-  forks: 0
-  watchers: 0
 - name: unicorn-cmf
   description: Automatically exported from code.google.com/p/unicorn-cmf
   full_name: alsemyonov/unicorn-cmf
