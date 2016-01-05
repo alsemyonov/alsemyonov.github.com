@@ -13,7 +13,11 @@ title: Projects
         <li>
             <h2>
                 <a class="post-link" href="https://github.com/{{ project.full_name }}">
-                    {{ project.human_name | default: project.name }}
+                  {% if project.human_name %}
+                    {{ project.human_name }}
+                  {% else %}
+                    {{ project.name }}
+                  {% endif %}
                 </a>
             </h2>
 
