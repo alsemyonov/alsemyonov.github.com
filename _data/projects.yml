@@ -1,0 +1,519 @@
+---
+- human_name: Xommelier
+  name: xommelier
+  visible: true
+  description: WIP; XML←→Object mapper in Ruby with included definitions for standard
+    formats (Atom, RSS, etc)
+  full_name: alsemyonov/xommelier
+  language: Ruby
+  stargazers_count: 4
+  forks: 2
+  watchers: 4
+- human_name: Hotmeal
+  name: hotmeal
+  visible: true
+  description: HTML<->Ruby mapper; Helps to discover links to relative pages (e. g.
+    Atom, RSS, OpenSearch), hidden data, microformats, microdata, RDFa, metadata
+  full_name: alsemyonov/hotmeal
+  language: Ruby
+  stargazers_count: 3
+  forks: 0
+  watchers: 3
+- human_name: Redefine
+  name: redefine
+  description: WIP; RDF←→Object mapper in Ruby built on top of RDF.rb
+  visible: false
+- name: aepic
+  description: Æpic is for your epic APIs; WIP
+  full_name: alsemyonov/aepic
+  visible: true
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: vk
+  description: API wrapper for vk.com
+  visible: true
+  full_name: alsemyonov/vk
+  language: Ruby
+  stargazers_count: 7
+  forks: 3
+  watchers: 7
+- name: ymaps
+  human_name: YMaps
+  visible: true
+  description: Helpers for using Yandex Maps service, including geocoder and YMapsML
+    generator
+  full_name: alsemyonov/ymaps
+  language: Ruby
+  stargazers_count: 9
+  forks: 2
+  watchers: 9
+- name: als_typograf
+  human_name: Als Typograf
+  visible: true
+  description: Ruby client for ArtLebedevStudio.RemoteTypograf Web Service.
+  full_name: alsemyonov/als_typograf
+  language: Ruby
+  stargazers_count: 14
+  forks: 5
+  watchers: 14
+- name: activeadmin-globalize
+  description: ''
+  full_name: alsemyonov/activeadmin-globalize
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: alsemyonov.github.com
+  description: Website for alsemyonov’s opensource projects
+  full_name: alsemyonov/alsemyonov.github.com
+  language: HTML
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: annotate_models
+  description: Git repo for Dave Thomas's AnnotateModels plugin, with some improvings
+  full_name: alsemyonov/annotate_models
+  language: Ruby
+  stargazers_count: 52
+  forks: 15
+  watchers: 52
+- name: apipie-rails
+  description: Rails API documentation tool
+  full_name: alsemyonov/apipie-rails
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: awesome-ruby
+  description: ":gem: A collection of awesome Ruby libraries, tools, frameworks and
+    software"
+  full_name: alsemyonov/awesome-ruby
+  language: 
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: awesome_nested_set
+  description: An awesome replacement for acts_as_nested_set and better_nested_set.
+  full_name: alsemyonov/awesome_nested_set
+  language: Ruby
+  stargazers_count: 1
+  forks: 1
+  watchers: 1
+- name: babushka-deps
+  description: 'Common babushka deps '
+  full_name: alsemyonov/babushka-deps
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: backend-mvc
+  description: Automatically exported from code.google.com/p/backend-mvc
+  full_name: alsemyonov/backend-mvc
+  language: PHP
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: backend-prototype
+  description: Automatically exported from code.google.com/p/backend-prototype
+  full_name: alsemyonov/backend-prototype
+  language: JavaScript
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: bash-it
+  description: A community bash framework.
+  full_name: alsemyonov/bash-it
+  language: Shell
+  stargazers_count: 2
+  forks: 0
+  watchers: 2
+- name: chronic18n
+  description: One "way" to i18nlize chronic
+  full_name: alsemyonov/chronic18n
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: cinnamon
+  description: Application Navigation framework
+  full_name: alsemyonov/cinnamon
+  language: Ruby
+  stargazers_count: 2
+  forks: 1
+  watchers: 2
+- name: ci_reporter
+  description: CI::Reporter is an add-on to Test::Unit and RSpec that allows you to
+    generate XML reports of your test and/or spec runs.
+  full_name: alsemyonov/ci_reporter
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: dropbox-api
+  description: Dropbox API Ruby Client
+  full_name: alsemyonov/dropbox-api
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: ember-cli-rollbar
+  description: Include the Rollbar client your Ember app, and report Ember.Logger.error()
+    to Rollbar
+  full_name: alsemyonov/ember-cli-rollbar
+  language: HTML
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: ember-script-rails
+  description: EmberScript Rails Integration
+  full_name: alsemyonov/ember-script-rails
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: esperanto
+  description: Esperanta morfologio kaj gramatiko por Rubeno
+  full_name: alsemyonov/esperanto
+  language: Ruby
+  stargazers_count: 4
+  forks: 0
+  watchers: 4
+- name: esperanto_mongomapper
+  description: MongoMapper adaptilo por «Esperanto» gemo
+  full_name: alsemyonov/esperanto_mongomapper
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: espresso
+  description: Rails extender for simplifying application development
+  full_name: alsemyonov/espresso
+  language: Ruby
+  stargazers_count: 2
+  forks: 1
+  watchers: 2
+- name: factory_girl_rails
+  description: Factory Girl ♥ Rails
+  full_name: alsemyonov/factory_girl_rails
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: faye-client
+  description: Distribution of faye-client library for bower
+  full_name: alsemyonov/faye-client
+  language: JavaScript
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: fckeditor_on_rails
+  description: A helper/controller to put FCKeditor on Rails using either the engines
+    or appable plugins or desert (not stable yet).
+  full_name: alsemyonov/fckeditor_on_rails
+  language: Ruby
+  stargazers_count: 1
+  forks: 2
+  watchers: 1
+- name: focused_controller
+  description: ''
+  full_name: alsemyonov/focused_controller
+  language: JavaScript
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: formtastic
+  description: A Rails form builder plugin with semantically rich and accessible markup.
+  full_name: alsemyonov/formtastic
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: fucktherubyracer
+  description: Provides fake gem as a therubyracer (or other gem) replacement without
+    functionality
+  full_name: alsemyonov/fucktherubyracer
+  language: Ruby
+  stargazers_count: 2
+  forks: 0
+  watchers: 2
+- name: giteaucrat
+  description: The Git Bureaucrat
+  full_name: alsemyonov/giteaucrat
+  language: Ruby
+  stargazers_count: 2
+  forks: 0
+  watchers: 2
+- name: godville-indicator
+  description: App indicator for http://godville.net/
+  full_name: alsemyonov/godville-indicator
+  language: Vala
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: gollum
+  description: A simple, Git-powered wiki with a sweet API and local frontend.
+  full_name: alsemyonov/gollum
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: grnotify
+  description: A Python written Linux Google Reader Notifier
+  full_name: alsemyonov/grnotify
+  language: Python
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: haml-coffee-script
+  description: CoffeeScript (:coffee) filter for Haml
+  full_name: alsemyonov/haml-coffee-script
+  language: Ruby
+  stargazers_count: 3
+  forks: 3
+  watchers: 3
+- name: homebrew-fonts
+  description: Casks of fonts
+  full_name: alsemyonov/homebrew-fonts
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: insightly-ruby
+  description: Ruby Library for the Insightly REST API
+  full_name: alsemyonov/insightly-ruby
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: jquery.enhance_forms_behaviour
+  description: Enhances forms behaviour by preventing double submitting
+  full_name: alsemyonov/jquery.enhance_forms_behaviour
+  language: JavaScript
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: jrails
+  description: ''
+  full_name: alsemyonov/jrails
+  language: Ruby
+  stargazers_count: 2
+  forks: 0
+  watchers: 2
+- name: kaminari
+  description: A Scope & Engine based, clean, powerful, customizable and sophisticated
+    paginator for Rails 3
+  full_name: alsemyonov/kaminari
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: libdeskbar-empathy
+  description: Search empathy contacts in deskbar
+  full_name: alsemyonov/libdeskbar-empathy
+  language: Python
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: middleman-breadcrumbs
+  description: Breadcrumbs helper for Middleman
+  full_name: alsemyonov/middleman-breadcrumbs
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: mongoid-ancestry
+  description: Organise Mongoid model into a tree structure
+  full_name: alsemyonov/mongoid-ancestry
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: mongoid_atomic
+  description: Atomic update helpers for your Mongoid models
+  full_name: alsemyonov/mongoid_atomic
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: neuron
+  description: Code reused in my rails applications
+  full_name: alsemyonov/neuron
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: normailize
+  description: Normalize emails like J.oh.n+sneaky@gmail.com into john@gmail.com
+  full_name: alsemyonov/normailize
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: oauth-plugin
+  description: Rails plugin for OAuth
+  full_name: alsemyonov/oauth-plugin
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: omnibar
+  description: Omni Bar extension for Safari
+  full_name: alsemyonov/omnibar
+  language: JavaScript
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: one_password
+  description: Decryptor of 1Password Agile Keychain
+  full_name: alsemyonov/one_password
+  language: Ruby
+  stargazers_count: 4
+  forks: 2
+  watchers: 4
+- name: rails-templates
+  description: My rails templates
+  full_name: alsemyonov/rails-templates
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: redmine_hudson
+  description: This is a plugin collaborates with Hudson for Redmine.
+  full_name: alsemyonov/redmine_hudson
+  language: Ruby
+  stargazers_count: 4
+  forks: 0
+  watchers: 4
+- name: rgtk
+  description: Small, but sweet Ruby GTK framework for personal purposes
+  full_name: alsemyonov/rgtk
+  language: Ruby
+  stargazers_count: 2
+  forks: 0
+  watchers: 2
+- name: rotuka-rails-extender
+  description: ''
+  full_name: alsemyonov/rotuka-rails-extender
+  language: Ruby
+  stargazers_count: 2
+  forks: 1
+  watchers: 2
+- name: rspec-cells
+  description: Spec your Cells.
+  full_name: alsemyonov/rspec-cells
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: rubygsm
+  description: Ruby interface to AT-compatible GSM modems
+  full_name: alsemyonov/rubygsm
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: russian
+  description: Russian language support for Ruby and Rails | Поддержка русского языка
+    для Ruby и Rails
+  full_name: alsemyonov/russian
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: RXSD
+  description: XSD / Ruby Translator
+  full_name: alsemyonov/RXSD
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: searchlogic
+  description: Searchlogic provides object based searching, common named scopes, and
+    other useful named scope tools.
+  full_name: alsemyonov/searchlogic
+  language: Ruby
+  stargazers_count: 1
+  forks: 1
+  watchers: 1
+- name: seo
+  description: set of seo helpers for rails
+  full_name: alsemyonov/seo
+  language: Ruby
+  stargazers_count: 2
+  forks: 1
+  watchers: 2
+- name: simple_blog
+  description: Простой блог со вкусом огурцов
+  full_name: alsemyonov/simple_blog
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: sozdat
+  description: Small Rails IDE (Vim + WebKit-based browser + Autotest integrated),
+    early alpha
+  full_name: alsemyonov/sozdat
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: sugar
+  description: Some sugar, we implement once for using in many projects. Deprecated
+    now
+  full_name: alsemyonov/sugar
+  language: Ruby
+  stargazers_count: 1
+  forks: 0
+  watchers: 1
+- name: synapses
+  description: Synapses connecting your applications
+  full_name: alsemyonov/synapses
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: tablo
+  description: ''
+  full_name: alsemyonov/tablo
+  language: JavaScript
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: taggable
+  description: This gem is based on acts_as_taggable_on_steroids
+  full_name: alsemyonov/taggable
+  language: Ruby
+  stargazers_count: 2
+  forks: 1
+  watchers: 2
+- name: tiny_mce
+  description: A Ruby on Rails plugin that allows easy implementation of the TinyMCE
+    editor into your applications.
+  full_name: alsemyonov/tiny_mce
+  language: Ruby
+  stargazers_count: 1
+  forks: 1
+  watchers: 1
+- name: unboolean
+  description: Boolean is too boring. Maybe we should add maybe value?
+  full_name: alsemyonov/unboolean
+  language: Ruby
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: unicorn-cmf
+  description: Automatically exported from code.google.com/p/unicorn-cmf
+  full_name: alsemyonov/unicorn-cmf
+  language: PHP
+  stargazers_count: 0
+  forks: 0
+  watchers: 0
+- name: yard-mongoid
+  description: A Yard plugin for parsing Mongoid syntax.
+  full_name: alsemyonov/yard-mongoid
+  language: Ruby
+  stargazers_count: 8
+  forks: 5
+  watchers: 8

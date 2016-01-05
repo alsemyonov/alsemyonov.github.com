@@ -1,0 +1,35 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="home">
+
+    <h1 class="page-heading">Projects</h1>
+
+    <ul class="post-list">
+        {% for project in site.data.projects %}
+        {% if project.visible %}
+        <li>
+            <h2>
+                <a class="post-link" href="https://github.com/{{ project.full_name }}">{{ project.human_name | default:
+                    project.name }}</a>
+            </h2>
+
+            <p>{{ project.description }}</p>
+            <p>
+                <a href="https://codeclimate.com/github/{{ project.full_name }}">
+                    <img src="https://codeclimate.com/github/{{ project.full_name }}.png" alt="Code Climate"/>
+                </a>
+                <a href="http://travis-ci.org/{{ project.full_name }}">
+                    <img src="http://travis-ci.org/{{ project.full_name }}.png?branch=master" alt="Build Status"/>
+                </a>
+                <a href="https://gemnasium.com/{{ project.full_name }}">
+                    <img src="https://gemnasium.com/{{ project.full_name }}.png" alt="Dependency Status"/>
+                </a>
+            </p>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

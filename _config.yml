@@ -20,3 +20,4 @@ github_username:  alsemyonov
 
 # Build settings
 markdown: kramdown
+timezone: Europe/Moscow
