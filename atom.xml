@@ -1,0 +1,32 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title | xml_escape }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <link href="{{ site.url }}{{ site.baseurl }}" rel="alternate" type="text/html" />
+  <link href="{{ '/atom.xml' | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/atom+xml"/>
+  <link href="{{ '/rss.xml' | prepend: site.baseurl | prepend: site.url }}" rel="alternate" type="application/rss+xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <generator>Jekyll v{{ jekyll.version }}</generator>
+  <author>
+    <name>{{ site.author }}</name>
+    <email>{{ site.email }}</email>
+  </author>
+  {% for post in site.posts limit:10 %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <content>{{ post.content | xml_escape }}</content>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <link href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" rel="alternate" type="text/html" />
+    <id>{{ post.url | prepend: site.baseurl | prepend: site.url }}</id>
+    {% for tag in post.tags %}
+    <category term="{{ tag | xml_escape }}" label="{{ tag | xml_escape }}" scheme="{{ site.url }}{{ site.baseurl }}" />
+    {% endfor %}
+    {% for cat in post.categories %}
+    <category term="{{ tag | xml_escape }}" label="{{ tag | xml_escape }}" scheme="{{ site.url }}{{ site.baseurl }}" />
+    {% endfor %}
+  </entry>
+  {% endfor %}
+</feed>
