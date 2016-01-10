@@ -74,6 +74,14 @@
   stargazers_count: 0
   forks: 0
   watchers: 0
+- name: one_password
+  description: Decryptor of 1Password Agile Keychain
+  full_name: alsemyonov/one_password
+  visible: true
+  language: Ruby
+  stargazers_count: 4
+  forks: 2
+  watchers: 4
 - name: activeadmin-globalize
   description: ''
   full_name: alsemyonov/activeadmin-globalize
@@ -374,13 +382,6 @@
   stargazers_count: 0
   forks: 0
   watchers: 0
-- name: one_password
-  description: Decryptor of 1Password Agile Keychain
-  full_name: alsemyonov/one_password
-  language: Ruby
-  stargazers_count: 4
-  forks: 2
-  watchers: 4
 - name: rails-templates
   description: My rails templates
   full_name: alsemyonov/rails-templates
