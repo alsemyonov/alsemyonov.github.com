@@ -23,6 +23,12 @@ title: Projects
 
             <p>{{ project.description }}</p>
             <p>
+                <a href="https://badge.fury.io/gh/{{ project.full_name | cgi_escape}}" target="_blank">
+                  <img src="https://badge.fury.io/gh/{{ project.full_name | cgi_escape}}.svg" alt="GitHub version" height="18">
+                </a>
+                <a href="https://badge.fury.io/rb/{{ project.name | cgi_escape}}" target="_blank">
+                  <img src="https://badge.fury.io/rb/{{ project.name | cgi_escape}}.svg" alt="Gem version" height="18">
+                </a>
                 <a href="https://codeclimate.com/github/{{ project.full_name }}" target="_blank">
                     <img src="https://codeclimate.com/github/{{ project.full_name }}.png" alt="Code Climate"/>
                 </a>
@@ -31,6 +37,9 @@ title: Projects
                 </a>
                 <a href="https://gemnasium.com/{{ project.full_name }}" target="_blank">
                     <img src="https://gemnasium.com/{{ project.full_name }}.png" alt="Dependency Status"/>
+                </a>
+                <a href="https://hakiri.io/github/{{ project.full_name }}" target="_blank">
+                    <img src="https://hakiri.io/github/{{ project.full_name }}/master.svg" alt="Dependency Status"/>
                 </a>
             </p>
         </li>
