@@ -22,12 +22,23 @@ title: Projects
       </h2>
 
       <p>{{ project.description }}</p>
+
+      <h3>Released</h3>
       <p>
-        <a href="https://badge.fury.io/gh/{{ project.full_name | cgi_escape }}" target="_blank">
-          <img src="https://badge.fury.io/gh/{{ project.full_name | cgi_escape }}.svg" alt="GitHub version" height="18">
-        </a>
+        <a href="https://rubydoc.org/gems/{{ project.name | cgi_escape }}" target="_blank">Documentation</a>
         <a href="https://badge.fury.io/rb/{{ project.name | cgi_escape }}" target="_blank">
           <img src="https://badge.fury.io/rb/{{ project.name | cgi_escape}}.svg" alt="Gem version" height="18">
+        </a>
+      </p>
+
+      <h3>Development</h3>
+      <p>
+        <a href="https://rubydoc.org/gems/{{ project.full_name | cgi_escape }}" target="_blank">Documentation</a>
+        <a href="http://inch-ci.org/github/{{ project.full_name }}" target="_blank">
+          <img src="http://inch-ci.org/github/{{ project.full_name }}.svg?branch=master" alt="Documentation Status"/>
+        </a>
+        <a href="https://badge.fury.io/gh/{{ project.full_name | cgi_escape }}" target="_blank">
+          <img src="https://badge.fury.io/gh/{{ project.full_name | cgi_escape }}.svg" alt="GitHub version" height="18">
         </a>
         <a href="https://codeclimate.com/github/{{ project.full_name }}" target="_blank">
           <img src="https://codeclimate.com/github/{{ project.full_name }}.png" alt="Code Climate"/>
@@ -40,9 +51,6 @@ title: Projects
         </a>
         <a href="https://hakiri.io/github/{{ project.full_name }}" target="_blank">
           <img src="https://hakiri.io/github/{{ project.full_name }}/master.svg" alt="Security Status"/>
-        </a>
-        <a href="http://inch-ci.org/github/{{ project.full_name }}" target="_blank">
-          <img src="http://inch-ci.org/github/{{ project.full_name }}.svg?branch=master" alt="Documentation Status"/>
         </a>
       </p>
     </li>
