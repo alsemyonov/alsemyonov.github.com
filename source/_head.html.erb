@@ -7,7 +7,8 @@
   <meta name="description" content="<%= current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description %>">
 
   <%= stylesheet_link_tag :main %>
+  <%= javascript_include_tag :all %>
   <link rel="canonical" href="<%= canonicalize_url(current_resource.url) %>">
-  <link rel="alternate" type="application/rss+xml" title="<%= data.site.title %>" href="<%= absolutize_url '/rss.xml' %>">
-  <link rel="alternate" type="application/atom+xml" title="<%= data.site.title %>" href="<%= absolutize_url '/atom.xml' %>">
+  <link rel="alternate" type="application/rss+xml" title="<%= data.site.title %>" href="<%= absolute_url '/rss.xml' %>">
+  <link rel="alternate" type="application/atom+xml" title="<%= data.site.title %>" href="<%= absolute_url '/atom.xml' %>">
 </head>

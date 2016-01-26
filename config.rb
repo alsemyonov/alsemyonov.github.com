@@ -23,10 +23,37 @@ configure :development do
   activate :livereload
 end
 
+activate :blog do |blog|
+  # This will add a prefix to all links, template references and source paths
+  # blog.prefix = "blog"
+
+  # blog.permalink = "{year}/{month}/{day}/{title}.html"
+  # Matcher for blog source files
+  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  # blog.taglink = "tags/{tag}.html"
+  # blog.layout = "layout"
+  # blog.summary_separator = /(READMORE)/
+  # blog.summary_length = 250
+  # blog.year_link = "{year}.html"
+  # blog.month_link = "{year}/{month}.html"
+  # blog.day_link = "{year}/{month}/{day}.html"
+  # blog.default_extension = ".markdown"
+
+  blog.tag_template = 'tag.html'
+  blog.calendar_template = 'calendar.html'
+
+  # Enable pagination
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/{num}"
+end
+
+page '/atom.xml', layout: false
+page '/rss.xml', layout: false
+
 ###
 # Helpers
 ###
-
 # Methods defined in the helpers block are available in templates
 helpers do
   def cgi_escape(string)
@@ -42,13 +69,17 @@ helpers do
 
   def canonicalize_url(url)
     url = url.gsub('index.html', '')
-    absolutize_url(url)
+    absolute_url(url)
   end
 
-  def absolutize_url(url)
+  def absolute_url(url)
     # url = data.site.baseurl + url
     # url = data.site.url + url
-    url
+    URI.join(data.site.url, url)
+  end
+
+  def format_date(date, format = nil)
+    date.to_s(format)
   end
 end
 
