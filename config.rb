@@ -90,6 +90,10 @@ helpers do
   def format_date(date, format = nil)
     date.to_s(format)
   end
+
+  def navigation_resources
+    sitemap.resources.select { |resource| resource.data.navigation == true }.sort_by { |resource| resource.data.priority }
+  end
 end
 
 # Build-specific configuration

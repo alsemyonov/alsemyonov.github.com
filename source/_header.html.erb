@@ -14,9 +14,9 @@
       </a>
 
       <div class="trigger">
-        <% for my_page in sitemap.resources %>
-          <% if my_page.data.title? %>
-          <a class="page-link" href="<%= my_page.url %>"><%= my_page.data.title %></a>
+        <% navigation_resources.each do |resource| %>
+          <% if resource.data.title? %>
+            <%= link_to(resource.data.title, resource.url, class: 'page-link') %>
           <% end %>
         <% end %>
       </div>
