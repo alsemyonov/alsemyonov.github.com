@@ -28,11 +28,29 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def cgi_escape(string)
+    CGI::escape(string)
+  end
+
+  def make_excerpt(text)
+    # text = text.strip_html
+    # text = text.strip_newlines
+    # text.truncate(60)
+    text
+  end
+
+  def canonicalize_url(url)
+    url = url.gsub('index.html', '')
+    absolutize_url(url)
+  end
+
+  def absolutize_url(url)
+    # url = data.site.baseurl + url
+    # url = data.site.url + url
+    url
+  end
+end
 
 # Build-specific configuration
 configure :build do

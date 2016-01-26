@@ -1,0 +1,38 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"><%= data.site.title %></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><%= data.site.title %></li>
+          <li><a href="mailto:<%= data.site.email %>"><%= data.site.email %></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <% if data.site.github_username %>
+            <li>
+              <%= partial "icon-github", locals: { username: data.site.github_username } %>
+            </li>
+          <% end %>
+
+          <% if data.site.twitter_username %>
+            <li>
+              <%= partial "icon-twitter", locals: { username: data.site.twitter_username } %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p><%= data.site.description %></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

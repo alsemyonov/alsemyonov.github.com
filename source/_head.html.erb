@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= current_resource.data.title ? current_resource.data.title : data.site.title %></title>
+  <meta name="description" content="<%= current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description %>">
+
+  <%= stylesheet_link_tag :main %>
+  <link rel="canonical" href="<%= canonicalize_url(current_resource.url) %>">
+  <link rel="alternate" type="application/rss+xml" title="<%= data.site.title %>" href="<%= absolutize_url '/rss.xml' %>">
+  <link rel="alternate" type="application/atom+xml" title="<%= data.site.title %>" href="<%= absolutize_url '/atom.xml' %>">
+</head>

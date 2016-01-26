@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
+  <%= partial 'head' %>
 
   <body>
-
-    {% include header.html %}
+    <%= partial 'header' %>
 
     <div class="page-content">
       <div class="wrapper">
-        {{ content }}
+        <%= yield %>
       </div>
     </div>
 
-    {% include footer.html %}
-
+    <%= partial 'footer' %>
   </body>
-
 </html>

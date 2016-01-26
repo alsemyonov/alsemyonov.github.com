@@ -2,7 +2,7 @@
 layout: post
 title:  "Let’s read some code"
 date:   2016-01-05 12:28:25 +0300
-categories: ruby github
+tags: ruby github
 ---
 Today I’ve made new website for my opensource projects.
 
