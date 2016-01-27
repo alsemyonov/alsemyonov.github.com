@@ -9,7 +9,7 @@ if __FILE__ == $0
   require 'active_support/core_ext'
 
   ROOT = Pathname.new(File.expand_path('../..', __FILE__))
-  PROJECTS_FILE = ROOT.join('_data/projects.yml')
+  PROJECTS_FILE = ROOT.join('data/projects.yml')
 
   Octokit.auto_paginate = true
 

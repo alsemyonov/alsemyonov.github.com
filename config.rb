@@ -1,5 +1,4 @@
 Time.zone = 'St. Petersburg'
-set :slim, { ugly: true, format: :html }
 
 ###
 # Page options, layouts, aliases and proxies
@@ -24,6 +23,7 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  set :slim, { ugly: false, format: :html }
 end
 
 activate :i18n,
@@ -109,11 +109,19 @@ helpers do
   end
 end
 
+activate :autoprefixer
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
-
+  activate :minify_css
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+  # Minify Javascript on build
+  activate :minify_html
+  # Provide GZipped versions of files
+  activate :gzip
+  # Uniquely-named assets
+  activate :asset_hash
+  set :slim, { ugly: true, format: :html }
 end

@@ -10,6 +10,8 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-blog'
+gem 'middleman-minify-html'
+gem 'middleman-autoprefixer'
 
 # Markdown support
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
@@ -17,6 +19,10 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
 gem 'slim'
+
+# # I18n
+# gem 'i18n'
+# gem 'russian'
 
 # Old Jekyll Stuff
 gem 'jekyll'

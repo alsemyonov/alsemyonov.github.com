@@ -45,7 +45,7 @@
   full_name: alsemyonov/vk
   language: Ruby
   stargazers_count: 7
-  forks: 3
+  forks: 2
   watchers: 7
 - name: ymaps
   human_name: YMaps
@@ -92,7 +92,7 @@
 - name: alsemyonov.github.com
   description: Website for alsemyonov’s opensource projects
   full_name: alsemyonov/alsemyonov.github.com
-  language: HTML
+  language: CSS
   stargazers_count: 1
   forks: 0
   watchers: 1
@@ -114,7 +114,7 @@
   description: ":gem: A collection of awesome Ruby libraries, tools, frameworks and
     software"
   full_name: alsemyonov/awesome-ruby
-  language:
+  language: 
   stargazers_count: 0
   forks: 0
   watchers: 0
@@ -147,7 +147,7 @@
   forks: 0
   watchers: 0
 - name: bash-it
-  description: A community bash framework.
+  description: NON-useful already fork of bash-it framework
   full_name: alsemyonov/bash-it
   language: Shell
   stargazers_count: 2
@@ -518,5 +518,5 @@
   full_name: alsemyonov/yard-mongoid
   language: Ruby
   stargazers_count: 8
-  forks: 5
+  forks: 4
   watchers: 8
