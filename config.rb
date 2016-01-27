@@ -1,9 +1,7 @@
-require 'active_support'
-require './lib/patches.rb'
-Time.zone = 'St. Petersburg'
+instance_eval File.read(File.expand_path('.././lib/initialize.rb', __FILE__))
 
 ###
-# Page options, layouts, aliases and proxies
+# Site structure
 ###
 
 # Per-page layout changes:
@@ -13,31 +11,14 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+page '/sitemap.xml', layout: false
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
-
-# General configuration
-
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-  set :slim, { ugly: false, format: :html }
-end
-
-activate :directory_indexes
-
-require 'i18n'
-require 'russian'
-I18n.default_locale = :ru
-I18n.locale = :ru
-activate :i18n,
-         mount_at_root: :ru,
-         path: '/:locale/',
-         locales: [:ru, :en]
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -71,68 +52,4 @@ activate :blog do |blog|
   }
   page "#{blog.prefix}/atom.xml", layout: false
   page '#{blog.prefix}/rss.xml', layout: false
-end
-
-###
-# Helpers
-###
-# Methods defined in the helpers block are available in templates
-helpers do
-  def cgi_escape(string)
-    CGI::escape(string)
-  end
-
-  def make_excerpt(text)
-    # text = text.strip_html
-    # text = text.strip_newlines
-    # text.truncate(60)
-    text
-  end
-
-  def canonicalize_url(url)
-    url = url.gsub('index.html', '')
-    absolute_url(url)
-  end
-
-  def absolute_url(url)
-    # url = root_url + url
-    # url = data.site.url + url
-    URI.join(data.site.url, url)
-  end
-
-  def format_date(date, format = nil)
-    date.to_s(format)
-  end
-
-  def navigation_resources
-    sitemap.resources.select do |resource|
-      resource.data.navigation == true &&
-        (!resource.locals['page_number'] || (resource.locals['page_number'] == 1)) &&
-        !resource.locals['category']
-    end.sort_by { |resource| resource.data.priority }
-  end
-
-  def root_path(*paths)
-    uri_root_path(*paths)
-  end
-
-  def l(date, options)
-    ::I18n.localize(date, options)
-  end
-end
-
-# Build-specific configuration
-configure :build do
-  activate :autoprefixer
-  # Minify CSS on build
-  activate :minify_css
-  # Minify Javascript on build
-  activate :minify_javascript
-  # Minify Javascript on build
-  activate :minify_html
-  # Provide GZipped versions of files
-  activate :gzip
-  # Uniquely-named assets
-  activate :asset_hash
-  set :slim, { ugly: true, format: :html }
 end

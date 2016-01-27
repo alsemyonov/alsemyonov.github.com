@@ -34,7 +34,7 @@ html
             ul.social-media-list
               - data.site.usernames.each do |service, username|
                 li
-                  = link_to("https://#{service}.com/#{username}", target: '_blank', class: "btn btn-social btn-#{service}") do
+                  = link_to("https://#{service}.com/#{username}", target: '_blank', class: "btn btn-sm btn-social btn-#{service}") do
                     i.fa class="fa-#{service}"
                     = username
           .footer-col.footer-col-3

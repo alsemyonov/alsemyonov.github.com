@@ -64,6 +64,11 @@
   @extend .b-sidebar__section
 .b-articles-list
   @extend .list-unstyled
+  ul
+    padding-left: 1em
+    &, & li
+      list-style: none
+      //padding-left: 0
 //.b-article-item
 .b-article-item__time
   display: inline-block
@@ -100,6 +105,8 @@
 .b-projects
   @extend .table
   //@extend .table-sm
+  img
+    min-height: 20px
 .b-github-actions
   @extend .row
 .b-github-actions__item
