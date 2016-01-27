@@ -17,7 +17,6 @@ activate :directory_indexes
 # Development-specific configuration
 configure :development do
   activate :livereload
-  set :slim, { ugly: false, format: :html }
 end
 
 # Build-specific configuration
@@ -33,5 +32,7 @@ configure :build do
   activate :gzip
   # Uniquely-named assets
   activate :asset_hash
-  set :slim, { ugly: true, format: :html }
 end
+
+set :slim, { format: :html, pretty: false }
+set :markdown_engine, :redcarpet

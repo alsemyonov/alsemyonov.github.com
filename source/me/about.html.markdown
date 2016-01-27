@@ -1,13 +1,14 @@
 ---
-date: 2008-09-29 01:01
-title: Александр Семёнов
+title: Про Алекса Семёнова
 slug: about
-type: page
+layout: page
 ---
 
-<div class="vcard"><img class="photo" style="margin: 0 0 0 1em; float: right; width: 264px; height: 332px;" title="Ротука в стандартной среде обитания" src="http://rotuka.com/wp-content/uploads/2008/09/sosnovka_crop.jpg" alt="roTuKa обыкновенный в привычной среде обитания" />
+<!-- TODO: переписать текст о себе -->
+<div itemscope itemtype="http://schema.org/Person" class="h-card">
+<img class="photo" style="margin: 0 0 0 1em; float: right; width: 264px; height: 332px;" src="" alt="Алекс в естественной среде обитания" title="Алекс в естественной среде обитания" />
 
-Привет, %username%!
+Здравствуй, %username%!
 
 Я — автор и полноправный хозяин этого сайта, <span class="fn n"><span class="given-name">Александр</span> <span class="family-name">Семёнов</span></span>, больше известный в интернете как <del>Rotuka</del> <ins><a class="nickname" href="http://www.google.ru/search?q=alsemyonov">alsemyonov</a></ins>. Меньше всего я люблю рассказывать о себе, поэтому эта страница может показаться скучной, ибо написана довольно скупым языком.
 

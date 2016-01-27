@@ -1,14 +1,9 @@
 - articles ||= page_articles
 - partial ||= 'article'
+- collection_partial ||= 'articles_list'
 
 = wrap_layout :paginated do
-  ul.b-articles-list
-    - articles.group_by {|a| a.date.year}.each do |year, articles|
-      li
-        strong = link_to(year, blog_year_path(year))
-        ul
-          - articles.each do |article|
-            = partial partial, locals: {article: article}
+  ul.b-articles-list = partial collection_partial, locals: {articles: page_articles, partial: partial}
 
 p.rss-subscribe
   = t('blog.subscribe.action', rss: rss_link, atom: atom_link)

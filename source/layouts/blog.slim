@@ -1,6 +1,6 @@
 - content_for :header do
   header.b-blog__header
-    h1.b-blog__title = t('blog.title')
+    h1.b-blog__title = link_to t('blog.title'), blog_path
     p.b-blog__description = t('blog.description')
 
 = wrap_layout :layout do

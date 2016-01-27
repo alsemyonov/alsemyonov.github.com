@@ -3,54 +3,55 @@ title: Проекты
 navigation: true
 priority: 2
 ---
-h1.page-heading = t('projects.index.title')
+.b-single
+  h1.page-heading = t('projects.index.title')
 
-table.b-projects
-  thead
-    tr
-      th = t('projects.index.project')
-      th = t('projects.index.released')
-      th colspan="3" = t('projects.index.unreleased')
-  - data.projects.each do |project|
-    - human_name = project.human_name.presence || project.name
-    - if project.visible
-      tbody
-        tr id=project.name
-          td
-            h4
-              = link_to human_name, "https://github.com/#{project.full_name}"
-            = project.description
-            .b-github-actions
-              .b-github-actions__item
-                = link_to("https://github.com/#{project.full_name}/subscription", target: '_blank') do
-                  = image_tag("https://img.shields.io/github/watchers/#{project.full_name}.svg?style=social&label=Watch", alt: "#{human_name} Watchers")
-              .b-github-actions__item
-                = link_to("https://github.com/#{project.full_name}/stargazers", target: '_blank') do
-                  = image_tag("https://img.shields.io/github/stars/#{project.full_name}.svg?style=social&label=Star", alt: "#{human_name} Stars")
-              .b-github-actions__item
-                = link_to("https://github.com/#{project.full_name}/fork", target: '_blank') do
-                  = image_tag("https://img.shields.io/github/forks/#{project.full_name}.svg?style=social&label=Fork", alt: "#{human_name} Forks")
-          td
-            => link_to("https://rubygems.org/gems/#{project.name}", target: '_blank') do
-              = image_tag("https://img.shields.io/gem/v/#{project.name}.svg", alt: "#{human_name} version")
-            => link_to('Documentation', "http://www.rubydoc.info/gems/#{cgi_escape(project.name)}", target: '_blank')
-            = link_to("https://rubygems.org/gems/#{project.name}", taget: '_blank') do
-              = image_tag("https://img.shields.io/gem/dv/#{project.name}/stable.svg", alt: "#{human_name} Downloads")
-          td
-            = link_to("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}.svg", alt: "#{human_name} Github version")
-            => link_to('Documentation', "http://www.rubydoc.info/github/#{project.full_name}", target: '_blank')
-          td
-            = link_to("https://travis-ci.org/#{project.full_name}", target: '_blank') do
-              = image_tag("https://travis-ci.org/#{project.full_name}.svg?branch=master", alt: "#{human_name} Build Status")
-            = link_to("https://hakiri.io/github/#{project.full_name}", target: '_blank') do
-              = image_tag("https://hakiri.io/github/#{project.full_name}/master.svg", alt: "#{human_name} Security Status")
-            = link_to("https://gemnasium.com/#{project.full_name}", target: '_blank') do
-              = image_tag("https://gemnasium.com/#{project.full_name}.svg", alt: "#{human_name} Dependencies Status")
-          td
-            = link_to("https://codeclimate.com/github/#{project.full_name}", target: '_blank') do
-              = image_tag("https://codeclimate.com/github/#{project.full_name}/badges/gpa.svg", alt: "#{human_name} Code Climate")
-            = link_to("https://codeclimate.com/github/#{project.full_name}/coverage", target: '_blank') do
-              = image_tag("https://codeclimate.com/github/#{project.full_name}/badges/coverage.svg", alt: "#{human_name} Test Coverage")
-            = link_to("https://inch-ci.org/github/#{project.full_name}", target: '_blank') do
-              = image_tag("https://inch-ci.org/github/#{project.full_name}.svg?branch=master", alt: "#{human_name} Documentation Status")
+  table.b-projects
+    thead
+      tr
+        th = t('projects.index.project')
+        th = t('projects.index.released')
+        th colspan="3" = t('projects.index.unreleased')
+    - data.projects.each do |project|
+      - human_name = project.human_name.presence || project.name
+      - if project.visible
+        tbody
+          tr id=project.name
+            td
+              h4
+                = link_to human_name, "https://github.com/#{project.full_name}"
+              = project.description
+              .b-github-actions
+                .b-github-actions__item
+                  = link_to("https://github.com/#{project.full_name}/subscription", target: '_blank') do
+                    = image_tag("https://img.shields.io/github/watchers/#{project.full_name}.svg?style=social&label=Watch", alt: "#{human_name} Watchers")
+                .b-github-actions__item
+                  = link_to("https://github.com/#{project.full_name}/stargazers", target: '_blank') do
+                    = image_tag("https://img.shields.io/github/stars/#{project.full_name}.svg?style=social&label=Star", alt: "#{human_name} Stars")
+                .b-github-actions__item
+                  = link_to("https://github.com/#{project.full_name}/fork", target: '_blank') do
+                    = image_tag("https://img.shields.io/github/forks/#{project.full_name}.svg?style=social&label=Fork", alt: "#{human_name} Forks")
+            td
+              => link_to("https://rubygems.org/gems/#{project.name}", target: '_blank') do
+                = image_tag("https://img.shields.io/gem/v/#{project.name}.svg", alt: "#{human_name} version")
+              => link_to('Documentation', "http://www.rubydoc.info/gems/#{cgi_escape(project.name)}", target: '_blank')
+              = link_to("https://rubygems.org/gems/#{project.name}", taget: '_blank') do
+                = image_tag("https://img.shields.io/gem/dv/#{project.name}/stable.svg", alt: "#{human_name} Downloads")
+            td
+              = link_to("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}", target: '_blank') do
+                = image_tag("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}.svg", alt: "#{human_name} Github version")
+              => link_to('Documentation', "http://www.rubydoc.info/github/#{project.full_name}", target: '_blank')
+            td
+              = link_to("https://travis-ci.org/#{project.full_name}", target: '_blank') do
+                = image_tag("https://travis-ci.org/#{project.full_name}.svg?branch=master", alt: "#{human_name} Build Status")
+              = link_to("https://hakiri.io/github/#{project.full_name}", target: '_blank') do
+                = image_tag("https://hakiri.io/github/#{project.full_name}/master.svg", alt: "#{human_name} Security Status")
+              = link_to("https://gemnasium.com/#{project.full_name}", target: '_blank') do
+                = image_tag("https://gemnasium.com/#{project.full_name}.svg", alt: "#{human_name} Dependencies Status")
+            td
+              = link_to("https://codeclimate.com/github/#{project.full_name}", target: '_blank') do
+                = image_tag("https://codeclimate.com/github/#{project.full_name}/badges/gpa.svg", alt: "#{human_name} Code Climate")
+              = link_to("https://codeclimate.com/github/#{project.full_name}/coverage", target: '_blank') do
+                = image_tag("https://codeclimate.com/github/#{project.full_name}/badges/coverage.svg", alt: "#{human_name} Test Coverage")
+              = link_to("https://inch-ci.org/github/#{project.full_name}", target: '_blank') do
+                = image_tag("https://inch-ci.org/github/#{project.full_name}.svg?branch=master", alt: "#{human_name} Documentation Status")

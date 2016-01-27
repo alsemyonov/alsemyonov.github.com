@@ -1,13 +1,12 @@
 ---
-date: 2009-11-08 10:10
 title: Пою
 slug: sing
-type: page
+layout: page
 published: false
 ---
 
 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="300" height="72" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="video" value="http://flv.video.yandex.ru/lite-audio/rotuka/cldshby07j.603/" /><param name="allowFullScreen" value="true" /><param name="scale" value="noscale" /><param name="src" value="http://flv.video.yandex.ru/lite-audio/rotuka/cldshby07j.603/" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="300" height="72" src="http://flv.video.yandex.ru/lite-audio/rotuka/cldshby07j.603/" scale="noscale" allowfullscreen="true" video="http://flv.video.yandex.ru/lite-audio/rotuka/cldshby07j.603/"></embed></object>
-<pre style="font-family: serif">
+<pre style="font-family: monospace">
    Am                  Dm           E
 Жила на свете пешка — девчонка деревянная —
      Am                        Dm         E

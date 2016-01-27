@@ -17,4 +17,8 @@ module SiteUrls
   def root_path(*paths)
     uri_root_path(*paths)
   end
+
+  def blog_path
+    root_path('/blog')
+  end
 end

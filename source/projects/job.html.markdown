@@ -2,7 +2,7 @@
 date: 2010-07-20 20:08
 title: Работа в стартапе
 slug: job
-type: page
+layout: page
 published: false
 ---
 

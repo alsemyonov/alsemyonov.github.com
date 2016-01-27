@@ -6,7 +6,7 @@ pageable: false
 .b-map
   section.b-map__blog
     h2 = link_to t('site.navigation.blog'), '/blog'
-    = partial 'articles', locals: {articles: page_articles}
+    = partial 'articles', locals: {articles: page_articles, collection_partial: 'articles_yearly'}
   section.b-map__projects
     h2 = link_to t('site.navigation.projects'), '/projects'
     = partial 'projects'

@@ -9,10 +9,10 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://al.semyonov.us" # the base hostname & protocol for your site
 usernames:
-  twitter: alsemyonov
   github: alsemyonov
-  facebook: alsemyonov
   vk: alsemyonov
+  twitter: alsemyonov
+  facebook: alsemyonov
   instagram: alsemyonov
   foursquare: alsemyonov
 
