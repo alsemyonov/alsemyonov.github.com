@@ -19,12 +19,8 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
 gem 'slim'
-
-# # I18n
-# gem 'i18n'
-# gem 'russian'
+gem 'russian'
 
 # Old Jekyll Stuff
-gem 'jekyll'
 gem 'octokit'
 gem 'activesupport'

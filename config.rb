@@ -1,3 +1,4 @@
+require './lib/patches.rb'
 Time.zone = 'St. Petersburg'
 
 ###

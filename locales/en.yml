@@ -9,3 +9,12 @@ en:
       title: Projects
       released: Released
       unreleased: Unreleased
+  number:
+    human:
+      storage_units:
+        units:
+          byte:
+            zero: 'Bytes'
+            one: 'Byte'
+            many: 'Bytes'
+            other: 'Bytes'
