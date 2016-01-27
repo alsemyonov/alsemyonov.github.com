@@ -1,5 +1,5 @@
 Time.zone = 'St. Petersburg'
-
+set :slim, { ugly: true, format: :html5 }
 ###
 # Page options, layouts, aliases and proxies
 ###

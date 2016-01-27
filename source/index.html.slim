@@ -1,0 +1,15 @@
+---
+title: Alex Semyonov
+pageable: false
+---
+.home
+  h1.page-heading Blog
+
+  ul.post-list
+    - page_articles.each do |article|
+      li
+        h2
+          span.post-meta => article.date.strftime('%b %-d, %Y')
+          = link_to article.title, article
+
+  p.rss-subscribe subscribe #{link_to('via RSS', '/rss.xml')} or #{link_to('via Atom', '/atom.xml')}

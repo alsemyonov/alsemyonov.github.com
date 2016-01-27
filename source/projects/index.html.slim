@@ -1,0 +1,37 @@
+---
+title: Projects
+navigation: true
+---
+.home
+  h1.page-heading Projects
+  ul.post-list
+    - data.projects.each do |project|
+      - human_name = project.human_name.presence || project.name
+      - if project.visible
+        li
+          h2 = link_to human_name, "https://github.com/#{project.full_name}"
+          p = project.description
+
+          h3 Released
+          p
+            = link_to('Documentation', "https://rubydoc.org/gems/#{cgi_escape(project.name)}", target: '_blank')
+            = link_to("https://badge.fury.io/rb/#{cgi_escape(project.name)}", target: '_blank') do
+              = image_tag("https://badge.fury.io/rb/#{cgi_escape(project.name)}.svg", alt: "#{human_name} version", height: 18)
+
+          h3 Unreleased
+          p
+            = link_to('Documentation', "https://rubydoc.org/github/#{cgi_escape(project.full_name)}", target: '_blank')
+            = link_to("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}", target: '_blank') do
+              = image_tag("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}.svg", alt: "#{human_name} Github version", height: 18)
+
+            = link_to("http://inch-ci.org/github/#{cgi_escape(project.full_name)}", target: '_blank') do
+              = image_tag("http://inch-ci.org/github/#{cgi_escape(project.full_name)}.svg?branch=master", alt: "#{human_name} Documentation Status")
+            = link_to("https://codeclimate.com/github/#{cgi_escape(project.full_name)}", target: '_blank') do
+              = image_tag("https://codeclimate.com/github/#{cgi_escape(project.full_name)}.png", alt: "#{human_name} Code Climate")
+            = link_to("http://travis-ci.org/#{cgi_escape(project.full_name)}", target: '_blank') do
+              = image_tag("http://travis.org/#{cgi_escape(project.full_name)}.png?branch=master", alt: "#{human_name} Build Status")
+            = link_to("https://gemnasium.com/#{cgi_escape(project.full_name)}", target: '_blank') do
+              = image_tag("https://gemnasium.com/#{cgi_escape(project.full_name)}.png", alt: "#{human_name} Dependencies Status")
+            = link_to("https://hakiri.io/github/#{cgi_escape(project.full_name)}", target: '_blank') do
+              = image_tag("https://hakiri.io/github/#{cgi_escape(project.full_name)}/master.svg", alt: "#{human_name} Security Status")
+

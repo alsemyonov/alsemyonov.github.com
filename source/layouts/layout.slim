@@ -14,8 +14,6 @@ html
     = feed_tag :rss, '/rss.xml', title: "#{data.site.title} (RSS)"
     link[href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"]
   body class=page_classes
-  = partial 'header'
-  .page-content
-    .wrapper
-      = yield
-  = partial 'footer'
+    = partial 'header'
+    .page-content: .wrapper = yield
+    = partial 'footer'

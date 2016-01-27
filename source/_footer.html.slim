@@ -1,0 +1,16 @@
+footer.site-footer
+  .wrapper
+    h2.footer-heading = data.site.title
+    .footer-col-wrapper
+      .footer-col.footer-col-1
+        ul.contact-list
+          li = data.site.title
+          li = mail_to(data.site.email)
+      .footer-col.footer-col-2
+        ul.social-media-list
+          - if data.site.github_username
+            li = partial 'icon-github', locals: { username: data.site.github_username }
+          - if data.site.twitter_username
+            li = partial 'icon-twitter', locals: { username: data.site.twitter_username }
+      .footer-col.footer-col-3
+        p = data.site.description
