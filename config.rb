@@ -55,10 +55,9 @@ activate :blog do |blog|
       template: 'category.html'
     }
   }
+  page "#{blog.prefix}/atom.xml", layout: false
+  page '#{blog.prefix}/rss.xml', layout: false
 end
-
-page '/atom.xml', layout: false
-page '/rss.xml', layout: false
 
 ###
 # Helpers
@@ -92,7 +91,11 @@ helpers do
   end
 
   def navigation_resources
-    sitemap.resources.select { |resource| resource.data.navigation == true }.sort_by { |resource| resource.data.priority }
+    sitemap.resources.select do |resource|
+      resource.data.navigation == true &&
+        (!resource.locals['page_number'] || (resource.locals['page_number'] == 1)) &&
+        !resource.locals['category']
+    end.sort_by { |resource| resource.data.priority }
   end
 end
 
