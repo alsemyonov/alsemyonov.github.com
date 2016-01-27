@@ -57,7 +57,6 @@ GEM
     hamster (2.0.0)
       concurrent-ruby (~> 0.8)
     hashie (3.4.3)
-    html-schema (0.5.0)
     htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
@@ -170,10 +169,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bootstrap (~> 4.0.0.alpha3)
   builder (~> 3.0)
   font-awesome-sass
-  html-schema
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-blog

@@ -12,9 +12,9 @@ gem 'middleman-livereload'
 gem 'middleman-blog'
 
 # HTML
+gem 'activesupport'
 gem 'middleman-minify-html'
 gem 'slim'
-gem 'html-schema'
 
 # Markdown support
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
