@@ -1,0 +1,11 @@
+- articles ||= page_articles
+- partial ||= 'article'
+
+= wrap_layout :paginated do
+  ul.b-articles-list
+    - articles.each do |article|
+      = partial partial, locals: {article: article}
+
+p.rss-subscribe
+  - icon = ' ' << content_tag(:i, nil, class: 'fa fa-feed')
+  = t('blog.subscribe.action', rss: link_to(t('blog.subscribe.rss') << icon, '/rss.xml'), atom: link_to(t('blog.subscribe.atom') << icon, '/atom.xml'))

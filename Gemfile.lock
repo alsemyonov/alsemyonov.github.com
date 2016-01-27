@@ -8,6 +8,7 @@ GIT
 
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     activesupport (4.2.5.1)
       i18n (~> 0.7)
@@ -49,6 +50,8 @@ GEM
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
     haml (4.0.7)
       tilt
     hamster (2.0.0)
@@ -126,6 +129,14 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-bootstrap (3.3.6)
+      rails-assets-jquery (>= 1.9.1, < 3)
+    rails-assets-bootstrap-social (4.12.0)
+      rails-assets-bootstrap (~> 3)
+      rails-assets-font-awesome (~> 4.5)
+    rails-assets-font-awesome (4.5.0)
+    rails-assets-jquery (2.2.0)
+    rails-assets-tether (1.1.1)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -161,6 +172,7 @@ DEPENDENCIES
   activesupport
   bootstrap (~> 4.0.0.alpha3)
   builder (~> 3.0)
+  font-awesome-sass
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-blog
@@ -168,6 +180,8 @@ DEPENDENCIES
   middleman-minify-html
   middleman-sprockets (~> 4.0.0.rc.1)!
   octokit
+  rails-assets-bootstrap-social!
+  rails-assets-tether!
   redcarpet (~> 3.3, >= 3.3.3)
   russian
   slim

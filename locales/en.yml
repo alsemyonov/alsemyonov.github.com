@@ -9,6 +9,7 @@ en:
       title: Projects
       released: Released
       unreleased: Unreleased
+      project: "Project"
   number:
     human:
       storage_units:

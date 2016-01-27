@@ -27,6 +27,12 @@ configure :development do
   set :slim, { ugly: false, format: :html }
 end
 
+activate :directory_indexes
+
+require 'i18n'
+require 'russian'
+I18n.default_locale = :ru
+I18n.locale = :ru
 activate :i18n,
          mount_at_root: :ru,
          path: '/:locale/',
@@ -108,12 +114,15 @@ helpers do
   def root_path
     '/'
   end
-end
 
-activate :autoprefixer
+  def l(date, options)
+    ::I18n.localize(date, options)
+  end
+end
 
 # Build-specific configuration
 configure :build do
+  activate :autoprefixer
   # Minify CSS on build
   activate :minify_css
   # Minify Javascript on build

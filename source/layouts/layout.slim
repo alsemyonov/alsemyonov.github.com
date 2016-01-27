@@ -6,14 +6,40 @@ html
     meta[name="viewport" content="width=device-width, initial-scale=1"]
     title = current_page.data.title.presence || data.site.title
     meta name="description" content=(current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description)
-    = stylesheet_link_tag :main
-    = javascript_include_tag :all
+    = stylesheet_link_tag :screen
+    = javascript_include_tag :screen
     link rel="canonical" href=canonicalize_url(current_resource.url)
     /= feed_tag :atom, "#{blog.options.prefix.to_s}/atom.xml", title: 'Atom Feed'
     = feed_tag :atom, '/atom.xml', title: "#{data.site.title} (Atom)"
     = feed_tag :rss, '/rss.xml', title: "#{data.site.title} (RSS)"
     link[href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"]
   body class=page_classes
-    = partial 'header'
-    .page-content: .wrapper = yield
-    = partial 'footer'
+    header.b-header
+      nav.b-navigation
+        = link_to(t('site.title'), root_path, class: 'b-title')
+        ul.b-menu
+          - navigation_resources.each do |resource|
+            - if resource.data.title?
+              li.b-menu__item= link_to(resource.data.title, resource.url, class: 'nav-link')
+
+    .b-contents
+      = yield_content :header
+      .b-contents__wrapper = yield
+
+    footer.b-footer
+      .b-footer__wrapper
+        h2.footer-heading = t('site.title')
+        .b-footer__columns
+          .footer-col.footer-col-1
+            ul.contact-list
+              li = t('author.name')
+              li = mail_to(data.site.email)
+          .footer-col.footer-col-2
+            ul.social-media-list
+              - data.site.usernames.each do |service, username|
+                li
+                  = link_to("https://#{service}.com/#{username}", target: '_blank') do
+                    i.fa> class="fa-#{service}"
+                    span.username = username
+          .footer-col.footer-col-3
+            p = data.site.description

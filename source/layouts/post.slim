@@ -1,10 +1,11 @@
+- article = current_resource
 = wrap_layout :blog do
-  article.post[itemscope itemtype="http://schema.org/BlogPosting"]
-    header.post-header
-      h1.post-title[itemprop="name headline"] = current_page.title
-      p.post-meta
-        time datetime=current_page.date.xmlschema itemprop="datePublished" = format_date(current_page.date, "%b %-d, %Y")
-        - if current_page.data.author
-          | •
-          span[itemprop="author" itemscope itemtype="http://schema.org/Person"]: span[itemprop="name"] = current_page.data.author
+  article.b-article[itemscope itemtype="http://schema.org/BlogPosting"]
+    h2.b-article__title itemprop="name headline"= link_to article.title, article, rel: 'canonical'
+    p.b-article__meta
+      time datetime=article.date.xmlschema itemprop="datePublished" = l(article.date, format: :long)
+      - if current_page.data.author
+        | •
+        span[itemprop="author" itemscope itemtype="http://schema.org/Person"]: span[itemprop="name"] = current_page.data.author
+
     .post-content[itemprop="articleBody"] = yield

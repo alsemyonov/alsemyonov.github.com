@@ -1,0 +1,120 @@
+@import bootstrap
+@import bootstrap/variables
+@import font-awesome-sprockets
+@import font-awesome
+
+.b-header
+  @extend .navbar
+  @extend .navbar-light
+  @extend .bg-faded
+  margin-bottom: 3rem
+.b-navigation
+  @extend .container
+.b-title
+  @extend .navbar-brand
+.b-menu
+  @extend .nav
+  @extend .navbar-nav
+  @extend .pull-xs-right
+.b-menu__item
+  @extend .nav-item
+.b-contents
+  @extend .container
+.b-contents__wrapper
+  @extend .row
+.b-main
+  @extend .col-xl-8
+  @extend .col-lg-8
+  @extend .col-md-8
+  @extend .col-md-8
+.b-sidebar
+  @extend .col-md-4
+.b-blog__header
+  padding-bottom: 1.25rem
+  margin-bottom: 2rem
+  border-bottom: 0.05rem solid #eee
+.b-blog__title
+  margin-bottom: 0
+  font-size: 2rem
+  font-weight: normal
+.b-blog__description
+  @extend .lead
+  font-size: 1.1rem
+  color: #999
+.b-blog__main
+  @extend .b-main
+.b-article
+  margin-bottom: 4rem
+.b-article__title
+  margin-bottom: .25rem
+  font-size: 2.5rem
+.b-article__meta
+  margin-bottom: 1.25rem
+  color: #999
+.b-article-excerpt
+  @extend .b-article
+.b-article-excerpt__title
+  @extend .b-article__title
+.b-article-excerpt__meta
+  @extend .b-article__meta
+.b-sidebar__section
+  margin-bottom: 1rem
+.b-sidebar__recent
+  @extend .b-sidebar__section
+.b-articles-list
+  @extend .list-unstyled
+//.b-article-item
+.b-article-item__time
+  display: inline-block
+  color: $text-muted
+  margin-right: .3em
+//.b-article-item__title
+.b-sidebar__keywords
+  @extend .b-sidebar__section
+  display: none
+
+.b-sidebar__archive
+  @extend .b-sidebar__section
+.b-archive-list
+  @extend .list-unstyled
+.b-archive-link
+.b-archive-link__amount
+  color: $text-muted
+
+.b-options-list
+  @extend .dl-horizontal
+  dt
+    @extend .col-sm-2
+  dd
+    @extend .col-sm-10
+
+
+.b-map
+.b-map__section
+  @extend .col-md-6
+.b-map__blog
+  @extend .b-map__section
+.b-map__projects
+  @extend .b-map__section
+.b-projects
+  @extend .table
+  //@extend .table-sm
+.b-github-actions
+  @extend .row
+.b-github-actions__item
+  @extend .col-md-3
+
+.b-footer
+  @extend .navbar
+  @extend .navbar-light
+  @extend .bg-faded
+.b-footer__wrapper
+  @extend .container
+.b-footer__columns
+  @extend .row
+.footer-col
+  @extend .col-md-4
+.contact-list,
+.social-media-list
+  @extend .list-unstyled
+
