@@ -10,25 +10,27 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-blog'
+
+# HTML
 gem 'middleman-minify-html'
+gem 'slim'
+gem 'html-schema'
 
 # Markdown support
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
-gem 'slim'
 gem 'russian'
+
+# Interaction with Github
+gem 'octokit'
 
 # Assets
 gem 'middleman-autoprefixer'
 gem 'middleman-sprockets', '~> 4.0.0.rc.1', git: 'https://github.com/middleman/middleman-sprockets.git'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-sass'
-
-# Old Jekyll Stuff
-gem 'octokit'
-gem 'activesupport'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
