@@ -1,5 +1,6 @@
 Time.zone = 'St. Petersburg'
-set :slim, { ugly: true, format: :html5 }
+set :slim, { ugly: true, format: :html }
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -24,6 +25,11 @@ page '/*.txt', layout: false
 configure :development do
   activate :livereload
 end
+
+activate :i18n,
+         mount_at_root: :ru,
+         path: '/:locale/',
+         locales: [:ru, :en]
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -81,7 +87,7 @@ helpers do
   end
 
   def absolute_url(url)
-    # url = data.site.baseurl + url
+    # url = root_url + url
     # url = data.site.url + url
     URI.join(data.site.url, url)
   end
@@ -96,6 +102,10 @@ helpers do
         (!resource.locals['page_number'] || (resource.locals['page_number'] == 1)) &&
         !resource.locals['category']
     end.sort_by { |resource| resource.data.priority }
+  end
+
+  def root_path
+    '/'
   end
 end
 

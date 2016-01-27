@@ -3,7 +3,8 @@ title: Projects
 navigation: true
 ---
 .home
-  h1.page-heading Projects
+  h1.page-heading = t('projects.index.title')
+
   ul.post-list
     - data.projects.each do |project|
       - human_name = project.human_name.presence || project.name
@@ -12,26 +13,27 @@ navigation: true
           h2 = link_to human_name, "https://github.com/#{project.full_name}"
           p = project.description
 
-          h3 Released
+          h3 = t('projects.index.released')
           p
             = link_to('Documentation', "https://rubydoc.org/gems/#{cgi_escape(project.name)}", target: '_blank')
             = link_to("https://badge.fury.io/rb/#{cgi_escape(project.name)}", target: '_blank') do
-              = image_tag("https://badge.fury.io/rb/#{cgi_escape(project.name)}.svg", alt: "#{human_name} version", height: 18)
+              = image_tag("https://badge.fury.io/rb/#{cgi_escape(project.name)}.svg", alt: "#{human_name} version")
 
-          h3 Unreleased
+          h3 = t('projects.index.unreleased')
           p
             = link_to('Documentation', "https://rubydoc.org/github/#{cgi_escape(project.full_name)}", target: '_blank')
             = link_to("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}.svg", alt: "#{human_name} Github version", height: 18)
+              = image_tag("https://badge.fury.io/gh/#{cgi_escape(project.full_name)}.svg", alt: "#{human_name} Github version")
 
-            = link_to("http://inch-ci.org/github/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("http://inch-ci.org/github/#{cgi_escape(project.full_name)}.svg?branch=master", alt: "#{human_name} Documentation Status")
-            = link_to("https://codeclimate.com/github/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("https://codeclimate.com/github/#{cgi_escape(project.full_name)}.png", alt: "#{human_name} Code Climate")
-            = link_to("http://travis-ci.org/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("http://travis.org/#{cgi_escape(project.full_name)}.png?branch=master", alt: "#{human_name} Build Status")
-            = link_to("https://gemnasium.com/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("https://gemnasium.com/#{cgi_escape(project.full_name)}.png", alt: "#{human_name} Dependencies Status")
-            = link_to("https://hakiri.io/github/#{cgi_escape(project.full_name)}", target: '_blank') do
-              = image_tag("https://hakiri.io/github/#{cgi_escape(project.full_name)}/master.svg", alt: "#{human_name} Security Status")
-
+            = link_to("https://inch-ci.org/github/#{project.full_name}", target: '_blank') do
+              = image_tag("https://inch-ci.org/github/#{project.full_name}.svg?branch=master", alt: "#{human_name} Documentation Status")
+            = link_to("https://codeclimate.com/github/#{project.full_name}", target: '_blank') do
+              = image_tag("https://codeclimate.com/github/#{project.full_name}/badges/gpa.svg", alt: "#{human_name} Code Climate")
+            = link_to("https://codeclimate.com/github/#{project.full_name}/coverage", target: '_blank') do
+              = image_tag("https://codeclimate.com/github/#{project.full_name}/badges/coverage.svg", alt: "#{human_name} Test Coverage")
+            = link_to("https://travis-ci.org/#{project.full_name}", target: '_blank') do
+              = image_tag("https://travis-ci.org/#{project.full_name}.svg?branch=master", alt: "#{human_name} Build Status")
+            = link_to("https://hakiri.io/github/#{project.full_name}", target: '_blank') do
+              = image_tag("https://hakiri.io/github/#{project.full_name}/master.svg", alt: "#{human_name} Security Status")
+            = link_to("https://gemnasium.com/#{project.full_name}", target: '_blank') do
+              = image_tag("https://gemnasium.com/#{project.full_name}.svg", alt: "#{human_name} Dependencies Status")

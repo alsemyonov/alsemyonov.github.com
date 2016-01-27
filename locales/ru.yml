@@ -1,0 +1,14 @@
+ru:
+  site:
+    title: Здесь был Алекс
+  author:
+    name: Алекс Семёнов
+    email: al@semyonov.us
+  blog:
+    index:
+      title: Блог
+  projects:
+    index:
+      title: Проекты
+      released: Выпущенное
+      unreleased: В разработке

@@ -1,0 +1,11 @@
+en:
+  site:
+    title: Alex was Here
+  author:
+    name: Alex Semyonov
+    email: al@semyonov.us
+  projects:
+    index:
+      title: Projects
+      released: Released
+      unreleased: Unreleased
