@@ -2,6 +2,7 @@
 @import bootstrap/variables
 @import font-awesome-sprockets
 @import font-awesome
+@import bootstrap-social
 
 .b-header
   @extend .navbar
@@ -114,7 +115,10 @@
   @extend .row
 .footer-col
   @extend .col-md-4
+.footer-col-3
+  @extend .col-md-8
 .contact-list,
 .social-media-list
   @extend .list-unstyled
-
+  li
+    margin-bottom: $padding-base-vertical

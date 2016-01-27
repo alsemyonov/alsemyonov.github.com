@@ -28,18 +28,14 @@ html
 
     footer.b-footer
       .b-footer__wrapper
-        h2.footer-heading = t('site.title')
         .b-footer__columns
           .footer-col.footer-col-1
-            ul.contact-list
-              li = t('author.name')
-              li = mail_to(data.site.email)
-          .footer-col.footer-col-2
+            p#copyrights &copy;&nbsp;#{mail_to(data.site.email, t('author.name'), subject: "RE: #{current_resource.data.title}", body: absolute_url(current_resource.url))}, 2016
             ul.social-media-list
               - data.site.usernames.each do |service, username|
                 li
-                  = link_to("https://#{service}.com/#{username}", target: '_blank') do
-                    i.fa> class="fa-#{service}"
-                    span.username = username
+                  = link_to("https://#{service}.com/#{username}", target: '_blank', class: "btn btn-social btn-#{service}") do
+                    i.fa class="fa-#{service}"
+                    = username
           .footer-col.footer-col-3
             p = data.site.description

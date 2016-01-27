@@ -9,7 +9,7 @@ layout: blog
 - when 'month'
   - interval = l Date.new(year, month, 1), format: :month
 - when 'year'
-  - interval = year
+  - interval = l Date.new(year, 1, 1), format: :year
 
 h1 = t('calendar.title', interval: interval)
 

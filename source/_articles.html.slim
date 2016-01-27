@@ -3,8 +3,10 @@
 
 = wrap_layout :paginated do
   ul.b-articles-list
-    - articles.each do |article|
-      = partial partial, locals: {article: article}
+    - articles.group_by {|a| a.date.year}.each do |year, articles|
+      li: strong = link_to(year, blog_year_path(year))
+      - articles.each do |article|
+        = partial partial, locals: {article: article}
 
 p.rss-subscribe
   - icon = ' ' << content_tag(:i, nil, class: 'fa fa-feed')

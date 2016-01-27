@@ -111,8 +111,8 @@ helpers do
     end.sort_by { |resource| resource.data.priority }
   end
 
-  def root_path
-    '/'
+  def root_path(*paths)
+    uri_root_path(*paths)
   end
 
   def l(date, options)

@@ -13,7 +13,8 @@ ru:
       short: "%d %b"
       long: "%d %B %Y"
       date: "%d %B %Y"
-      month: "%B %Y"
+      month: "%B %Y г."
+      year: "%Y г."
     common_day_names: [воскресенье, понедельник, вторник, среда, четверг, пятница, суббота]
     standalone_day_names: [Воскресенье, Понедельник, Вторник, Среда, Четверг, Пятница, Суббота]
     common_abbr_day_names: [Вс, Пн, Вт, Ср, Чт, Пт, Сб]
