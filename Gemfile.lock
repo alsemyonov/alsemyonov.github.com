@@ -131,6 +131,10 @@ GEM
     sawyer (0.3.0)
       faraday (~> 0.8, < 0.10)
       uri_template (~> 0.5.0)
+    slim (3.0.6)
+      temple (~> 0.7.3)
+      tilt (>= 1.3.3, < 2.1)
+    temple (0.7.6)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -155,6 +159,7 @@ DEPENDENCIES
   middleman-livereload
   octokit
   redcarpet (~> 3.3, >= 3.3.3)
+  slim
   tzinfo-data
   wdm (~> 0.1.0)
 

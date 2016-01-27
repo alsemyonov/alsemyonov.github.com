@@ -15,7 +15,8 @@ gem 'middleman-blog'
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 # For feed.xml.builder
-gem "builder", "~> 3.0"
+gem 'builder', '~> 3.0'
+gem 'slim'
 
 # Old Jekyll Stuff
 gem 'jekyll'

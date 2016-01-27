@@ -1,0 +1,21 @@
+doctype 5
+html
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+    title = current_page.data.title.presence || data.site.title
+    meta name="description" content=(current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description)
+    = stylesheet_link_tag :main
+    = javascript_include_tag :all
+    link rel="canonical" href=canonicalize_url(current_resource.url)
+    /= feed_tag :atom, "#{blog.options.prefix.to_s}/atom.xml", title: 'Atom Feed'
+    = feed_tag :atom, '/atom.xml', title: "#{data.site.title} (Atom)"
+    = feed_tag :rss, '/rss.xml', title: "#{data.site.title} (RSS)"
+    link[href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"]
+  body class=page_classes
+  = partial 'header'
+  .page-content
+    .wrapper
+      = yield
+  = partial 'footer'
