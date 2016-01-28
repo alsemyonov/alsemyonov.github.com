@@ -12,8 +12,8 @@ pageable: false
         .media-heading
           h2 Здравствуй, <code>%username%</code>!
         = partial 'me/about'
-  section.b-map__blog
-    h2 = link_to t('site.navigation.blog'), '/blog'
+  section.b-map__blog.h-feed
+    h2.p-name = link_to t('site.navigation.blog'), '/blog', class: 'u-url'
     = partial 'articles', locals: {articles: page_articles, collection_partial: 'articles_yearly'}
   section.b-map__projects
     h2 = link_to t('site.navigation.software'), '/software'

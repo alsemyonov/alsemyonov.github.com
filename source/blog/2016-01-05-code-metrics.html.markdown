@@ -5,6 +5,7 @@ date: 2016-01-05 12:28:25 +0300
 tags: Ruby, Github
 category: Development
 author: Alex Semyonov
+published: false
 ---
 
 Сделал [приборную панель](/software/) для своих проектов с открытым исходным кодом.

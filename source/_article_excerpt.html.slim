@@ -1,5 +1,5 @@
-article.b-article-excerpt
-  h2.b-article-excerpt__title = link_to article.title, article
+article.b-article-excerpt.h-entry
+  h2.b-article-excerpt__title = link_to article.title, article, class: 'u-url p-name', rel: 'canonical'
   p.b-article-excerpt__meta
-    time datetime=article.date.xmlschema title=l(article.date, format: :long) = l article.date, format: :short
-  = article.body
+    time.dt-published datetime=article.date.xmlschema title=l(article.date, format: :long) = l article.date, format: :short
+  .p-content = article.body
