@@ -1,7 +1,10 @@
 - content_for :header do
-  header.b-blog__header
-    h1.b-blog__title = link_to t('blog.title'), blog_path
-    p.b-blog__description = t('blog.description')
+  header.b-blog-header
+    .b-blog-header__logo
+      = image_tag 'alsemyonov.jpg', width: 64, height: 64, class: 'media-object img-circle', itemprop: 'image'
+    .b-blog-header__titles
+      h1.b-blog-header__title = link_to t('blog.title'), blog_path
+      p.b-blog-header__description = t('blog.description')
 
 = wrap_layout :layout do
   #main.b-blog__main[role="main"] = yield
