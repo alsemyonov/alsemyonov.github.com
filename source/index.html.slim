@@ -4,9 +4,17 @@ pageable: false
 ---
 
 .b-map
+  section.b-map__person
+    .media
+      .media-left
+        = image_tag('alsemyonov.jpg', class: 'media-object img-circle', width: 200, height: 200, alt: t('index.photo.alt'), title: t('index.photo.alt'))
+      .media-body
+        .media-heading
+          h2 Здравствуй, <code>%username%</code>!
+        = partial 'me/about'
   section.b-map__blog
     h2 = link_to t('site.navigation.blog'), '/blog'
     = partial 'articles', locals: {articles: page_articles, collection_partial: 'articles_yearly'}
   section.b-map__projects
-    h2 = link_to t('site.navigation.projects'), '/projects'
+    h2 = link_to t('site.navigation.software'), '/software'
     = partial 'projects'

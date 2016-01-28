@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+rsync -r ./build/ alsemyonov@cerebelo.info:/w/al.semyonov.us/current/public/

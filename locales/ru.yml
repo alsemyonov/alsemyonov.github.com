@@ -2,8 +2,8 @@ ru:
   site:
     title: Здесь был Алекс
     navigation:
-      blog: Блог
-      projects: Проекты
+      blog: Блог разработчика веба
+      software: Программное обеспечение
   pagination:
     pagination: "Страница %{page} из %{of}"
     previous: Предыдущая страница
@@ -98,3 +98,6 @@ ru:
       skills: Навыки
       at: "в"
       in: "в"
+  index:
+    photo:
+      alt: "Алекс в естественной среде обитания"

@@ -2,8 +2,8 @@
 title: Я
 page_title: Про Алекса Семёнова
 layout: page
-navigation: true
-priority: 1
+navigation: false
+published: false
 ---
 
 <!-- TODO: переписать текст о себе -->

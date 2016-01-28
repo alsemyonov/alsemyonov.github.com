@@ -31,7 +31,7 @@ configure :build do
   # Minify Javascript on build
   activate :minify_html
   # Provide GZipped versions of files
-  activate :gzip
+  activate :gzip, exts: %w(.js .css .html .htm .xml)
   # Uniquely-named assets
   activate :asset_hash
 end
