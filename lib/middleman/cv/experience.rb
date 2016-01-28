@@ -57,6 +57,10 @@ class Middleman::CV
       [-start_date.to_time.to_i, -end_date.try(:to_time).to_i, title]
     end
 
+    def status_icon
+      content_tag(:i, nil, class: "b-experience__status b-experience__status_#{is_current ? 'current' : 'previous'}")
+    end
+
     def list_property(property)
       values = public_send(property).compact
       content_tag(:section, class: "b-experience__list b-experience__list_#{property}", itemtype: 'http://schema.org/ItemList', itemscope: true) do

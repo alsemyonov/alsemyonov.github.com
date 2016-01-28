@@ -1,5 +1,14 @@
 .b-experience
-  margin-bottom: 2rem
+  margin-bottom: 3rem
+.b-experience__status
+  @extend .fa
+  margin-right: .1em
+.b-experience__status_current
+  @extend .fa-play
+  color: $alert-success-text
+.b-experience__status_previous
+  @extend .fa-stop
+  color: $alert-danger-text
 .b-experience__dates
   @extend .text-muted
   font-weight: lighter
@@ -35,8 +44,10 @@
       @extend .fa-li
 .b-experience__list_responsibilities ul i
   @extend .fa-shield
+  color: darkgreen
 .b-experience__list_achievements ul i
-  @extend .fa-diamond
+  @extend .fa-trophy
+  color: darkgoldenrod
 .b-experience__list-title
   @extend h5
   @extend .text-muted

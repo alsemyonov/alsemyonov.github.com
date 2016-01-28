@@ -8,7 +8,7 @@ priority: 1
 
 <!-- TODO: переписать текст о себе -->
 <div itemscope itemtype="http://schema.org/Person" class="h-card">
-<img class="photo" style="margin: 0 0 0 1em; float: right; width: 264px; height: 332px;" src="" alt="Алекс в естественной среде обитания" title="Алекс в естественной среде обитания" />
+<img class="photo" style="margin: 0 0 0 1em; float: right; width: 200px; height: 200px;" src="/images/alsemyonov.jpg" alt="Алекс в естественной среде обитания" title="Алекс в естественной среде обитания" />
 
 Здравствуй, %username%!
 

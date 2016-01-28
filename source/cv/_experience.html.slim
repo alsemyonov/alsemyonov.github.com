@@ -6,12 +6,13 @@ li.b-experience.p-experience(itemprop="worksFor" itemscope itemtype='http://sche
       span.b-experience__location.p-geo(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
         span itemprop="addressLocality" = experience.location
         i
-  h4
+  h4.b-experience__title
     em.b-experience__job-title => experience.title
     span.b-experience__at => t('cv.experience.at')
     strong.b-experience__company.p-org> itemprop="name"
       i
       = experience.company.name
+    = experience.status_icon
   p.summary = experience.summary
   = experience.list_property(:responsibilities)
   = experience.list_property(:achievements)
