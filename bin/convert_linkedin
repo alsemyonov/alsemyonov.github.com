@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+
+return unless __FILE__ == $0
+
+require 'dotenv'
+require 'yaml'
+require 'csv'
+require 'pathname'
+require 'active_support'
+require 'active_support/core_ext'
+require 'i18n/core_ext/hash'
+
+Dotenv.load('.env')
+
+ROOT = Pathname.new(File.expand_path('../..', __FILE__))
+EXPERIENCE_FILE = ROOT.join('data/cv/experience.yml')
+@data = File.exist?(EXPERIENCE_FILE) ? YAML.load(File.read(EXPERIENCE_FILE)) : []
+
+CSV.new(ARGF.read, headers: :first_row).each do |row|
+  puts row
+  new_position = {
+    company: { name: row['Company Name'] },
+    title: row['Title']
+  }
+  new_position[:summary] = row['Description'] if row['Description']
+  new_position[:location] = { name: row['Location'] } if row['Location']
+  new_position[:start_date] = Date.parse(row['Start Date']) if row['Start Date']
+  new_position[:end_date] = Date.parse(row['End Date']) if row['End Date']
+  existing_position = @data.find { |pos| pos['title'] == new_position[:title] && pos['company']['name'] == new_position[:company][:name] }
+  if existing_position
+    existing_position.deep_merge!(new_position.stringify_keys)
+  else
+    @data << new_position.stringify_keys
+  end
+end
+
+@data.each do |position|
+  case position['start_date']
+  when Hash
+    position['start_date'] = Date.new(*position['start_date'].fetch_values('year', 'month'))
+  when String
+    position['start_date'] = Date.parse(position['start_date'])
+  end
+  position.deep_stringify_keys!
+end
+@data = @data.uniq.sort_by do |position|
+  [-position['start_date'].to_time.to_i, -position['end_date'].try(:to_time).to_i, position['title']]
+end
+
+File.write(EXPERIENCE_FILE, YAML.dump(@data))
+
+require 'irb'
+IRB.start

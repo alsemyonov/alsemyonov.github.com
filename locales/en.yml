@@ -19,3 +19,8 @@ en:
             one: 'Byte'
             many: 'Bytes'
             other: 'Bytes'
+  cv:
+    experiences:
+      until_now: "now"
+    experience:
+      at: "at"

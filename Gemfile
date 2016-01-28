@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'dotenv'
+
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 
@@ -25,8 +27,9 @@ gem 'builder', '~> 3.0'
 # I18n
 gem 'russian'
 
-# Interaction with Github
+# Interactions
 gem 'octokit'
+gem 'linkedin'
 
 # Assets
 gem 'middleman-autoprefixer'

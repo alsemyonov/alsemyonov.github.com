@@ -1,0 +1,12 @@
+li.b-experience.p-experience(itemprop="worksFor" itemscope itemtype='http://schema.org/Organization')
+  .b-experience__dates = experience.dates
+  h4
+    em.b-experience__job-title> itemprop="jobTitle" = experience.title
+    span.b-experience__at => t('cv.experience.at')
+    strong.b-experience__company.p-org itemprop="name"
+      i
+      = experience.company.name
+  p.summary = experience.summary
+  = experience.list_property(:responsibilities)
+  = experience.list_property(:achievements)
+  = experience.list_property(:skills)

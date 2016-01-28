@@ -1,5 +1,5 @@
 ---
-date: 1970-01-01 03:03
+date: 2008-10-01 03:03
 title: Настройка тачпада в Ubuntu
 slug: configuring-touchpad-in-ubuntu
 type: post

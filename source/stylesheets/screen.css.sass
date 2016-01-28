@@ -134,3 +134,57 @@
 
 .b-about
   @extend .b-single
+
+.b-keywords
+  @extend p
+  display: block
+  margin-top: 1em
+  width: 100%
+  ul
+    &, & li
+      list-style: none
+  span, ul, ul li
+    display: inline
+    margin: 0
+    padding: 0
+  span:after
+    content: '\a0'
+  ul
+    li
+      &:after
+        content: ', '
+        white-space: normal
+      &:last-child:after
+        content: '.'
+
+@import blocks/cv
+
+.b-commas
+  display: inline
+  margin: 0
+  padding: 0
+  li
+    display: inline
+    &:after
+      content: ', '
+    &:last-child:after
+      white-space: nowrap
+      content: ''
+
+.b-brackets
+  @extend .b-commas
+  &:before
+    content: '\a0('
+  &:after
+    content: ')'
+    white-space: nowrap
+.b-skills-list
+  @extend .list-unstyled
+  ul
+    list-style: circle
+    ul
+      @extend .b-brackets
+.b-experiences-list
+  @extend .list-unstyled
+
+@import blocks/experience

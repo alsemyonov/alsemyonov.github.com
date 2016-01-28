@@ -1,0 +1,44 @@
+- Software Architecture
+- Team Leadership
+- title: Deployment
+  children:
+  - title: Linux
+    children:
+    - Ubuntu
+  - Nginx
+  - Git
+  - SSH
+  - Upstart
+  - Foreman
+- title: Development
+  children:
+  - title: Ruby
+    children:
+    - Ruby on Rails
+    - Sinatra
+    - Rack
+  - PostgreSQL
+  - MySQL
+  - RabbitMQ
+  - MongoDB
+  - Redis
+  - title: HTML5
+    children:
+    - WebSocket
+    - Microdata
+    - Slim
+    - Haml
+  - title: JavaScript
+    children:
+    - ES6
+    - CoffeeScript
+    - Ember
+    - jQuery
+    - Node.js
+  - title: CSS3
+    children:
+    - Sass
+    - Autoprefixer
+    - Twitter Bootstrap
+    - Bourbon
+    - Compass

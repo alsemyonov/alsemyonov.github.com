@@ -1,0 +1,21 @@
+//.b-cv
+.b-cv__section
+  margin-bottom: 3rem
+.b-cv__header
+  @extend .col-md-12
+  @extend .text-md-center
+.b-cv__image
+  @extend .img-circle
+
+.b-hobbies-list
+  @extend .fa-ul
+//.b-hobby
+@each $color in red, orange, yellow, green, blue, purple
+  .b-hobby_#{"" + $color}
+    color: $color
+
+.b-hobby__mark
+  @extend .fa
+  @extend .fa-li
+  @extend .fa-heart
+  color: $alert-danger-text

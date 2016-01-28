@@ -14,6 +14,7 @@ page '/sitemap.xml', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 activate :blog do |blog|
+  blog.name = 'blog'
   # This will add a prefix to all links, template references and source paths
   blog.prefix = 'blog'
 

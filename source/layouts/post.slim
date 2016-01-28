@@ -13,3 +13,10 @@ priority: 1
         span[itemprop="author" itemscope itemtype="http://schema.org/Person"]: span[itemprop="name"] = current_page.data.author
 
     .post-content[itemprop="articleBody"] = yield
+
+    - if article.tags.any?
+      .b-keywords
+        span Ключевые слова:
+        ul
+          - article.tags.each do |tag|
+            li = link_to(tag, tag_path(tag))

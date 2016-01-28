@@ -1,6 +1,7 @@
 require 'active_support'
 require 'i18n'
 require 'russian'
+require 'dotenv'
 require 'lib/patches'
 
 # General configuration

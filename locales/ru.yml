@@ -4,6 +4,14 @@ ru:
     navigation:
       blog: Блог
       projects: Проекты
+  i18n:
+    languages:
+      ru: Русский
+      en: Английский
+      eo: Эсперанто
+      de: Немецкий
+      fr: Французский
+      es: Испанский
   author:
     name: Алекс Семёнов
     email: al@semyonov.us
@@ -66,3 +74,22 @@ ru:
     title: "Статьи с ключевым словом «%{tag}»"
   calendar:
     title: "Статьи за %{interval}"
+  cv:
+    sections:
+      about: Обо мне
+      languages: Языки
+      skills: Навыки
+      education: Образование
+      experience: Опыт работы
+      contacts: Связь
+      hobbies: Хобби
+    language_level:
+      native: родной язык
+      fluid: свободно говорю
+      beginner: базовые знания
+    experience:
+      until_now: "сейчас"
+      responsibilities: Ответственности
+      achievements: Достижения
+      skills: Навыки
+      at: "в"

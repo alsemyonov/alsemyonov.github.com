@@ -1,7 +1,9 @@
 ---
-title: Про Алекса Семёнова
-slug: about
+title: Я
+page_title: Про Алекса Семёнова
 layout: page
+navigation: true
+priority: 1
 ---
 
 <!-- TODO: переписать текст о себе -->

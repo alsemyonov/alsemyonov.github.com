@@ -6,6 +6,11 @@ html
     meta[name="viewport" content="width=device-width, initial-scale=1"]
     title = current_page.data.title.presence || data.site.title
     meta name="description" content=(current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description)
+    - if current_resource.data.nofollow
+      meta name="robots" content=current_resource.data.nofollow.presence || "noindex, nofollow"
+    - else
+      meta name="robots" content="index, follow"
+    meta name="author" content=data.site.author
     = stylesheet_link_tag :screen
     = javascript_include_tag :screen
     link rel="canonical" href=canonicalize_url(current_resource.url)
