@@ -1,0 +1,9 @@
+@import blocks/commas
+
+.b-brackets
+  @extend .b-commas
+  &:before
+    content: '\a0('
+  &:after
+    content: ')'
+    white-space: nowrap

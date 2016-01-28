@@ -1,0 +1,16 @@
+@import blocks/commas
+
+.b-keywords
+  @extend p
+  display: block
+  margin-top: 1em
+  width: 100%
+  span
+    display: inline
+    margin: 0
+    padding: 0
+  span:after
+    content: '\a0'
+  ul
+    @extend .b-commas
+    @extend .b-commas_point

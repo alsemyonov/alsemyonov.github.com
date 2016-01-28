@@ -1,0 +1,28 @@
+.b-article
+  margin-bottom: 4rem
+.b-article__title
+  margin-bottom: .25rem
+  font-size: 2.5rem
+.b-article__meta
+  margin-bottom: 1.25rem
+  color: #999
+.b-article-excerpt
+  @extend .b-article
+.b-article-excerpt__title
+  @extend .b-article__title
+.b-article-excerpt__meta
+  @extend .b-article__meta
+
+.b-articles-list
+  @extend .list-unstyled
+  ul
+    padding-left: 1em
+    &, & li
+      list-style: none
+
+//.b-article-item
+.b-article-item__time
+  display: inline-block
+  color: $text-muted
+  margin-right: .3em
+//.b-article-item__title

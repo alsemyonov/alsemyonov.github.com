@@ -1,10 +1,11 @@
 - if paginate && num_pages > 1
-  p Page #{page_number} of #{num_pages}
-  - if prev_page
-    p = link_to 'Previous page', prev_page
+  nav
+    p = t('pagination.pagination', page: page_number, of: num_pages)
+    - if prev_page
+      p = link_to t('pagination.previous'), prev_page
 
 = yield
 
 - if paginate
   - if next_page
-    p = link_to 'Next page', next_page
+    nav: p = link_to t('pagination.next'), next_page

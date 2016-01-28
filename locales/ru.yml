@@ -4,6 +4,10 @@ ru:
     navigation:
       blog: Блог
       projects: Проекты
+  pagination:
+    pagination: "Страница %{page} из %{of}"
+    previous: Предыдущая страница
+    next: "Следующая страница"
   i18n:
     languages:
       ru: Русский

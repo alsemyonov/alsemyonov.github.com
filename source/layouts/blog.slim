@@ -20,15 +20,15 @@
 
     section#keywords.b-sidebar__keywords
       h2 = t('blog.keywords')
-      ol.b-keywords-list
+      ol.b-blog-keywords-list
         - blog.tags.each do |tag, articles|
           li = link_to "#{tag} (#{articles.size})", tag_path(tag)
 
     section#years.b-sidebar__archive
       h2 = t('blog.archive')
-      ol.b-archive-list
+      ol.b-blog-archive-list
         - blog.articles.group_by { |a| [a.date.year, a.date.month] }.each do |(year, month), articles|
-          li.b-archive-link
+          li.b-blog-archive-link
             = link_to(l(Date.new(year, month, 1), format: :month), blog_month_path(year, month))
-            span.b-archive-link__amount<
+            span.b-blog-archive-link__amount<
               | (#{articles.size})

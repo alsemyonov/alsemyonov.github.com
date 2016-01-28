@@ -17,16 +17,10 @@
   @extend .container
 .b-title
   @extend .navbar-brand
-.b-menu
-  @extend .nav
-  @extend .navbar-nav
-  @extend .pull-xs-right
-.b-menu__item
-  @extend .nav-item
-.b-contents
-  @extend .container
-.b-contents__wrapper
-  @extend .row
+@import blocks/menu
+@import blocks/contents
+@import blocks/article
+@import blocks/sidebar
 .b-single
   @extend .col-md-12
 .b-main
@@ -34,50 +28,6 @@
   @extend .col-lg-8
   @extend .col-md-8
   @extend .col-md-8
-.b-sidebar
-  @extend .col-md-4
-.b-article
-  margin-bottom: 4rem
-.b-article__title
-  margin-bottom: .25rem
-  font-size: 2.5rem
-.b-article__meta
-  margin-bottom: 1.25rem
-  color: #999
-.b-article-excerpt
-  @extend .b-article
-.b-article-excerpt__title
-  @extend .b-article__title
-.b-article-excerpt__meta
-  @extend .b-article__meta
-.b-sidebar__section
-  margin-bottom: 1rem
-.b-sidebar__recent
-  @extend .b-sidebar__section
-.b-articles-list
-  @extend .list-unstyled
-  ul
-    padding-left: 1em
-    &, & li
-      list-style: none
-      //padding-left: 0
-//.b-article-item
-.b-article-item__time
-  display: inline-block
-  color: $text-muted
-  margin-right: .3em
-//.b-article-item__title
-.b-sidebar__keywords
-  @extend .b-sidebar__section
-  display: none
-
-.b-sidebar__archive
-  @extend .b-sidebar__section
-.b-archive-list
-  @extend .list-unstyled
-//.b-archive-link
-.b-archive-link__amount
-  color: $text-muted
 
 .b-options-list
   @extend .dl-horizontal
@@ -86,88 +36,18 @@
   dd
     @extend .col-sm-10
 
-
-//.b-map
-.b-map__section
-  @extend .col-md-6
-.b-map__blog
-  @extend .b-map__section
-.b-map__projects
-  @extend .b-map__section
-.b-projects
-  @extend .table
-  //@extend .table-sm
-  img
-    min-height: 20px
-.b-github-actions
-  @extend .row
-.b-github-actions__item
-  @extend .col-md-3
-
-.b-footer
-  @extend .navbar
-  @extend .navbar-light
-  @extend .bg-faded
-.b-footer__wrapper
-  @extend .container
-.b-footer__columns
-  @extend .row
-.footer-col
-  @extend .col-md-4
-.footer-col-3
-  @extend .col-md-8
-.contact-list,
-.social-media-list
-  @extend .list-unstyled
-  li
-    margin-bottom: $padding-base-vertical
+@import blocks/map
+@import blocks/projects
+@import blocks/github-actions
+@import blocks/footer
 
 .b-about
   @extend .b-single
 
-.b-keywords
-  @extend p
-  display: block
-  margin-top: 1em
-  width: 100%
-  ul
-    &, & li
-      list-style: none
-  span, ul, ul li
-    display: inline
-    margin: 0
-    padding: 0
-  span:after
-    content: '\a0'
-  ul
-    li
-      &:after
-        content: ', '
-        white-space: normal
-      &:last-child:after
-        content: '.'
-
 @import blocks/cv
-
-.b-commas
-  display: inline
-  margin: 0
-  padding: 0
-  li
-    display: inline
-    &:after
-      content: ', '
-    &:last-child:after
-      white-space: nowrap
-      content: ''
-
-.b-brackets
-  @extend .b-commas
-  &:before
-    content: '\a0('
-  &:after
-    content: ')'
-    white-space: nowrap
+@import blocks/commas
+@import blocks/brackets
+@import blocks/keywords
 
 @import blocks/experience
 @import blocks/blog
