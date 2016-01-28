@@ -11,8 +11,15 @@
   @extend .col-md-4
 .b-footer__disclaimer
   @extend .col-md-8
-.contact-list,
-.social-media-list
-  @extend .list-unstyled
+
+.b-footer-social
+  @extend .fa-ul
   li
-    margin-bottom: $padding-base-vertical
+    i
+      @extend .fa
+      @extend .fa-li
+
+@each $service, $color in $social-colors
+  .b-social_#{$service}
+    &, & a
+      color: $color

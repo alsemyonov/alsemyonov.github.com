@@ -51,18 +51,12 @@
   color: #009926
   i
     @extend .fa-phone
-.b-contact_github
-  color: $github-color
-  i
-    @extend .fa-github
-.b-contact_linkedin
-  color: $linkedin-color
-  i
-    @extend .fa-linkedin
-.b-contact_skype
-  color: $skype-color
-  i
-    @extend .fa-skype
+@each $service in github, linkedin, skype
+  .b-contact_#{$service}
+    color: map-get($social-colors, $service)
+    i
+      @extend .fa-#{$service}
+
 .b-contact_email
   color: darkgoldenrod
   i

@@ -23,18 +23,21 @@ class Middleman::CV
 
     def dates
       dates = [started_at, end_at].compact.join(' — ')
-      dates = dates.mb_chars.downcase if I18n.locale == :ru
       dates
     end
 
     def started_at
       return unless start_date
-      l(start_date, format: :month)
+      label = l(start_date, format: :month)
+      label = label.mb_chars.downcase if I18n.locale == :ru
+      content_tag(:time, label, itemprop: 'startDate', class: 'dt-start', datetime: start_date.xmlschema)
     end
 
     def end_at
       return t('cv.experience.until_now') if is_current || !end_date
-      l(end_date, format: :month)
+      label = l(end_date, format: :month)
+      label = label.mb_chars.downcase if I18n.locale == :ru
+      content_tag(:time, label, itemprop: 'endDate', class: 'dt-end', datetime: end_date.xmlschema)
     end
 
     def responsibilities

@@ -36,11 +36,11 @@ html lang=::I18n.language_territory
         .b-footer__columns
           .b-footer__links
             p#copyrights &copy;&nbsp;#{mail_to(data.site.email, t('author.name'), subject: "RE: #{current_resource.data.title}", body: absolute_url(current_resource.url))}, 2016
-            ul.social-media-list.fa-ul
+            ul.b-footer-social
               - data.site.usernames.each do |service, username|
-                li
+                li.b-social class="b-social_#{service}"
                   = link_to("https://#{service}.com/#{username}", target: '_blank') do
-                    i.fa.fa-li class="fa-#{service}"
+                    i class="fa-#{service}"
                     = username
           .b-footer__disclaimer
             p = data.site.description

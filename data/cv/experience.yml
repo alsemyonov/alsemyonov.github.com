@@ -4,6 +4,10 @@
   id: 681367197
   is_current: true
   location:
+    country:
+      name: Estonia
+    locality:
+      name: Tallinn
     name: Tallinn, Estonia
   start_date: 2015-06-01
   title: Software Engineer
@@ -19,6 +23,13 @@
   - JSON API
 - company:
     name: AutoGrid Systems
+  location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Saint Petersburg
+    name: Saint Petersburg, Russian Federation
   title: Senior Software Engineer
   start_date: 2015-03-01
   end_date: 2015-06-01
@@ -44,6 +55,10 @@
   - officially certified OpenADR 2.0a server
   - officially certified OpenADR 2.0b server, first in the world
   location:
+    country:
+      name: Russia
+    locality:
+      name: Kazan
     name: Kazan, Russia
   start_date: 2013-10-01
   end_date: 2014-07-01
@@ -53,11 +68,22 @@
   summary: Developing highload Rails application with many background tasks
   skills: [Ruby on Rails, RSpec, Resque, RabbitMQ, EventMachine]
   location:
+    country:
+      name: Russia
+    locality:
+      name: Kazan
     name: Kazan, Russia
   start_date: 2011-11-01
   end_date: 2013-09-01
 - company:
     name: Green Light, Smart Green Streetlights
+  location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Saint Petersburg
+    name: Saint Petersburg, Russian Federation
   title: Software Architect / Senior Ruby Developer
   responsibilities:
   - Development of a web service to gather statistics, and remote control street lights
@@ -72,6 +98,8 @@
     country:
       code: ru
       name: Russian Federation
+    locality:
+      name: Saint Petersburg
     name: Saint Petersburg, Russian Federation
   start_date: 2011-01-01
   summary: |-
@@ -81,6 +109,13 @@
   title: Co-founder, Lead Developer
 - company:
     name: Goodwill
+  location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Saint Petersburg
+    name: Saint Petersburg, Russian Federation
   title: CTO/Senior Web Developer
   summary: CTO, development
   responsibilities:
@@ -104,6 +139,13 @@
   end_date: 2011-02-01
 - company:
     name: KTK studio
+  location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Orenburg
+    name: Orenburg, Russian Federation
   title: Senior Web Developer
   summary: |-
     Technical expertise;
@@ -115,6 +157,13 @@
   end_date: 2009-11-01
 - company:
     name: RockBee Design Studio
+  location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Saint Petersburg
+    name: Saint Petersburg, Russian Federation
   title: Web Developer
   summary: Development of different kinds of Rails applications (and a couple of PHP
     ones).
@@ -122,11 +171,23 @@
   end_date: 2008-11-01
 - company:
     name: Desmix studio
+  location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Orenburg
+    name: Orenburg, Russian Federation
   title: Senior web developer
   summary: |-
     A couple of Rails application (RDBMS, working with Web Services and APIs);
     Technical expertise and consulting.
   location:
+    country:
+      code: ru
+      name: Russian Federation
+    locality:
+      name: Orenburg
     name: Orenburg, Russian Federation
   start_date: 2007-03-01
   end_date: 2008-01-01

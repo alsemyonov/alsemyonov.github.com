@@ -17,15 +17,12 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
       ' , и я
       em> itemprop="jobTitle" системный архитектор
       ' из
-      span(itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope)
+      abbr.p-adr.h-adr(itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope title="Санкт-Петербург, Россия" content="Санкт-Петербург, Россия")
         em
-          span itemprop="addressLocality" Санкт-Петербург
-          ' а,
+          abbr.p-locality itemprop="addressLocality" title="Санкт-Петербург" Санкт-Петербурга
+          ' ,
         em
-          span itemprop="addressCountry"
-            | Росси
-            span.sr-only я
-          | и
+          abbr.p-country-name itemprop="addressCountry" title="Россия" content="Россия" России
       | .
   .col-md-8
     section#about.b-cv__section
@@ -33,7 +30,7 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
       p.p-summary itemprop="description" = cv.about
     /section#education.p-education
       h3 = t('cv.sections.education')
-    section#experiences.b-cv__section.p-experience
+    section#experiences.b-cv__section.h-calendar
       h3 = t('cv.sections.experience')
       = cv.list_of(:experiences, list: false)
   .col-md-4
