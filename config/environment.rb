@@ -10,6 +10,7 @@ Time.zone = 'St. Petersburg'
 
 # Default locale is ru_RU, en_US is under /en/ directory.
 I18n.default_locale = :ru
+I18n.default_locale = :ru
 I18n.locale = :ru
 activate :i18n, mount_at_root: :ru, path: '/:locale/', locales: [:ru, :en]
 

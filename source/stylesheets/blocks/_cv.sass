@@ -4,8 +4,12 @@
 .b-cv__header
   @extend .col-md-12
   @extend .text-md-center
+  margin-bottom: 5rem
 .b-cv__image
   @extend .img-circle
+
+.b-languages-list
+  @extend .list-unstyled
 
 .b-hobbies-list
   @extend .fa-ul
@@ -13,9 +17,57 @@
 @each $color in red, orange, yellow, green, blue, purple
   .b-hobby_#{"" + $color}
     color: $color
-
 .b-hobby__mark
   @extend .fa
   @extend .fa-li
   @extend .fa-heart
   color: $alert-danger-text
+  .b-commas &
+    display: none
+
+.b-skills-list
+  @extend .fa-ul
+  ul
+    ul
+      @extend .b-brackets
+      .b-skill__mark
+        display: none
+        visibility: none
+.b-skill__mark
+  @extend .fa
+  @extend .fa-plus-square
+  @extend .fa-li
+.b-experiences-list
+  @extend .list-unstyled
+.b-
+.b-contacts-list
+  @extend .fa-ul
+.b-contact
+  i
+    @extend .fa
+    @extend .fa-li
+.b-contact_phone
+  color: #009926
+  i
+    @extend .fa-phone
+.b-contact_github
+  color: $github-color
+  i
+    @extend .fa-github
+.b-contact_linkedin
+  color: $linkedin-color
+  i
+    @extend .fa-linkedin
+.b-contact_skype
+  color: $skype-color
+  i
+    @extend .fa-skype
+.b-contact_email
+  color: #ECC561
+  i
+    @extend .fa-envelope-o
+.b-contact_url
+  color: #2a7ae2
+  i
+    @extend .fa-safari
+

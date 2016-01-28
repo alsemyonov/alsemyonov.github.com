@@ -5,7 +5,7 @@ class Middleman::CV::Language < Middleman::CV::Object
   attr_accessor :level
 
   def to_html
-    item = content_tag(:strong, language) << ' — ' << content_tag(:span, level_description)
+    item = content_tag(:strong, language, itemprop: 'itemListElement') << ' — ' << content_tag(:span, level_description)
     content_tag(:li, item)
   end
 

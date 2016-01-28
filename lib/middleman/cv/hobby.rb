@@ -10,7 +10,10 @@ class Middleman::CV
     attr_accessor :title
 
     def to_html
-      content_tag(:li, content_tag(:i, nil, class: 'b-hobby__mark') << ' ' << title, class: 'b-hobby')
+      content_tag(:li,
+                  content_tag(:i, nil, class: 'b-hobby__mark') <<
+                    ' ' << content_tag(:span, title, itemprop: 'itemListElement'),
+                  class: 'b-hobby')
     end
   end
 end

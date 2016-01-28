@@ -1,4 +1,5 @@
 require 'middleman/cv/object'
+require 'active_support/core_ext/string/multibyte'
 
 class Middleman::CV
   class Experience < Object
@@ -16,8 +17,14 @@ class Middleman::CV
     attr_writer :achievements
     attr_writer :skills
 
+    def location
+      (@location || {})['name']
+    end
+
     def dates
-      [started_at, end_at].compact.join(' — ')
+      dates = [started_at, end_at].compact.join(' — ')
+      dates = dates.mb_chars.downcase if I18n.locale == :ru
+      dates
     end
 
     def started_at
@@ -52,9 +59,12 @@ class Middleman::CV
 
     def list_property(property)
       values = public_send(property).compact
-      content_tag(:section, class: "b-experience__list b-experience__list_#{property}") do
-        content_tag(:p, t(property, scope: 'cv.experience'), class: 'b-experience__list-title') <<
-          content_tag(:ul, values.map { |value| value.respond_to?(:to_html) ? value.to_html : content_tag(:li, value) }.join)
+      content_tag(:section, class: "b-experience__list b-experience__list_#{property}", itemtype: 'http://schema.org/ItemList', itemscope: true) do
+        list_items = values.map do |value|
+          value.respond_to?(:to_html) ? value.to_html : content_tag(:li, content_tag(:i, nil) << value, itemprop: 'itemListElement')
+        end.join
+        content_tag(:p, t(property, scope: 'cv.experience'), class: 'b-experience__list-title', itemprop: 'name') <<
+          content_tag(:ul, list_items)
       end if values.any?
     end
   end

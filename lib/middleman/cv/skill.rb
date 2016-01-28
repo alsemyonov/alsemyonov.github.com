@@ -17,14 +17,15 @@ class Middleman::CV
     end
 
     def to_html
-      attributes = {id: "skill-#{title.parameterize}", class: 'p-skill', itemprop: 'itemListElement'}
+      attributes = {id: "skill-#{title.parameterize}", class: 'b-skill p-skill', itemprop: 'itemListElement'}
       result = if tags.include?(title)
                  link_to(title, tag_path(title), attributes)
                else
                  content_tag(:span, title, attributes)
                end
+      result = content_tag(:i, nil, class: 'b-skill__mark') << result
       if skills.any?
-        result << content_tag(:ul, skills.map(&:to_html).join)
+        result << content_tag(:ul, skills.map(&:to_html).join, class: 'b-skills-list')
       end
       content_tag(:li, result)
     end

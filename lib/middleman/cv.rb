@@ -45,8 +45,8 @@ module Middleman
       @hobbies ||= data.cv.hobbies.map { |hobby| Hobby.new(self, hobby) }
     end
 
-    def list_of(property)
-      content_tag(:ul, public_send(property).map(&:to_html).join, class: "b-#{property}-list")
+    def list_of(property, options = {})
+      content_tag(:ul, public_send(property).map(&:to_html).join, {class: "b-#{property}-list"}.merge(options))
     end
   end
 end

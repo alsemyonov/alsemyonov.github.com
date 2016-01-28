@@ -10,31 +10,33 @@
   - SSH
   - Upstart
   - Foreman
-- title: Development
+- title: Backend Development
   children:
   - title: Ruby
     children:
     - Ruby on Rails
     - Sinatra
     - Rack
+    - Slim
+    - Haml
   - PostgreSQL
   - MySQL
   - RabbitMQ
   - MongoDB
   - Redis
+  - Node.js
+- title: Frontend Development
+  children:
   - title: HTML5
     children:
     - WebSocket
     - Microdata
-    - Slim
-    - Haml
   - title: JavaScript
     children:
     - ES6
     - CoffeeScript
     - Ember
     - jQuery
-    - Node.js
   - title: CSS3
     children:
     - Sass

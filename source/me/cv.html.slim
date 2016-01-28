@@ -6,7 +6,7 @@ article.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
       ' Меня зовут
       em.p-name itemprop="name"
         span.p-given-name> itemprop="givenName"
-          span.p-nickname itemprop="nickname" Алекс
+          span.p-nickname itemprop="alternateName" Алекс
           span.sr-only андр
         span.p-family-name itemprop="familyName" Семёнов
       ' , и я
@@ -30,35 +30,35 @@ article.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
       h3 = t('cv.sections.education')
     section#experiences.p-experience
       h3 = t('cv.sections.experience')
-      = cv.list_of(:experiences)
+      = cv.list_of(:experiences, list: false)
   .col-md-4
     section#contacts.b-cv__section
       h3 = t('cv.sections.contacts')
-      ul.list-unstyled.p-contact
-        li
-          i.fa.fa-phone>
+      ul.b-contacts-list.p-contact
+        li.b-contact.b-contact_phone
+          i
           = link_to('+7-981-197-07-00', 'tel:+79811970700', class: 'p-tel', itemprop: 'telephone')
-        li
-          i.fa.fa-envelope-o>
+        li.b-contact.b-contact_email
+          i
           = mail_to('al@semyonov.us', 'al@semyonov.us', itemprop: 'email', class: 'u-email')
-        li
-          i.fa.fa-safari>
+        li.b-contact.b-contact_url
+          i
           = link_to('al.semyonov.us', 'https://al.semyonov.us/', rel: 'me', itemprop: 'url', class: 'u-url')
-        li
-          i.fa.fa-github>
+        li.b-contact.b-contact_github
+          i
           = link_to('alsemyonov', 'https://github.com/alsemyonov', rel: 'me', itemprop: 'url')
-        li
-          i.fa.fa-linkedin>
+        li.b-contact.b-contact_linkedin
+          i
           = link_to('alsemyonov', 'https://linkedin.com/in/alsemyonov', rel: 'me', itemprop: 'url')
-        li
-          i.fa.fa-skype>
+        li.b-contact.b-contact_skype
+          i
           = link_to('alsemyonov', 'skype:alsemyonov?chat', rel: 'me', itemprop: 'url')
-    section#skills.b-cv__section(itemscop itemptype="http://schema.org/ItemList")
+    section#skills.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
       h3 itemprop="name" = t('cv.sections.skills')
       = cv.list_of(:skills)
-    section#languages.b-cv__section
-      h3 = t('cv.sections.languages')
+    section#languages.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
+      h3 itemprop="name" = t('cv.sections.languages')
       = cv.list_of(:languages)
-    section#hobbies.b-cv__section
-      h3 = t('cv.sections.hobbies')
+    section#hobbies.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
+      h3 itemprop="name" = t('cv.sections.hobbies')
       = cv.list_of(:hobbies)

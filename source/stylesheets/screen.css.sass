@@ -4,6 +4,10 @@
 @import font-awesome
 @import bootstrap-social
 
+.fa-li
+  //top: (3em / 16)
+  top: 5px
+
 .b-header
   @extend .navbar
   @extend .navbar-light
@@ -178,13 +182,5 @@
   &:after
     content: ')'
     white-space: nowrap
-.b-skills-list
-  @extend .list-unstyled
-  ul
-    list-style: circle
-    ul
-      @extend .b-brackets
-.b-experiences-list
-  @extend .list-unstyled
 
 @import blocks/experience

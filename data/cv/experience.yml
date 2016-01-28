@@ -7,11 +7,29 @@
     name: Tallinn, Estonia
   start_date: 2015-06-01
   title: Software Engineer
+  responsibilities:
+  - System Architecture
+  - Backend Development
+  - Frontend Development
+  skills:
+  - Ruby on Rails
+  - Ruby
+  - PostgreSQL
+  - RabbitMQ
+  - JSON API
 - company:
     name: AutoGrid Systems
   title: Senior Software Engineer
   start_date: 2015-03-01
   end_date: 2015-06-01
+  responsibilities:
+  - System Architecture
+  - Backend Development
+  skills:
+  - Ruby
+  - Ruby on Rails
+  - MySQL
+  - RabbitMQ
 - company:
     name: Provectus IT, Inc
   title: Technical Lead
@@ -68,11 +86,20 @@
   responsibilities:
   - participate in writing a business plan
   - architecture of the server software (system service, written in Ruby)
-  - database architecture (MongoDB, PostgreSQL)
-  - development of the server software (Ruby)
-  - development of client software (JavaScript + CoffeeScript)
-  - imposition layouts prototype (Haml + Sass + Compass)
+  - database architecture
+  - development of the server software
+  - development of client software
+  - imposition layouts prototype
   - participated in UI design
+  skills:
+  - MongoDB
+  - PostgreSQL
+  - Ruby
+  - JavaScript
+  - CoffeeScript
+  - Haml
+  - Sass
+  - Compass
   start_date: 2010-02-01
   end_date: 2011-02-01
 - company:

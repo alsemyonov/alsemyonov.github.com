@@ -1,9 +1,15 @@
 li.b-experience.p-experience(itemprop="worksFor" itemscope itemtype='http://schema.org/Organization')
-  .b-experience__dates = experience.dates
+  .b-experience__dates
+    => experience.dates
+    - if experience.location
+      span.b-experience__in => t('cv.experience.in')
+      span.b-experience__location.p-geo(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+        span itemprop="addressLocality" = experience.location
+        i
   h4
-    em.b-experience__job-title> itemprop="jobTitle" = experience.title
+    em.b-experience__job-title => experience.title
     span.b-experience__at => t('cv.experience.at')
-    strong.b-experience__company.p-org itemprop="name"
+    strong.b-experience__company.p-org> itemprop="name"
       i
       = experience.company.name
   p.summary = experience.summary

@@ -30,3 +30,16 @@ module Middleman
     end
   end
 end
+
+require 'i18n'
+module I18n
+  LANGUAGE_TERRITORIES = {
+    en: 'en_US',
+    ru: 'ru_RU'
+  }
+  def language_territory
+    LANGUAGE_TERRITORIES[locale.to_sym]
+  end
+
+  module_function :language_territory
+end

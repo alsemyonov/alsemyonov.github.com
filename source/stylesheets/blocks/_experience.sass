@@ -1,13 +1,20 @@
 .b-experience
-  margin-bottom: 1.5rem
+  margin-bottom: 2rem
 .b-experience__dates
   @extend .text-muted
   font-weight: lighter
-.b-experience__company
+.b-experience__company,
+.b-experience__location
   i
     @extend .fa
+.b-experience__company
+  i
     @extend .fa-building-o
     margin-right: .1em
+.b-experience__location
+  i
+    @extend .fa-map
+    margin-left: .1em
 .b-experience__list_skills
   .b-experience__list-title, ul, li
     display: inline
@@ -15,8 +22,21 @@
     padding: 0
   ul
     @extend .b-commas
+    .b-skill__mark
+      display: none
 .b-experience__list
   margin-bottom: 1em
+.b-experience__list_responsibilities,
+.b-experience__list_achievements
+  ul
+    @extend .fa-ul
+    i
+      @extend .fa
+      @extend .fa-li
+.b-experience__list_responsibilities ul i
+  @extend .fa-shield
+.b-experience__list_achievements ul i
+  @extend .fa-diamond
 .b-experience__list-title
   @extend h5
   @extend .text-muted
@@ -28,3 +48,7 @@
 .b-experience__at
   @extend .text-muted
   font-weight: normal
+.b-experience__in
+  @extend .b-experience__at
+  @extend .text-muted
+  font-weight: inherit
