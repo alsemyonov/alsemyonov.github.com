@@ -13,5 +13,5 @@
 
     .b-article__body[itemprop="articleBody"] = yield
 
-    - keywords = article.tags
-    = partial 'blog/keywords', locals: {keywords: keywords}
+    = partial 'blog/keywords', locals: {keywords: article.tags}
+    = partial 'blog/social_buttons'
