@@ -30,8 +30,8 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  blog.tag_template = 'tag.html'
-  blog.calendar_template = 'calendar.html'
+  blog.tag_template = 'blog/tag.html'
+  blog.calendar_template = 'blog/calendar.html'
 
   # Enable pagination
   blog.paginate = true
@@ -41,7 +41,7 @@ activate :blog do |blog|
   blog.custom_collections = {
     category: {
       link: '/categories/{category}.html',
-      template: 'category.html'
+      template: 'blog/category.html'
     }
   }
   page "#{blog.prefix}/atom.xml", layout: false

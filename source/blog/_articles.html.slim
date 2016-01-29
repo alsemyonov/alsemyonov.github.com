@@ -1,6 +1,6 @@
 - articles ||= page_articles
-- partial ||= 'article'
-- collection_partial ||= 'articles_list'
+- partial ||= 'blog/article'
+- collection_partial ||= 'blog/articles_list'
 
 = wrap_layout :paginated do
   ul.b-articles-list = partial collection_partial, locals: {articles: page_articles, partial: partial}

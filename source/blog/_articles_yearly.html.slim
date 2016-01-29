@@ -1,5 +1,5 @@
-- partial ||= 'article'
+- partial ||= 'blog/article'
 - articles.group_by { |article| article.date.year }.each do |year, article_list|
   li
     strong = link_to(year, blog_year_path(year))
-    ul = partial 'articles_list', locals: { articles: article_list, partial: partial }
+    ul = partial 'blog/articles_list', locals: { articles: article_list, partial: partial }
