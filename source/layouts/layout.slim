@@ -31,8 +31,9 @@ html lang=::I18n.language_territory
 
     .b-contents
       = yield_content :header
-      .b-contents__wrapper = yield
-
+      .b-contents__wrapper
+        = yield
+        .b-search-form = partial 'search_form'
     footer.b-footer
       .b-footer__wrapper
         .b-footer__columns
