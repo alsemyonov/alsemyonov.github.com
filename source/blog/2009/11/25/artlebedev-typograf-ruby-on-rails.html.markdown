@@ -3,7 +3,7 @@ date: 2009-11-25 08:08
 title: Ставим рубиновый типограф на Рельсы
 slug: artlebedev-typograf-ruby-on-rails
 type: post
-tags: Ruby, Ruby on Rails, Студия Артемия Лебедева, типографика
+tags: Ruby, Ruby on Rails, Backend Development, Студия Артемия Лебедева, типографика
 ---
 
 В продолжение [вчерашней темы](../../24/artlebedev-typograf-ruby), добавил простой способ типографить избранные поля в модели ActiveRecord.
