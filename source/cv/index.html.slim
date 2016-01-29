@@ -37,22 +37,22 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
     section#contacts.b-cv__section
       h3 = t('cv.sections.contacts')
       ul.b-contacts-list.p-contact
-        li.b-contact.b-contact_phone
+        li.b-social.b-social_phone
           i
           = link_to('+7-981-197-07-00', 'tel:+79811970700', class: 'p-tel', itemprop: 'telephone')
-        li.b-contact.b-contact_email
+        li.b-social.b-social_email
           i
           = mail_to('al@semyonov.us', 'al@semyonov.us', itemprop: 'email', class: 'u-email')
-        li.b-contact.b-contact_url
+        li.b-social.b-social_url
           i
           = link_to('al.semyonov.us', 'https://al.semyonov.us/', rel: 'me', itemprop: 'url', class: 'u-url')
-        li.b-contact.b-contact_github
+        li.b-social.b-social_github
           i
           = link_to('alsemyonov', 'https://github.com/alsemyonov', rel: 'me', itemprop: 'url')
-        li.b-contact.b-contact_linkedin
+        li.b-social.b-social_linkedin
           i
           = link_to('alsemyonov', 'https://linkedin.com/in/alsemyonov', rel: 'me', itemprop: 'url')
-        li.b-contact.b-contact_skype
+        li.b-social.b-social_skype
           i
           = link_to('alsemyonov', 'skype:alsemyonov?chat', rel: 'me', itemprop: 'url')
     section#skills.b-cv__section(itemscope itemtype="http://schema.org/ItemList")

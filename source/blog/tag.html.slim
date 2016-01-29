@@ -5,4 +5,5 @@ pageable: true
 
 h1 = t('tag.title', tag: tagname)
 
+/= partial 'blog/articles_yearly', locals: { articles: page_articles }
 = partial 'blog/articles', locals: { articles: page_articles }

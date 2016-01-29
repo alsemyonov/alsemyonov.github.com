@@ -1,0 +1,10 @@
+.b-social
+  i
+    @extend .fa
+
+@each $service, $color in $social-colors
+  .b-social_#{$service}
+    &, & a
+      color: $color
+    i
+      @extend .fa-#{$service} !optional

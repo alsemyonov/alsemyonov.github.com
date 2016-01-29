@@ -1,8 +1,0 @@
----
-date: 2008-09-03 03:03
-title: Gnome Do сразу после запуска
-slug: gnome-do-1
-type: attachment
-published: false
----
-

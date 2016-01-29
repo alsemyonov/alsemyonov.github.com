@@ -1,0 +1,16 @@
+$font-size-large: $font-size-lg
+$font-size-small: $font-size-sm
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429 // 20/14
+$line-height-computed: floor($font-size-base * $line-height-base) // ~20px
+$padding-base-vertical: $btn-padding-y
+$padding-large-vertical: $btn-padding-y-lg
+$padding-small-vertical: $btn-padding-y-sm
+$padding-base-horizontal: $btn-padding-x
+$padding-large-horizontal: $btn-padding-x-lg
+$padding-small-horizontal: $btn-padding-x-sm
+
+$bs-height-base: $line-height-computed + $padding-base-vertical * 2
+$bs-height-lg: floor($font-size-large * $line-height-base) + $padding-large-vertical * 2
+$bs-height-sm: floor($font-size-small * 1.5) + $padding-small-vertical * 2
+$bs-height-xs: floor($font-size-small * 1.2) + $padding-small-vertical + 1
