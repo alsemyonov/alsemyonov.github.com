@@ -25,7 +25,7 @@
           li = link_to "#{tag} (#{articles.size})", tag_path(tag)
 
     section#years.b-sidebar__archive
-      h2 = t('blog.archive')
+      h2 = t('blog.archive.title')
       ol.b-blog-archive-list
         - blog.articles.group_by { |a| [a.date.year, a.date.month] }.each do |(year, month), articles|
           li.b-blog-archive-link

@@ -1,0 +1,7 @@
+---
+title: Архив
+layout: blog
+---
+
+h2.p-name = link_to t('blog.archive.title'), '/blog', class: 'u-url'
+= partial 'blog/articles', locals: { articles: page_articles, collection_partial: 'blog/articles_yearly' }

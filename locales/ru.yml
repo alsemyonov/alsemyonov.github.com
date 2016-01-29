@@ -51,7 +51,8 @@ ru:
     description: Статьи о веб-разработке и обо всём остальном
     recent: Последние статьи
     keywords: Ключевые слова
-    archive: Архивы
+    archive:
+      title: "Архив блога"
     index:
       title: Блог
     subscribe:
