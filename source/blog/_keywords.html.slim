@@ -1,0 +1,6 @@
+- if keywords.any?
+  .b-keywords
+    span Ключевые слова:
+    ul
+      - keywords.each do |tag|
+        li = blog.tags[tag].size > 1 ? link_to(tag, tag_path(tag)) : tag

@@ -37,4 +37,24 @@ configure :build do
 end
 
 set :slim, { format: :html, pretty: false }
+
+require 'redcarpet'
+require 'redcarpet/render/html_abbreviations'
+
+class SmartRenderer < Redcarpet::Render::SmartyHTML
+  include Redcarpet::Render::HTMLAbbreviations
+end
+
 set :markdown_engine, :redcarpet
+set :markdown, {
+  strikethrough: true,
+  autolink: true,
+  highlight: true,
+  underline: true,
+  superscript: true,
+  footnotes: true,
+  tables: true,
+  fenced_code_blocks: true,
+  renderer: SmartRenderer,
+  smartypants: true
+}
