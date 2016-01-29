@@ -1,0 +1,5 @@
+- human_name = project.human_name.presence || project.name
+- if project.visible
+  li
+    => link_to(human_name, "/software/##{project.name}")
+    small.text-muted = project.description

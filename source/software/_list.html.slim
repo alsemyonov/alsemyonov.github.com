@@ -1,7 +1,3 @@
 ol.b-projects-list
   - data.projects.each do |project|
-    - human_name = project.human_name.presence || project.name
-    - if project.visible
-      li
-        => link_to(human_name, "/projects/##{project.name}")
-        small.text-muted = project.description
+    = partial 'software/project', locals: {project: project}

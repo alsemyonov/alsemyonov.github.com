@@ -2,10 +2,11 @@ require 'active_support'
 require 'i18n'
 require 'russian'
 require 'dotenv'
-require 'lib/patches'
+require './config/initializers/patches'
 
 # General configuration
 
+Dotenv.load!('.env')
 Time.zone = 'St. Petersburg'
 
 # Default locale is ru_RU, en_US is under /en/ directory.
