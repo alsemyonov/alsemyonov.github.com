@@ -1,4 +1,5 @@
 require 'middleman/cv/object'
+require 'middleman/world'
 require 'active_support/core_ext/string/multibyte'
 
 class Middleman::CV
@@ -17,8 +18,8 @@ class Middleman::CV
     attr_writer :achievements
     attr_writer :skills
 
-    def location
-      (@location || {})['name']
+    def location=(location)
+      @location = Middleman::World::Location.new(@beholder, location || {})
     end
 
     def dates
@@ -49,7 +50,7 @@ class Middleman::CV
     end
 
     def skills
-      @decorated_skills ||= (@skills || []).map { |skill| Skill.new(@cv, skill) }
+      @decorated_skills ||= (@skills || []).map { |skill| Skill.new(@beholder, skill) }
     end
 
     def <=>(other)

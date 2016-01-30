@@ -2,18 +2,17 @@ require 'middleman/cv/object'
 
 class Middleman::CV
   class Skill < Object
-    def initialize(cv, attributes = {})
-      @cv = cv
+    def initialize(beholder, attributes = {})
       attributes = { title: attributes } if attributes.is_a?(String)
       attributes[:children] ||= []
-      super(cv, attributes)
+      super(beholder, attributes)
     end
 
     attr_accessor :title
     attr_accessor :children
 
     def skills
-      @skills ||= children.map { |child| Skill.new(@cv, child) }
+      @skills ||= children.map { |child| Skill.new(@beholder, child) }
     end
 
     def to_html

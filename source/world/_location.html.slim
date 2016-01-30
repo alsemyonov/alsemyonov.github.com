@@ -1,0 +1,10 @@
+span.b-location.p-geo(itemprop="location" itemscope itemtype="http://schema.org/Place")
+  - if location.locality && location.country
+    span(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+      span itemprop="addressLocality" = location.locality.name
+      ' ,
+      span itemprop="addressCountry" = location.country.name
+    meta itemprop="name" content=location.name
+  - else
+    span itemprop="name" = location.name
+  i

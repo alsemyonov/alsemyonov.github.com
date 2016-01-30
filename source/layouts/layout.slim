@@ -3,6 +3,7 @@ html lang=::I18n.language_territory
   head
     meta[charset="utf-8"]
     meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1"]
     title = current_page.data.title.presence || data.site.title
     meta name="description" content=(current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description)

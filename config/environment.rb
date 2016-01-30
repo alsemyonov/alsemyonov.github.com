@@ -33,8 +33,8 @@ configure :build do
   activate :minify_html
   # Provide GZipped versions of files
   activate :gzip, exts: %w(.js .css .html .htm .xml)
-  # Uniquely-named assets
-  activate :asset_hash
+  # # Uniquely-named assets
+  # activate :asset_hash
 end
 
 set :slim, { format: :html, pretty: false }

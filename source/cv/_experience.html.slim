@@ -1,19 +1,21 @@
 li.b-experience.p-experience.h-event
-  .b-experience__dates(itemprop="performerIn" itemscope itemtype="http://schema.org/Event")
-    => experience.dates
-    - if experience.location
-      span.b-experience__in => t('cv.experience.in')
-      span.b-experience__location.p-geo(itemprop="location" itemscope itemtype="http://schema.org/PostalAddress")
-        span itemprop="address" = experience.location
+  div(itemprop="performerIn" itemscope itemtype="http://schema.org/Event")
+    .b-experience__dates
+      => experience.dates
+      - if experience.location.present?
+        span.b-experience__in => t('cv.experience.in')
+        span.b-experience__location = experience.location.to_html
+    h4.b-experience__title.p-name itemprop="name"
+      em.b-experience__job-title => experience.title
+      span.b-experience__at => t('cv.experience.at')
+      strong.b-experience__company.p-org.h-card(itemprop="organizer" itemscope itemtype='http://schema.org/Organization')
         i
-  h4.b-experience__title.p-name itemprop="name"
-    em.b-experience__job-title => experience.title
-    span.b-experience__at => t('cv.experience.at')
-    strong.b-experience__company.p-org.h-card(itemprop="worksFor" itemscope itemtype='http://schema.org/Organization')
-      i
-      span.p-name> itemprop="name" = experience.company.name
-    = experience.status_icon
-  p.summary = experience.summary
-  = experience.list_property(:responsibilities)
-  = experience.list_property(:achievements)
-  = experience.list_property(:skills)
+        span.p-name> itemprop="name" = experience.company.name
+        = experience.location.to_meta(:address) if experience.location
+      = experience.status_icon
+    p.summary = experience.summary
+    = experience.list_property(:responsibilities)
+    = experience.list_property(:achievements)
+    = experience.list_property(:skills)
+  - if experience.is_current
+      meta name="worksFor" content=experience.company.name

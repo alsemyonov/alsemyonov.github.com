@@ -1,13 +1,10 @@
 ---
-- company:
-    name: Skuuper
+- company: {name: Skuuper}
   id: 681367197
   is_current: true
   location:
-    country:
-      name: Estonia
-    locality:
-      name: Tallinn
+    country: {name: Estonia}
+    locality: {name: Tallinn}
     name: Tallinn, Estonia
   start_date: 2015-06-01
   title: Software Engineer
@@ -15,37 +12,43 @@
   - System Architecture
   - Backend Development
   - Frontend Development
-  skills:
-  - Ruby on Rails
-  - Ruby
-  - PostgreSQL
-  - RabbitMQ
-  - JSON API
-- company:
-    name: AutoGrid Systems
+  skills: [Ruby on Rails, Ruby, PostgreSQL, RabbitMQ, JSON API]
+- company: {name: Cerebelo Ltd}
+  id: 262224210
+  is_current: true
   location:
     country:
       code: ru
-      name: Russian Federation
-    locality:
-      name: Saint Petersburg
-    name: Saint Petersburg, Russian Federation
+      name: Россия
+    locality: {name: Санкт-Петербург}
+    name: Санкт-Петербург, Россия
+  start_date: 2011-01-01
+  summary: |-
+    Design & Architecture of service.
+    Developing realtime data-processing application.
+  responsibilities:
+  - Backend Development
+  - Frontend Development
+  - System Architecture
+  skills: [Ruby on Rails, RSpec, Resque, Linked Data, web services and APIs]
+  title: Co-founder, Architect, Lead Developer
+- company: {name: AutoGrid Systems}
+  location:
+    country:
+      code: ru
+      name: Россия
+    locality: {name: Санкт-Петербург}
+    name: Санкт-Петербург, Россия
   title: Senior Software Engineer
   start_date: 2015-03-01
   end_date: 2015-06-01
   responsibilities:
   - System Architecture
   - Backend Development
-  skills:
-  - Ruby
-  - Ruby on Rails
-  - MySQL
-  - RabbitMQ
-- company:
-    name: Provectus IT, Inc
+  skills: [Ruby, Ruby on Rails, MySQL, RabbitMQ, OpenADR]
+- company: {name: Provectus IT, Inc}
   title: Technical Lead
-  summary: |-
-    Worked for AutoGrid Systems
+  summary: Worked for AutoGrid Systems
   responsibilities:
   - Service side Architecture for realtime data updates & 10 000+ concurrent clients
   - Backend development
@@ -54,68 +57,47 @@
   achievements:
   - officially certified OpenADR 2.0a server
   - officially certified OpenADR 2.0b server, first in the world
+  skills: [OpenADR, Ruby, Ruby on Rails, RSpec, Backend Development]
   location:
     country:
-      name: Russia
+      name: Россия
     locality:
       name: Kazan
-    name: Kazan, Russia
+    name: Kazan, Россия
   start_date: 2013-10-01
   end_date: 2014-07-01
 - company:
     name: Provectus IT, Inc
   title: Senior Software Engineer
   summary: Developing highload Rails application with many background tasks
-  skills: [Ruby on Rails, RSpec, Resque, RabbitMQ, EventMachine]
+  skills: [Ruby on Rails, Ruby, RSpec, Resque, RabbitMQ, Backend Development, Highload]
   location:
     country:
-      name: Russia
-    locality:
-      name: Kazan
-    name: Kazan, Russia
+      name: Россия
+    locality: {name: Kazan}
+    name: Kazan, Россия
   start_date: 2011-11-01
   end_date: 2013-09-01
-- company:
-    name: Green Light, Smart Green Streetlights
+- company: {name: Green Light, Smart Green Streetlights}
   location:
     country:
       code: ru
-      name: Russian Federation
-    locality:
-      name: Saint Petersburg
-    name: Saint Petersburg, Russian Federation
+      name: Россия
+    locality: {name: Санкт-Петербург}
+    name: Санкт-Петербург, Россия
   title: Software Architect / Senior Ruby Developer
   responsibilities:
   - Development of a web service to gather statistics, and remote control street lights
   - Development of communication layer for ZigBee-enabled Street Light communicator through serial port
   start_date: 2011-06-01
   end_date: 2011-09-01
-- company:
-    name: Cerebelo Ltd
-  id: 262224210
-  is_current: true
+- company: {name: Goodwill}
   location:
     country:
       code: ru
-      name: Russian Federation
-    locality:
-      name: Saint Petersburg
-    name: Saint Petersburg, Russian Federation
-  start_date: 2011-01-01
-  summary: |-
-    Design & Architecture of service.
-    Developing realtime data-processing application.
-  skills: [Ruby on Rails, RSpec, Resque, web services and APIs]
-  title: Co-founder, Lead Developer
-- company:
-    name: Goodwill
-  location:
-    country:
-      code: ru
-      name: Russian Federation
-    locality:
-      name: Saint Petersburg
-    name: Saint Petersburg, Russian Federation
+      name: Россия
+    locality: {name: Санкт-Петербург}
+    name: Санкт-Петербург, Россия
   title: CTO/Senior Web Developer
   summary: CTO, development
   responsibilities:
@@ -126,26 +108,16 @@
   - development of client software
   - imposition layouts prototype
   - participated in UI design
-  skills:
-  - MongoDB
-  - PostgreSQL
-  - Ruby
-  - JavaScript
-  - CoffeeScript
-  - Haml
-  - Sass
-  - Compass
+  skills: [MongoDB, PostgreSQL, Ruby, JavaScript, CoffeeScript, Haml, Sass, Compass]
   start_date: 2010-02-01
   end_date: 2011-02-01
-- company:
-    name: KTK studio
+- company: {name: KTK studio}
   location:
     country:
       code: ru
-      name: Russian Federation
-    locality:
-      name: Orenburg
-    name: Orenburg, Russian Federation
+      name: Россия
+    locality: {name: Оренбург}
+    name: Оренбург, Россия
   title: Senior Web Developer
   summary: |-
     Technical expertise;
@@ -155,46 +127,40 @@
   - http://odnodvorets.ru/ – Historical and Genealogical Society “Odnodvorets”
   start_date: 2009-01-01
   end_date: 2009-11-01
-- company:
-    name: RockBee Design Studio
+- company: {name: RockBee Design Studio}
   location:
     country:
       code: ru
-      name: Russian Federation
-    locality:
-      name: Saint Petersburg
-    name: Saint Petersburg, Russian Federation
+      name: Россия
+    locality: {name: Санкт-Петербург}
+    name: Санкт-Петербург, Россия
   title: Web Developer
   summary: Development of different kinds of Rails applications (and a couple of PHP
     ones).
   start_date: 2007-12-01
   end_date: 2008-11-01
-- company:
-    name: Desmix studio
+- company: {name: Desmix studio}
   location:
     country:
       code: ru
-      name: Russian Federation
-    locality:
-      name: Orenburg
-    name: Orenburg, Russian Federation
+      name: Россия
+    locality: {name: Оренбург}
+    name: Оренбург, Россия
   title: Senior web developer
   summary: |-
     A couple of Rails application (RDBMS, working with Web Services and APIs);
     Technical expertise and consulting.
-  location:
-    country:
-      code: ru
-      name: Russian Federation
-    locality:
-      name: Orenburg
-    name: Orenburg, Russian Federation
   start_date: 2007-03-01
   end_date: 2008-01-01
-- company:
-    name: Metalink Ltd
+  skills: [PHP, Ruby]
+- company: {name: Metalink Ltd}
+  location:
+    country: {name: Россия}
+    locality: {name: Санкт-Петербург}
+    name: Санкт-Петербург, Россия
   title: Web Developer
   summary: Has worked on World Wide Lexicon project, providing PHP Server Code, WordPress
     plugin and JavaScript for interactions on client websites' pages
   start_date: 2007-03-01
   end_date: 2007-11-01
+  skills: [PHP, Ruby]

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ This is the formal description of Yandex extension of Friend of a Friend (FOAF) vocabulary, expressed using W3C RDFS and OWL markup.
+
+ For more information about Yandex extension of FOAF please refer to the official specification at http://api.yandex.ru/blogs/doc/
+-->
+
+<rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<owl:Ontology rdf:about="http://blogs.yandex.ru/schema/foaf/"
+              dc:title="Yandex extension of Friend of a Friend (FOAF) vocabulary"
+              dc:description="Yandex extension of Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+              dc:date="$Date:2009-01-23 09:10:11 $"/>
+
+  <!-- Classes (types) are listed first. -->
+
+  <rdfs:Class rdf:about="http://blogs.yandex.ru/schema/foaf/Comments"
+              rdfs:label="Comments"
+              rdfs:comment="Information about comments left in user's blog or journal, as well as written by the same user in blogs and journals of others.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+ <rdfs:subClassOf>
+ <owl:Class rdf:about="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ </rdfs:subClassOf>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdfs:Class>
+
+ <rdfs:Class rdf:about="http://blogs.yandex.ru/schema/foaf/Links"
+             rdfs:label="Links"
+             rdfs:comment="Information about links in one's blog or journal.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+ <rdfs:subClassOf>
+ <owl:Class rdf:about="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ </rdfs:subClassOf>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdfs:Class>
+
+<rdfs:Class rdf:about="http://blogs.yandex.ru/schema/foaf/Posts"
+            rdfs:label="Posts"
+            rdfs:comment="Information about posts in one's blog or journal.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+ <rdfs:subClassOf>
+ <owl:Class rdf:about="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ </rdfs:subClassOf>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdfs:Class>
+
+ <rdfs:Class rdf:about="http://blogs.yandex.ru/schema/foaf/Readers"
+             rdfs:label="Readers"
+             rdfs:comment="Information about readers of one's blog or journal.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+ <rdfs:subClassOf>
+ <owl:Class rdf:about="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ </rdfs:subClassOf>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdfs:Class>
+
+<rdfs:Class rdf:about="http://blogs.yandex.ru/schema/foaf/Syndicated"
+            rdfs:label="Syndicated account"
+            rdfs:comment="Syndicated account of one's friend.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+ <rdfs:subClassOf>
+ <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+ </rdfs:subClassOf>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdfs:Class>
+
+ <rdfs:Class rdf:about="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"
+             rdfs:label="Blog activity"
+             rdfs:comment="Activity that takes place in a blog, such as making new comments, posts, etc. Types of activity are usually defined by Comments, Posts, Links and Readers classes.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+ <rdfs:subClassOf>
+ <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+ </rdfs:subClassOf>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdfs:Class>
+
+  <!-- FOAF properties (ie. relationships). -->
+  <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/firstName"
+                rdfs:label="first name"
+                rdfs:comment="First name of a person.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/secondName"
+               rdfs:label="second name"
+               rdfs:comment="Second name of a person (family name).">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/middleName"
+               rdfs:label="middle name"
+               rdfs:comment="Middle name of a person (father's name).">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/blogActivity"
+               rdfs:label="blog activity"
+               rdfs:comment="Links to an activity that takes place in a blog, such as making new comments, posts, etc.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+ <rdfs:range rdf:resource="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf"/>
+</rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/country"
+               rdfs:label="country"
+               rdfs:comment="Name of a country.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/region"
+               rdfs:label="region"
+               rdfs:comment="Name of a region.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/city"
+               rdfs:label="city"
+               rdfs:comment="Name of a city.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/address"
+               rdfs:label="address"
+               rdfs:comment="Address.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/feed"
+               rdfs:label="feed"
+               rdfs:comment="URL of the RSS feed (usually of the given ya:blogActivity type).">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/posted"
+               rdfs:label="posted messages"
+               rdfs:comment="Number of messages, posted as a result of ya:blogActivity.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdfs:domain rdf:resource="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/received"
+               rdfs:label="received messages"
+               rdfs:comment="Number of messages, received as a result of ya:blogActivity.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdfs:domain rdf:resource="http://blogs.yandex.ru/schema/foaf/BlogActivityClass"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/creationDate"
+               rdfs:label="creation date"
+               rdfs:comment="Date and time of creation of an entity (in ISO8601 format).">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/bio"
+               rdfs:label="biography"
+               rdfs:comment="A free form biography of a person.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/weight"
+               rdfs:label="weight"
+               rdfs:comment="Weight of a person in kilogramms.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/height"
+               rdfs:label="height"
+               rdfs:comment="Height of a person in centimetres.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/dateStart"
+               rdfs:label="start date"
+               rdfs:comment="Date and time when an event started (in ISO8601 format).">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/dateFinish"
+               rdfs:label="closing date"
+               rdfs:comment="Date and time when an event came to an end (in ISO8601 format).">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+ <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+ <rdf:Property rdf:about="http://blogs.yandex.ru/schema/foaf/school"
+               rdfs:label="school"
+               rdfs:comment="A school or other educational establishment.">
+ <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+ <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+ <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+ <rdfs:isDefinedBy rdf:resource="http://blogs.yandex.ru/schema/foaf/"/>
+ </rdf:Property>
+
+</rdf:RDF>
