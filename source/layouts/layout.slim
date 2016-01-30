@@ -27,6 +27,7 @@ html lang=::I18n.language_territory
     meta name="yandex-verification" content="43e4fed0df577a4e"
     link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.1.0/styles/github.min.css"
     script src="//cdn.jsdelivr.net/highlight.js/9.1.0/highlight.min.js"
+    link type="text/plain" rel="author" href="/humans.txt"
   body class=page_classes
     header.b-header
       nav.b-navigation
@@ -35,7 +36,6 @@ html lang=::I18n.language_territory
           - navigation_resources.each do |resource|
             - if resource.data.title?
               li.b-menu__item= link_to(resource.data.title, resource.url, class: 'nav-link')
-
     .b-contents
       = yield_content :header
       .b-contents__wrapper

@@ -48,9 +48,11 @@ set :slim, { format: :html, pretty: false }
 
 require 'redcarpet'
 require 'redcarpet/render/html_abbreviations'
+require 'redcarpet/render/list_check_boxes'
 
 class SmartRenderer < Redcarpet::Render::SmartyHTML
   include Redcarpet::Render::HTMLAbbreviations
+  include Redcarpet::Render::ListCheckBoxes
 end
 
 set :markdown_engine, :redcarpet

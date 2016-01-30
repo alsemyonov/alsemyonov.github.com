@@ -24,10 +24,9 @@ gem 'builder', '~> 3.0'
 
 # I18n
 
-# Interactions
+gem 'middleman-livereload'
 group :development do
-  gem 'middleman-livereload'
-
+  # Interactions
   gem 'octokit'
   gem 'linkedin'
 end

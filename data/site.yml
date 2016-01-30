@@ -2,11 +2,17 @@
 title: Alex Semyonov
 author: Alex Semyonov
 email: al@semyonov.us
-description: > # this means to ignore newlines until "baseurl:"
+location:
+  country:
+    name:  Россия
+  locality:
+    name: Санкт-Петербург
+  name: Санкт-Петербург, Россия
+description: > # this means to ignore newlines until unindent
   Это личный сайт Алекса (Александра Семёнова).
   Я программирую, пишу статьи, иногда занимаюсь различными мероприятиями.
   Всё, что опубликовано на этом сайте, является моим личным мнением.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://al.semyonov.us" # the base hostname & protocol for your site
 usernames:
   github: alsemyonov
@@ -15,7 +21,6 @@ usernames:
   facebook: alsemyonov
   instagram: alsemyonov
   foursquare: alsemyonov
-
 
 # Build settings
 markdown: kramdown
