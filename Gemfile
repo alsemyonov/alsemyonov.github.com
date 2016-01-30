@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org/'
 
 gem 'dotenv'
 
@@ -38,7 +38,7 @@ gem 'middleman-sprockets', '~> 4.0.0.rc.1', git: 'https://github.com/middleman/m
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-sass'
 
-source 'https://rails-assets.org' do
+source 'https://rails-assets.org/' do
   gem 'rails-assets-tether'
   gem 'rails-assets-jquery'
 end
