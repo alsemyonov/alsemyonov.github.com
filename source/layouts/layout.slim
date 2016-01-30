@@ -12,6 +12,10 @@ html lang=::I18n.language_territory
     - else
       meta name="robots" content="index, follow"
     meta name="author" content=data.site.author
+    - ogp_tags do |name, value|
+      meta property=name content=value
+    - if current_resource.respond_to?(:tags)
+      meta name="keywords" content=current_resource.tags.join(', ')
     = stylesheet_link_tag :screen
     = javascript_include_tag :screen
     link rel="canonical" href=canonicalize_url(current_resource.url)

@@ -22,6 +22,13 @@ configure :development do
   activate :livereload
 end
 
+require 'middleman-ogp'
+activate :ogp do |ogp|
+  ogp.namespaces = data.ogp.to_hash
+  ogp.base_url = ENV['URL']
+  ogp.blog = true
+end
+
 # Build-specific configuration
 configure :build do
   activate :autoprefixer

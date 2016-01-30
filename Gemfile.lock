@@ -6,6 +6,12 @@ GIT
       middleman-core (>= 4.0.0.rc.1)
       sprockets (~> 3.0)
 
+PATH
+  remote: vendor/bundle/middleman-ogp
+  specs:
+    middleman-ogp (1.0.4)
+      middleman-core (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -181,6 +187,7 @@ DEPENDENCIES
   middleman-blog
   middleman-livereload
   middleman-minify-html
+  middleman-ogp!
   middleman-sprockets (~> 4.0.0.rc.1)!
   octokit
   rails-assets-jquery!

@@ -1,0 +1,3 @@
+[submodule "vendor/bundle/middleman-ogp"]
+	path = vendor/bundle/middleman-ogp
+	url = https://github.com/alsemyonov/middleman-ogp.git

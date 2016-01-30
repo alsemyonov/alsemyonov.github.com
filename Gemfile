@@ -12,6 +12,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-blog'
+gem 'middleman-ogp', path: 'vendor/bundle/middleman-ogp'
 
 # HTML
 gem 'activesupport'

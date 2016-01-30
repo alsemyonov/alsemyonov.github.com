@@ -1,7 +1,11 @@
 ---
 title: CV
+description: 10 лет практики. Системная архитектура и полный стек разработки.
 navigation: true
 position: 1
+ogp:
+  og:
+    title: Алекс Семёнов. Резюме (Сurriculum vitæ)
 ---
 main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
   .b-cv__header.p-contact.h-card
@@ -64,3 +68,4 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
     section#hobbies.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
       h3 itemprop="name" = t('cv.sections.hobbies')
       = cv.list_of(:hobbies)
+  .col-md-12: p = partial 'blog/social_buttons'
