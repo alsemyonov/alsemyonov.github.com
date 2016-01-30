@@ -10,27 +10,27 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
-gem 'middleman-livereload'
 gem 'middleman-blog'
 gem 'middleman-ogp', git: 'https://github.com/alsemyonov/middleman-ogp', branch: :master
 
-# HTML
+# General
 gem 'activesupport'
-gem 'middleman-minify-html'
+gem 'russian'
+
+# Templates
 gem 'slim'
-
-# Markdown support
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
-
-# For feed.xml.builder
 gem 'builder', '~> 3.0'
 
 # I18n
-gem 'russian'
 
 # Interactions
-gem 'octokit'
-gem 'linkedin'
+group :development do
+  gem 'middleman-livereload'
+
+  gem 'octokit'
+  gem 'linkedin'
+end
 
 # Assets
 gem 'middleman-autoprefixer'
@@ -42,3 +42,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
   gem 'rails-assets-jquery'
 end
+
+# Post-process
+gem 'middleman-minify-html'

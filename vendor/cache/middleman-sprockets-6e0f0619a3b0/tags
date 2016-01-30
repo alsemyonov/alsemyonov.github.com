@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Middleman	lib/middleman-sprockets/extension.rb	/^module Middleman$/;"	m
+Middleman	lib/middleman-sprockets/version.rb	/^module Middleman$/;"	m
+Sprockets	lib/middleman-sprockets/version.rb	/^  module Sprockets$/;"	m	class:Middleman
+SprocketsExtension	lib/middleman-sprockets/extension.rb	/^  class SprocketsExtension < Extension$/;"	c	class:Middleman
+SprocketsResource	lib/middleman-sprockets/extension.rb	/^    class SprocketsResource < ::Middleman::Sitemap::Resource$/;"	c
+after_configuration	lib/middleman-sprockets/extension.rb	/^    def after_configuration$/;"	f	class:Middleman.SprocketsExtension
+append_paths_from_gems	lib/middleman-sprockets/extension.rb	/^    def append_paths_from_gems$/;"	f
+asset_path	lib/middleman-sprockets/extension.rb	/^        def asset_path(path, options = {})$/;"	f	class:Middleman.SprocketsExtension.after_configuration
+base_resource?	lib/middleman-sprockets/extension.rb	/^    def base_resource?(r)$/;"	f	class:Middleman
+binary?	lib/middleman-sprockets/extension.rb	/^      def binary?$/;"	f	class:SprocketsResource
+check_asset	lib/middleman-sprockets/extension.rb	/^    def check_asset(path)$/;"	f	class:Middleman
+css?	lib/middleman-sprockets/extension.rb	/^    def css?(r)$/;"	f	class:Middleman
+css_exception_response	lib/middleman-sprockets/extension.rb	/^    def css_exception_response(exception)$/;"	f
+escape_css_content	lib/middleman-sprockets/extension.rb	/^    def escape_css_content(content)$/;"	f
+generate_resource	lib/middleman-sprockets/extension.rb	/^    def generate_resource(path, source_file, sprockets_path)$/;"	f
+initialize	lib/middleman-sprockets/extension.rb	/^      def initialize(store, path, source_file, sprockets_path, environment)$/;"	f	class:SprocketsResource
+initialize	lib/middleman-sprockets/extension.rb	/^    def initialize(app, options_hash={}, &block)$/;"	f	class:Middleman.SprocketsExtension
+javascript_exception_response	lib/middleman-sprockets/extension.rb	/^    def javascript_exception_response(exception)$/;"	f
+js?	lib/middleman-sprockets/extension.rb	/^    def js?(r)$/;"	f	class:Middleman
+manipulate_resource_list	lib/middleman-sprockets/extension.rb	/^    def manipulate_resource_list(resources)$/;"	f	class:Middleman
+render	lib/middleman-sprockets/extension.rb	/^      def render(*)$/;"	f	class:SprocketsResource
+rubygems_latest_specs	lib/middleman-sprockets/extension.rb	/^    def rubygems_latest_specs$/;"	f
+sprockets_asset	lib/middleman-sprockets/extension.rb	/^      def sprockets_asset$/;"	f	class:SprocketsResource
+template?	lib/middleman-sprockets/extension.rb	/^      def template?$/;"	f	class:SprocketsResource

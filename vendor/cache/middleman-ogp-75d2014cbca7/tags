@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Hash	lib/middleman-ogp/extension.rb	/^class Hash$/;"	c
+Helper	lib/middleman-ogp/extension.rb	/^    module Helper$/;"	m	class:Middleman.OGP
+Middleman	lib/middleman-ogp/extension.rb	/^module Middleman$/;"	m
+Middleman	lib/middleman-ogp/version.rb	/^module Middleman$/;"	m
+OGP	lib/middleman-ogp/extension.rb	/^  module OGP$/;"	m	class:Middleman
+OGP	lib/middleman-ogp/version.rb	/^  module OGP$/;"	m	class:Middleman
+OGPExtension	lib/middleman-ogp/extension.rb	/^    class OGPExtension < Extension$/;"	c	class:Middleman.OGP
+after_configuration	lib/middleman-ogp/extension.rb	/^      def after_configuration$/;"	f	class:Middleman.OGP.OGPExtension
+deep_merge4	lib/middleman-ogp/extension.rb	/^  def deep_merge4(other_hash, &block)$/;"	f	class:Hash
+deep_merge4!	lib/middleman-ogp/extension.rb	/^  def deep_merge4!(other_hash, &block)$/;"	f	class:Hash
+og_tag	lib/middleman-ogp/extension.rb	/^      def self.og_tag(key, obj = nil, prefix = 'og', &block)$/;"	F	class:Middleman.OGP.Helper
+ogp_include?	lib/middleman-ogp/extension.rb	/^        def ogp_include?(property)$/;"	f	class:Middleman.OGP.OGPExtension
+ogp_tags	lib/middleman-ogp/extension.rb	/^        def ogp_tags(&block)$/;"	f	class:Middleman.OGP.OGPExtension
+ogp_tags	lib/middleman-ogp/extension.rb	/^      def self.ogp_tags(opts = {}, data, &block)$/;"	F	class:Middleman.OGP.Helper
