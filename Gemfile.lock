@@ -1,16 +1,18 @@
 GIT
+  remote: https://github.com/alsemyonov/middleman-ogp
+  revision: 75d2014cbca7ad0c0a77473e7fdd5e3676b9c9f3
+  branch: master
+  specs:
+    middleman-ogp (1.0.4)
+      middleman-core (~> 4.0)
+
+GIT
   remote: https://github.com/middleman/middleman-sprockets.git
   revision: 6e0f0619a3b0be8d44b4b42765e12d6cb30625e6
   specs:
     middleman-sprockets (4.0.0.rc.1)
       middleman-core (>= 4.0.0.rc.1)
       sprockets (~> 3.0)
-
-PATH
-  remote: vendor/bundle/middleman-ogp
-  specs:
-    middleman-ogp (1.0.4)
-      middleman-core (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
