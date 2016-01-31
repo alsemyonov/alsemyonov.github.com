@@ -5,7 +5,7 @@ html lang=::I18n.language_territory
     meta[http-equiv="X-UA-Compatible" content="IE=edge"]
     meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1"]
-    title = current_page.data.title.presence || data.site.title
+    title = yield_content(:title).presence || current_page.data.title.presence || data.site.title
     meta name="description" content=(current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description)
     - if current_resource.data.nofollow
       meta name="robots" content=current_resource.data.nofollow.presence || "noindex, nofollow"

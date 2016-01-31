@@ -59,6 +59,10 @@ ru:
       action: Подпишитесь на статьи с помощью %{rss} или %{atom}.
       rss: РСС
       atom: Атом
+    tag:
+      title: "Статьи с ключевым словом «%{tag}»"
+    category:
+      title: "Статьи категории «%{category}»"
   projects:
     index:
       title: Проекты
@@ -75,8 +79,6 @@ ru:
             few: 'Байта'
             many: 'Байтов'
             other: 'Байта'
-  tag:
-    title: "Статьи с ключевым словом «%{tag}»"
   calendar:
     title: "Статьи за %{interval}"
   cv:

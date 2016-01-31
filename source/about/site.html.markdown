@@ -23,7 +23,8 @@ Following structure is represented in `source` directory:
         *   [x] structure of website
         *   [x] shows yearly list of all articles
         *   [x] lists all software
-    *   [ ] [`/robots.txt`][robots.txt] — [The Robots Exclusion protocol][robotstxt.org] endpoint
+    *   [ ] [`/robots.txt`][robots.txt]
+        *   [x] [The Robots Exclusion protocol][robotstxt.org] endpoint
         *   [ ] allows robots to see `/blog`, `/cv`, `/me`, `/software`, `/world`
         *   [x] points to [`/sitemap.xml`][sitemap.xml]
         *   [x] points to preferred domain name

@@ -1,9 +1,9 @@
 ---
 layout: blog
 pageable: true
+per_page: 50
 ---
 
-h1 = t('tag.title', tag: tagname)
+h1 = title(t('blog.tag.title', tag: tagname))
 
-/= partial 'blog/articles_yearly', locals: { articles: page_articles }
-= partial 'blog/articles', locals: { articles: page_articles }
+= partial 'blog/articles', locals: { articles: page_articles, collection_partial: 'blog/articles_yearly'  }

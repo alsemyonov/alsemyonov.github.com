@@ -7,9 +7,8 @@ module Redcarpet
         tag = '<li'
         match = CHECKBOX.match(text)
         if match
-          input_tag = %(<input type="checkbox"#{' checked="true"' if match[1] == 'x'} disabled>)
-          text = text.gsub(CHECKBOX, input_tag)
           tag << ' class="b-task-item"'
+          text = text.gsub(CHECKBOX, %(<input type="checkbox"#{' checked="true"' if match[1] == 'x'} disabled> ))
         end
         tag << ">#{text}</li>"
       end
