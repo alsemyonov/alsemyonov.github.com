@@ -1,4 +1,8 @@
 # Site settings
+host: al.semyonov.us
+scheme: https
+url: https://al.semyonov.us # the base hostname & protocol for your site
+baseurl: ''
 title: Alex Semyonov
 author: Alex Semyonov
 email: al@semyonov.us
@@ -12,8 +16,6 @@ description: > # this means to ignore newlines until unindent
   Это личный сайт Алекса (Александра Семёнова).
   Я программирую, пишу статьи, иногда занимаюсь различными мероприятиями.
   Всё, что опубликовано на этом сайте, является моим личным мнением.
-baseurl: ""
-url: "https://al.semyonov.us" # the base hostname & protocol for your site
 usernames:
   github: alsemyonov
   vk: alsemyonov
