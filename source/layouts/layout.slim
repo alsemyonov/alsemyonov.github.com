@@ -11,7 +11,7 @@ html lang=::I18n.language_territory
       meta name="robots" content=current_resource.data.nofollow.presence || "noindex, nofollow"
     - else
       meta name="robots" content="index, follow"
-    meta name="author" content=data.site.author
+    meta name="author" content=data.author.name
     - ogp_tags do |name, value|
       meta property=name content=value
     - if current_resource.respond_to?(:tags)
@@ -45,7 +45,7 @@ html lang=::I18n.language_territory
       .b-footer__wrapper
         .b-footer__columns
           .b-footer__links
-            p#copyrights &copy;&nbsp;#{mail_to(data.site.email, t('author.name'), subject: "RE: #{current_resource.data.title}", body: absolute_url(current_resource.url))}, 2016
+            p#copyrights &copy;&nbsp;#{mail_to(data.author.email, t('author.name'), subject: "RE: #{current_resource.data.title}", body: absolute_url(current_resource.url))}, 2016
             ul.b-footer-social
               - data.site.usernames.each do |service, username|
                 li.b-social class="b-social_#{service}"

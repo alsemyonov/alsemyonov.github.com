@@ -66,5 +66,6 @@ set :markdown, {
   tables: true,
   fenced_code_blocks: true,
   renderer: SmartRenderer,
-  smartypants: true
+  smartypants: true,
+  with_toc_data: true
 }

@@ -1,6 +1,6 @@
 blog_url = absolute_url(blog.options.prefix.to_s)
-site_author_name = data.site.author
-site_author_email = data.site.email
+site_author_name = data.author.name
+site_author_email = data.author.email
 
 xml.instruct!
 xml.rss 'xmlns:atom': 'http://www.w3.org/2005/Atom' do

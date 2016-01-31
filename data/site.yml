@@ -3,7 +3,13 @@ host: al.semyonov.us
 scheme: https
 url: https://al.semyonov.us # the base hostname & protocol for your site
 baseurl: ''
-title: Alex Semyonov
+title: Здесь был Алекс
+description: > # this means to ignore newlines until unindent
+  Это личный сайт Алекса (Александра Семёнова).
+  Я программирую, пишу статьи, иногда занимаюсь различными мероприятиями.
+  Всё, что опубликовано на этом сайте, является моим личным мнением.
+
+
 author: Alex Semyonov
 email: al@semyonov.us
 location:
@@ -12,10 +18,6 @@ location:
   locality:
     name: Санкт-Петербург
   name: Санкт-Петербург, Россия
-description: > # this means to ignore newlines until unindent
-  Это личный сайт Алекса (Александра Семёнова).
-  Я программирую, пишу статьи, иногда занимаюсь различными мероприятиями.
-  Всё, что опубликовано на этом сайте, является моим личным мнением.
 usernames:
   github: alsemyonov
   vk: alsemyonov
@@ -25,5 +27,4 @@ usernames:
   foursquare: alsemyonov
 
 # Build settings
-markdown: kramdown
 timezone: Europe/Moscow

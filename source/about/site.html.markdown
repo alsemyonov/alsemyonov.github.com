@@ -41,13 +41,24 @@ Following structure is represented in `source` directory:
 
 ## Data
 
-### Data Vocabularies
+It exposes several common data vocabularies:
 
-* `data/ogp.yml` - Global OGP properties that would be used as defaults for OGP meta tags for every page
+*   `data.ogp.*` —
+    OGP properties that would be used as defaults for OGP meta tags for every page.
+    Loads defaults from `data/ogp.yml`, then overload values from frontmatter.
+*   `data.site.*` — exposes information about a website.
+    Loads defaults from `data/site.yml`.
+
+    Keys: `host`, `scheme`, `url`, `baseurl`, `title`, `description`.
+*   `data.author.*` — exposes information about an author of a website.
+    Loads defaults from `data/author.yml`, then overload values from frontmatter.
+
+    Keys: `name`, `email`, `url`.
 
 ### Data Collections
 
-* `data/projects.yml` - List of global OGP properties that would be used as defaults for OGP meta tags for every page
+* `data.projects` is an array containing list of projects (`Project` class).
+  Loads from `data/projects.yml`.
 
 [Middleman]: https://middlemanapp.com/ "Middleman: Hand-crafted frontend development"
 
