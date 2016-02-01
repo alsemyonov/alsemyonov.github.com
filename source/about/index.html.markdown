@@ -3,7 +3,7 @@ title: Я
 page_title: Про Алекса Семёнова
 layout: page
 navigation: false
-published: false
+published: true
 ---
 
 <!-- TODO: переписать текст о себе -->

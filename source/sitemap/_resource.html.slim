@@ -6,7 +6,7 @@ li
     = link_to(resource.url, resource.url)
   - if app.environment == :development
     - unless resource.data.empty?
-      pre: code class="yaml" = resource.data.to_hash.to_yaml
+      pre: code.yaml = resource.data.to_hash.to_yaml
   - if resource.children.any?
     ul
       - resource.children.sort_by(&Weby::Sitemap.children_orderer).each do |child|
