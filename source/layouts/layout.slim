@@ -29,19 +29,21 @@ html lang=::I18n.language_territory
     script src="//cdn.jsdelivr.net/highlight.js/9.1.0/highlight.min.js"
     link type="text/plain" rel="author" href="/humans.txt"
   body class=page_classes
-    header.b-header
-      nav.b-navigation
-        = link_to(t('site.title'), root_path, class: 'b-title')
-        ul.b-menu
-          - navigation_resources.each do |resource|
-            - if resource.data.title?
-              li.b-menu__item= link_to(resource.data.title, resource.url, class: 'nav-link')
-    .b-contents
-      = yield_content :header
-      .b-contents__wrapper
-        = yield
-        .b-search-form = partial 'search_form'
-    footer.b-footer
+    .b-root
+      header.b-header
+        nav.b-navigation
+          = link_to(t('site.title'), root_path, class: 'b-title')
+          ul.b-menu
+            - navigation_resources.each do |resource|
+              - if resource.data.title?
+                li.b-menu__item= link_to(resource.data.title, resource.url, class: 'nav-link')
+      .b-contents
+        = yield_content :header
+        .b-contents__wrapper
+          = yield
+          .b-search-form = partial 'search_form'
+      .b-root__footer
+    footer.b-root-footer: .b-footer
       .b-footer__wrapper
         .b-footer__columns
           .b-footer__links

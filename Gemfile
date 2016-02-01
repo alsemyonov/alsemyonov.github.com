@@ -12,6 +12,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-blog'
 gem 'middleman-ogp', git: 'https://github.com/alsemyonov/middleman-ogp', branch: :master
+gem 'weby', git: 'https://github.com/alsemyonov/weby', branch: :master
 
 # General
 gem 'activesupport'

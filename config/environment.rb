@@ -7,7 +7,7 @@ require './config/initializers/patches'
 # General configuration
 
 Dotenv.load!('.env')
-Time.zone = 'St. Petersburg'
+set :time_zone, 'St. Petersburg'
 
 # Default locale is ru_RU, en_US is under /en/ directory.
 I18n.default_locale = :ru

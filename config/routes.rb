@@ -47,3 +47,5 @@ activate :blog do |blog|
   page "#{blog.prefix}/atom.xml", layout: false
   page '#{blog.prefix}/rss.xml', layout: false
 end
+
+activate :weby

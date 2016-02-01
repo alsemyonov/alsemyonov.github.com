@@ -1,9 +1,10 @@
-- root_url = data.sitemap.url
-ul
-  - sitemap.resources.sort_by { |res| res.data.priority.to_i }.reverse.each do |page|
-    - if page.data.title
-      li
-        = link_to(URI.join(root_url, page.url)) do
-          => page.data.priority.to_i
-          => URI.join(root_url, page.url)
-          => page.data.title
+---
+title: Карта сайта
+published: false
+---
+
+.b-single
+  h1 = current_resource.title
+
+  ul
+    = partial 'sitemap/resource', locals: { resource: sitemap.root }

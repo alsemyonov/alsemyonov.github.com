@@ -1,8 +1,25 @@
+$footer-height: 200px !default
+
+html, body
+  height: 100%
+  .b-root
+    clear: both
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    margin-bottom: -$footer-height
+    .b-root__footer
+      height: $footer-height
+
+.b-root-footer
+  clear: both
+  position: relative
+  height: $footer-height
+
 .b-footer
   @extend .navbar
   @extend .navbar-light
   @extend .bg-faded
-  margin-top: 2rem
 .b-footer__wrapper
   @extend .container
 .b-footer__columns

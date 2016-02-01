@@ -7,6 +7,14 @@ GIT
       middleman-core (~> 4.0)
 
 GIT
+  remote: https://github.com/alsemyonov/weby
+  revision: 7e659cd4148872dc6075e389bc929ab892e83fab
+  branch: master
+  specs:
+    weby (0.0.1)
+      middleman-core (>= 4.0.0)
+
+GIT
   remote: https://github.com/middleman/middleman-sprockets.git
   revision: 6e0f0619a3b0be8d44b4b42765e12d6cb30625e6
   specs:
@@ -199,6 +207,7 @@ DEPENDENCIES
   slim
   tzinfo-data
   wdm (~> 0.1.0)
+  weby!
 
 BUNDLED WITH
    1.11.2

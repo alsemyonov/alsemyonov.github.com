@@ -1,3 +1,5 @@
+@import variables
+
 @import bootstrap
 @import bootstrap/variables
 @import font-awesome-sprockets
@@ -5,14 +7,13 @@
 @import bootstrap-social
 
 .fa-li
-  //top: (3em / 16)
   top: 5px
 
 .b-header
   @extend .navbar
   @extend .navbar-light
   @extend .bg-faded
-  margin-bottom: 3rem
+  margin-bottom: $header-margin
 .b-navigation
   @extend .container
 .b-title
@@ -57,3 +58,6 @@
   input
     margin-left: -1.5em
     margin-right: .75em
+
+.b-search-form
+  margin-top: $header-margin / 2
