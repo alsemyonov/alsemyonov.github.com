@@ -11,7 +11,7 @@ pageable: false
       .media-body
         .media-heading
           h2 Здравствуй, <code>%username%</code>!
-        = partial 'me/about'
+        = partial 'about/me'
   section.b-map__blog.h-feed
     h2.p-name = link_to t('site.navigation.blog'), '/blog', class: 'u-url'
     = partial 'blog/articles', locals: {articles: page_articles, collection_partial: 'blog/articles_yearly'}

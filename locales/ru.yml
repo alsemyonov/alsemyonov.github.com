@@ -4,6 +4,15 @@ ru:
     navigation:
       blog: Блог разработчика веба
       software: Программное обеспечение
+  navigation:
+    index:
+      title: Здесь был Алекс
+    cv:
+      title: CV
+  meta:
+    cv:
+      meta:
+        title: Резюме Алекса Семёнова
   pagination:
     pagination: "Страница %{page} из %{of}"
     previous: Предыдущая страница

@@ -5,7 +5,16 @@ navigation: true
 position: 4
 ---
 .b-single
-  h1.page-heading = t('projects.index.title')
+  h1.page-heading = current_resource.data['page_title']
+
+  blockquote.blockquote
+    p ОБЕСПЕ́ЧЕНИЕ, -я, ср.
+    ol
+      li см. обеспечить.
+      li То, чем обеспечивают кого-что-н. (материальные ценности, деньги). Материальное о. в старости. Пенсионное о.
+    footer.blockquote-footer
+      ' С.И. Ожегов, Н.Ю. Шведова. 1949-1992 гг.
+      cite = link_to('Толковый словарь Ожегова.', 'http://dic.academic.ru/dic.nsf/ogegova/130050')
 
   table.b-projects
     thead

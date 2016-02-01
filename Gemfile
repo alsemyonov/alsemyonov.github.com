@@ -30,6 +30,7 @@ group :development do
   # Interactions
   gem 'octokit'
   gem 'linkedin'
+  gem 'pry'
 end
 
 # Assets
