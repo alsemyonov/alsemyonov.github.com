@@ -1,13 +1,10 @@
 .b-commas
-  display: inline
-  margin: 0
-  padding: 0
+  @extend .list-inline
   li
-    display: inline
+    @extend .list-inline-item
     &:after
-      content: ', '
+      content: ','
     &:last-child:after
-      white-space: nowrap
       content: ''
 
 .b-commas_point

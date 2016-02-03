@@ -3,7 +3,7 @@
 .b-keywords
   @extend p
   display: block
-  margin-top: 1em
+  margin: 1em 0
   width: 100%
   span
     display: inline
@@ -11,6 +11,8 @@
     padding: 0
   span:after
     content: '\a0'
+    white-space: nowrap
   ul
+    display: inline
     @extend .b-commas
     @extend .b-commas_point
