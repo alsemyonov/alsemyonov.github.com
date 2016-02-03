@@ -10,4 +10,7 @@ FileUtils.mkdir('log') unless File.exist?('log')
 
 app = ::Middleman::Application.new
 
+require 'rack/validate'
+use Rack::Validate
+
 run ::Middleman::Rack.new(app).to_app
