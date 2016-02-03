@@ -9,7 +9,7 @@ xml.urlset(
   last_modified = Date.today.to_time.iso8601
   sitemap.resources.select { |page| page.path =~ /\.html/ }.each do |page|
     xml.url do
-      location = "#{data.sitemap.url}#{page.path}"
+      location = "#{data.site.url}#{page.url}"
       change_frequency = page.data.changefreq || 'monthly'
       priority = page.data.priority || '0.5'
 
