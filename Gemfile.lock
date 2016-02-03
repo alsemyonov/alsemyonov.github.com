@@ -8,11 +8,12 @@ GIT
 
 GIT
   remote: https://github.com/alsemyonov/weby
-  revision: 006eea68eb7332108dd394ea2eb281c83b961c23
+  revision: 80d9e5e5b2e2d0fe170c0b5b7579b7acced0a05a
   branch: master
   specs:
     weby (0.0.1)
       middleman-core (>= 4.0.0)
+      redcarpet (~> 3.3.4)
 
 GIT
   remote: https://github.com/middleman/middleman-sprockets.git

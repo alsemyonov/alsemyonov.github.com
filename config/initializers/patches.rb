@@ -37,6 +37,7 @@ module I18n
     en: 'en_US',
     ru: 'ru_RU'
   }
+
   def language_territory
     LANGUAGE_TERRITORIES[locale.to_sym]
   end
