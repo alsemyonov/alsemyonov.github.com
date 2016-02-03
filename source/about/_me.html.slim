@@ -1,0 +1,26 @@
+#me.h-card[itemtype="http://schema.org/Person" itemscope]
+  p
+    ' Меня зовут
+    span.p-name&name
+      span.p-given-name&givenName
+        | Алекс
+        span.sr-only андр
+      span.p-family-name&familyName
+    | .
+  markdown:
+    В интернетах меня ещё иногда зовут ~~Rotuka~~ #{content_tag(:ins, content_tag(:span, link_to('alsemyonov', 'http://www.google.ru/search?q=alsemyonov', class: 'p-nickname', itemprop: 'alternateName'), class: 'b-social b-social_url'))}.
+
+    Мне сейчас 27 лет, я живу в Санкт-Петербурге и работаю старшим инженером-программистом.
+
+    Я предпочитаю общаться вживую. К сожалению, это возможно не всегда. Если ты хочешь пообщаться со мной, `%username%`, но предпочтёшь сделать это не лично, а в интернете, ты можешь связаться со мной, используя <span class="b-social b-social_email">#{link_to('<i></i> al@semyonov.us', 'mailto:al@semyonov.us', class: 'u-email', itemprop: 'email')}</span> или <span class="b-social b-social_xmpp">#{link_to('<i></i> al@semyonov.us', 'mailto:al@semyonov.us')}</span>.
+
+    Если, `%username%`, ты — работодатель, ознакомься с [моим резюме](/cv/).
+
+    <!--
+    #{link_to(image_tag('http://moikrug.ru/images/icon.gif', class: 'b-moikrug', title: 'Александр Семёнов на Моём Круге', alt: 'Александр Семёнов на Моём Круге') << content_tag(:span, 'А', class:'b-moikrug__initial') << 'лександр&nbsp;Семёнов', 'http://alsemyonov.moikrug.ru/?from=userlink')} на Моём Круге.
+    -->
+
+    Если же тебе интересно посмотреть, на что ещё я трачу свою жизнь, ищи ниже ссылки на мои страницы в разных
+    социальных сетях.
+
+p: markdown: Пока, `%username%`!

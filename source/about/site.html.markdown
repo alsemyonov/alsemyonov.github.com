@@ -1,26 +1,22 @@
-# al.semyonov.us
+---
+title: About this site
+---
 
 ## Features
 
-* Static site built using [Middleman][].
-* [OGP][] built into each page
-
-## Project Structure
-
-* `bin/` — executable scripts
-  * `bin/middleman` — [Middleman][] script
-  * `bin/redeploy` — deploys site to destination
-* `data/` — [YAML][] vocabularies and collections for different modules of site
-* `source/` — source of website
+*   [x] Static site built using [Middleman][].
+*   [ ] Semantic markup built into each page:
+    *   [ ] Meta tags with [OGP][]
+    *   [ ] Inline microdata markup with [schema.org][] vocabulary
 
 ## Site structure
 
 Following structure is represented in `source` directory:
 
 *   [ ] [`/`](/) — the main page of your website
-    *   [x] [`/index.html`](/)
+    *   [x] [`/index.html`](/index.html)
         *   [x] info about author
-        *   [x] structure of website
+        *   [x] structure of site
         *   [x] shows yearly list of all articles
         *   [x] lists all software
     *   [ ] [`/robots.txt`][robots.txt]
@@ -30,7 +26,11 @@ Following structure is represented in `source` directory:
         *   [x] points to preferred domain name
     *   [x] [`/humans.txt`][humans.txt] — [humansTXT protocol][humanstxt.org] endpoint
     *   [x] [`/sitemap.xml`][sitemap.xml] — [The Sitemaps protocol][sitemaps.org] endpoint
-* [ ] `/blog/`
+*   [ ] [`/about/`](/about/) — page describing this site contents
+    *   [ ] [`/about/index.html`](/about/index.html)
+        *   [ ] [`/about/#me`](/about/#me) - information about author of the
+    *   [x] [`/about/site.html`](/about/site.html) — information about this site (this page).
+*   [ ] `/blog/`
     *   [ ] [`/blog/index.html`](blog/index.html)
         *   [ ] shows latest article from blog
         *   [x] shows paginated list of latest articles
@@ -39,6 +39,14 @@ Following structure is represented in `source` directory:
 * [ ] `/software/`
 * [ ] `/world/`
 
+## Project Structure
+
+* `bin/` — executable scripts
+  * `bin/middleman` — [Middleman][] script
+  * `bin/redeploy` — deploys site to destination
+* `data/` — [YAML][] vocabularies and collections for different modules of site
+* `source/` — source of website
+
 ## Data
 
 It exposes several common data vocabularies:
@@ -46,10 +54,12 @@ It exposes several common data vocabularies:
 *   `data.ogp.*` —
     OGP properties that would be used as defaults for OGP meta tags for every page.
     Loads defaults from `data/ogp.yml`, then overload values from frontmatter.
+
 *   `data.site.*` — exposes information about a website.
     Loads defaults from `data/site.yml`.
 
     Keys: `host`, `scheme`, `url`, `baseurl`, `title`, `description`.
+
 *   `data.author.*` — exposes information about an author of a website.
     Loads defaults from `data/author.yml`, then overload values from frontmatter.
 
@@ -67,6 +77,7 @@ It exposes several common data vocabularies:
 [robotstxt.org]: http://www.robotstxt.org/ "The Robots Exclusion Protocol"
 [humanstxt.org]: http://humanstxt.org/ "Humans TXT: We Are People, Not Machines."
 [sitemaps.org]: http://www.sitemaps.org/ "The Sitemaps protocol"
+[schema.org]: http://www.schema.org/ "schema.org microdata vocabulary"
 
 [root_url]: https://al.semyonov.us/ "The Main Page of Site"
 [robots.txt]: https://al.semyonov.us/robots.txt "The Robots Exclusion Protocol endpoint"
