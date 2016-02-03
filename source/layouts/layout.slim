@@ -22,8 +22,10 @@ html lang=::I18n.language_territory
     = feed_tag :atom, '/atom.xml', title: "#{data.site.title} (Atom)"
     = feed_tag :rss, '/rss.xml', title: "#{data.site.title} (RSS)"
     link[href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"]
-    meta name="google-site-verification" content="ZQxszSrlDM3n_Iuke8g6KKUh4v9tfupDbfThdGYwLtc"
-    meta name="yandex-verification" content="43e4fed0df577a4e"
+    - if data.site.google.try(:verification)
+    meta name="google-site-verification" content=data.site.google.verification
+    - if data.site.yandex.try(:verification)
+      meta name="yandex-verification" content=data.site.yandex.verification
     link type="text/plain" rel="author" href="/humans.txt"
   body class=page_classes
     .b-root

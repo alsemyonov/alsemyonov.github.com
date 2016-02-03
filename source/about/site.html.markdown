@@ -30,8 +30,8 @@ Following structure is represented in `source` directory:
     *   [ ] [`/about/index.html`](/about/index.html)
         *   [ ] [`/about/#me`](/about/#me) - information about author of the
     *   [x] [`/about/site.html`](/about/site.html) — information about this site (this page).
-*   [ ] `/blog/`
-    *   [ ] [`/blog/index.html`](blog/index.html)
+*   [ ] [`/blog/`](/blog/)
+    *   [ ] [`/blog/index.html`](/blog/index.html)
         *   [ ] shows latest article from blog
         *   [x] shows paginated list of latest articles
 * [x] `/cv/`

@@ -1,15 +1,17 @@
-- if resource.navigatable?
-  li
-    = link_to(resource.title ? resource.title : resource.url, resource.url)
-    - if resource.data.description
-      p = resource.data.description
-    - if resource.page_type != 'page'
-      p = inspect resource.page_type
-      p = inspect resource.navigation_key
-    = debug resource.data.to_hash, environment.development? && resource.data.present?
-    - if resource.children.any?
-      ul
-        - resource.children.sort.each do |child|
-          = partial 'sitemap/resource', locals: { resource: child }
-- elsif environment.development?
-  p Hidden #{link_to(resource.title, resource.url)}
+li
+  - if resource.navigatable?
+    = link_to(resource.navigation.title, resource.url)
+    details
+      - if resource.data.description
+        p = resource.data.description
+      - if resource.page_type != 'page'
+        p = inspect resource.page_type
+        p = inspect resource.navigation_key
+      - if environment.development?
+        = debug resource.data.to_hash, resource.data.present?
+      - if resource.children.any?
+        ul
+          - resource.children.sort.each do |child|
+            = partial 'sitemap/resource', locals: { resource: child }
+  - elsif environment.development?
+    p Hidden #{link_to(resource.title, resource.url)}

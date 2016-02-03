@@ -1,16 +1,16 @@
 li.b-experience.p-experience.h-event
-  div(itemprop="performerIn" itemscope itemtype="http://schema.org/Event")
+  div&performerIn(itemscope itemtype="http://schema.org/Event")
     .b-experience__dates
       => experience.dates
       - if experience.location.present?
         span.b-experience__in => t('cv.experience.in')
         span.b-experience__location = experience.location.to_html
-    h4.b-experience__title.p-name itemprop="name"
+    h4.b-experience__title.p-name&name
       em.b-experience__job-title => experience.title
       span.b-experience__at => t('cv.experience.at')
-      strong.b-experience__company.p-org.h-card(itemprop="organizer" itemscope itemtype='http://schema.org/Organization')
+      strong.b-experience__company.p-org.h-card&organizer(itemscope itemtype='http://schema.org/Organization')
         i
-        span.p-name> itemprop="name" = experience.company.name
+        span.p-name&name => experience.company.name
         = experience.location.to_meta(:address) if experience.location
       = experience.status_icon
     p.summary = experience.summary

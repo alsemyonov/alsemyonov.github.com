@@ -1,6 +1,5 @@
 ---
-title: Я
-page_title: Про Алекса Семёнова
+title: Про Алекса Семёнова
 layout: page
 navigation: false
 published: true

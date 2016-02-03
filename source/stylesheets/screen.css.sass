@@ -1,34 +1,63 @@
 @import variables
 
+
+ul, ol
+  //margin-left: auto
+  ul, ol
+    padding-left: 1.4em
+
 @import bootstrap
 @import bootstrap/variables
 @import font-awesome-sprockets
 @import font-awesome
 @import bootstrap-social
+@import highlight
+
+@import blocks/article
+@import blocks/blog
+@import blocks/brackets
+@import blocks/commas
+@import blocks/contents
+@import blocks/cv
+@import blocks/experience
+@import blocks/footer
+@import blocks/github-actions
+@import blocks/keywords
+@import blocks/map
+@import blocks/menu
+@import blocks/moikrug
+@import blocks/projects
+@import blocks/sidebar
+@import blocks/sitemap
+@import blocks/social
 
 .fa-li
   top: 5px
+
 
 .b-header
   @extend .navbar
   @extend .navbar-light
   @extend .bg-faded
   margin-bottom: $header-margin
-.b-navigation
-  @extend .container
-.b-title
-  @extend .navbar-brand
-@import blocks/menu
-@import blocks/contents
-@import blocks/article
-@import blocks/sidebar
+
 .b-single
   @extend .col-md-12
+
 .b-main
   @extend .col-xl-8
   @extend .col-lg-8
   @extend .col-md-8
   @extend .col-md-8
+
+.b-about
+  @extend .b-single
+
+.b-navigation
+  @extend .container
+
+.b-title
+  @extend .navbar-brand
 
 .b-options-list
   @extend .dl-horizontal
@@ -36,28 +65,6 @@
     @extend .col-sm-2
   dd
     @extend .col-sm-10
-
-@import blocks/map
-@import blocks/projects
-@import blocks/github-actions
-@import blocks/footer
-
-.b-about
-  @extend .b-single
-
-@import blocks/cv
-@import blocks/commas
-@import blocks/brackets
-@import blocks/keywords
-
-@import blocks/experience
-@import blocks/blog
-@import blocks/sitemap
-
-ul, ol
-  //margin-left: auto
-  ul, ol
-    padding-left: 1.4em
 
 .b-task-item
   list-style: none
@@ -67,14 +74,3 @@ ul, ol
 
 .b-search-form
   margin-top: $header-margin / 2
-
-@import highlight
-
-.b-moikrug
-  border: 0 none
-  margin: 0 3px 0 0
-  width: 16px
-  height: 16px
-  vertical-align: middle
-.b-moikrug__initial
-  color: #c71717
