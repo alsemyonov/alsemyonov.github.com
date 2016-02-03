@@ -21,6 +21,7 @@ uses_tiny_mce only: [:new, :create, :edit, :update]
 ```
 
 В *обёртку*:
+
 ``` ruby
 include_tiny_mce_if_needed
 ```
