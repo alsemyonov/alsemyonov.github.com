@@ -1,15 +1,15 @@
 - content_for :header do
-  header.b-blog-header
+  header.b-blog-header@banner(itemscope itemtype="http://schema.org/WPHeader")
     .b-blog-header__logo
       = image_tag 'alsemyonov.jpg', width: 64, height: 64, class: 'media-object img-circle', itemprop: 'image'
     .b-blog-header__titles
-      h1.b-blog-header__title = link_to t('blog.title'), blog_path
-      p.b-blog-header__description = t('blog.description')
+      h1.b-blog-header__title&headline = link_to t('blog.title'), blog_path
+      p.b-blog-header__description&description = t('blog.description')
 
 = wrap_layout :layout do
   #main.b-blog__main[role="main"] = yield
 
-  aside.b-sidebar
+  aside.b-sidebar@complementary(itemscope itemtype="http://schema.org/WPSideBar")
     section#recent.b-sidebar__recent
       h2 = t('blog.recent')
       ol.b-articles-list

@@ -7,31 +7,32 @@ ogp:
   og:
     title: Алекс Семёнов. Резюме (Сurriculum vitæ)
 ---
+
 main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
   .b-cv__header.p-contact.h-card
     = image_tag 'alsemyonov.jpg', width: 200, height: 200, class: 'b-cv__image', itemprop: 'image'
     h1 Здравствуйте!
     h2.lead
       ' Меня зовут
-      em.p-name itemprop="name"
-        span.p-given-name> itemprop="givenName"
-          span.p-nickname itemprop="alternateName" Алекс
+      em.p-name&name
+        span.p-given-name&givenName>
+          span.p-nickname&alternateName Алекс
           span.sr-only андр
-        span.p-family-name itemprop="familyName" Семёнов
+        span.p-family-name&familyName Семёнов
       ' , и я
-      em> itemprop="jobTitle" системный архитектор
+      em&jobTitle>  системный архитектор
       ' из
-      abbr.p-adr.h-adr(itemprop="address" itemtype="http://schema.org/PostalAddress" itemscope title="Санкт-Петербург, Россия" content="Санкт-Петербург, Россия")
+      abbr.p-adr.h-adr&address( itemtype="http://schema.org/PostalAddress" itemscope title="Санкт-Петербург, Россия" content="Санкт-Петербург, Россия")
         em
-          abbr.p-locality itemprop="addressLocality" title="Санкт-Петербург" Санкт-Петербурга
+          abbr.p-locality&addressLocality title="Санкт-Петербург" Санкт-Петербурга
           ' ,
         em
-          abbr.p-country-name itemprop="addressCountry" title="Россия" content="Россия" России
+          abbr.p-country-name&addressCountry title="Россия" content="Россия" России
       | .
   .col-md-8
     section#about.b-cv__section
       h3 = t('cv.sections.about')
-      p.p-summary itemprop="description" = cv.about
+      p.p-summary&description = cv.about
     /section#education.p-education
       h3 = t('cv.sections.education')
     section#experiences.b-cv__section.h-calendar
@@ -60,12 +61,12 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
           i
           = link_to('alsemyonov', 'skype:alsemyonov?chat', rel: 'me', itemprop: 'url')
     section#skills.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
-      h3 itemprop="name" = t('cv.sections.skills')
+      h3&name = t('cv.sections.skills')
       = cv.list_of(:skills)
     section#languages.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
-      h3 itemprop="name" = t('cv.sections.languages')
+      h3&name = t('cv.sections.languages')
       = cv.list_of(:languages)
     section#hobbies.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
-      h3 itemprop="name" = t('cv.sections.hobbies')
+      h3&name = t('cv.sections.hobbies')
       = cv.list_of(:hobbies)
   .col-md-12: p = partial 'blog/social_buttons'

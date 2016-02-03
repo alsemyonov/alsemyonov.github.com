@@ -1,11 +1,11 @@
 - if paginate && num_pages > 1
-  nav
+  nav(itemscope itemtype="http://schema.org/SiteNavigationElement")
     p = t('pagination.pagination', page: page_number, of: num_pages)
     - if prev_page
-      p = link_to t('pagination.previous'), prev_page
+      p = link_to t('pagination.previous'), prev_page, itemprop: 'url'
 
 = yield
 
 - if paginate
   - if next_page
-    nav: p = link_to t('pagination.next'), next_page
+    nav(itemscope itemtype="http://schema.org/SiteNavigationElement"): p = link_to t('pagination.next'), next_page, itemprop: 'url'

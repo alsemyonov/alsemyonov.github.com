@@ -1,17 +1,18 @@
-li
-  - if resource.navigatable?
+- if resource.navigatable?
+  li class="b-sitemap-resource b-sitemap-resource_#{resource.resource_type}"
     = link_to(resource.navigation.title, resource.url)
-    details
-      - if resource.data.description
-        p = resource.data.description
-      - if resource.page_type != 'page'
-        p = inspect resource.page_type
-        p = inspect resource.navigation_key
-      - if environment.development?
-        = debug resource.data.to_hash, resource.data.present?
-      - if resource.children.any?
-        ul
-          - resource.children.sort.each do |child|
-            = partial 'sitemap/resource', locals: { resource: child }
-  - elsif environment.development?
-    p Hidden #{link_to(resource.title, resource.url)}
+    - if resource.description
+      p = resource.description
+    - if false && environment.development?
+      details
+        - if resource.page_type != 'page'
+          p = inspect resource.page_type
+          p = inspect resource.navigation_key
+        - if environment.development?
+          = debug resource.data.to_hash, resource.data.present?
+    - if resource.children.any?
+      ul
+        - resource.children.sort.each do |child|
+          = partial 'sitemap/resource', locals: { resource: child }
+- elsif false && environment.development?
+  li class="b-sitemap-resource b-sitemap-resource_#{resource.resource_type}": p Hidden #{link_to(resource.title, resource.url)}

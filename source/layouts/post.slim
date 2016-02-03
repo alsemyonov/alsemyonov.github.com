@@ -3,16 +3,20 @@
 
 - article = current_resource
 = wrap_layout :blog do
-  article.b-article[itemscope itemtype="http://schema.org/BlogPosting"]
+  article.b-article&mainEntityOfPage
     h2.b-article__title itemprop="name headline"= link_to article.title, article, rel: 'canonical'
-    p.b-article__meta
-      time datetime=article.date.xmlschema itemprop="datePublished" = l(article.date, format: :long)
-      - if current_page.data.author
-        | •
-        span[itemprop="author" itemscope itemtype="http://schema.org/Person"]: span[itemprop="name"] = current_page.data.author
-
-    .b-article__body[itemprop="articleBody"] = yield
-
+    - if article.data.image
+      div&image(itemscope itemtype="http://schema.org/ImageObject")
+        = image_tag(article.data.image, itemprop: 'url')
+    .b-article__body&articleBody = yield
     = partial 'blog/keywords', locals: {keywords: article.tags}
+    p.b-article__meta
+      - if current_page.data.author
+        span&author[itemscope itemtype="http://schema.org/Person"]
+          ' ©
+          span&name = current_page.author
+        ' ,
+      time.b-article__date-published&datePublished> datetime=article.date.xmlschema = l(article.date, format: :long)
+      time.b-article__date-modified&dateModified datetime=article.date.xmlschema
     = partial 'blog/social_buttons'
     = partial 'blog/comments'

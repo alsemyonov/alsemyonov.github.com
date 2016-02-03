@@ -29,7 +29,8 @@ Following structure is represented in `source` directory:
 *   [ ] [`/about/`](/about/) — page describing this site contents
     *   [ ] [`/about/index.html`](/about/index.html)
         *   [ ] [`/about/#me`](/about/#me) - information about author of the
-    *   [x] [`/about/site.html`](/about/site.html) — information about this site (this page).
+    *   [x] [`/about/site.html`](/about/site/) — information about this site (this page).
+    *   [x] [`/about/webmaster.html`](/about/webmaster/) — not-published information for webmaster.
 *   [ ] [`/blog/`](/blog/)
     *   [ ] [`/blog/index.html`](/blog/index.html)
         *   [ ] shows latest article from blog

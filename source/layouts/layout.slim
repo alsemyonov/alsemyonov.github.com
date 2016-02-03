@@ -1,12 +1,12 @@
 doctype 5
-html lang=::I18n.language_territory
+html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# website: http://ogp.me/ns/website#"
   head
     meta[charset="utf-8"]
+    title = yield_content(:title).presence || current_page.data.title.presence || data.site.title
     meta[http-equiv="X-UA-Compatible" content="IE=edge"]
     meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1"]
-    title = yield_content(:title).presence || current_page.data.title.presence || data.site.title
-    meta name="description" content=(current_resource.data.excerpt ? make_excerpt(current_resource.data.excerpt) : current_resource.data.description)
+    meta name="description" content=(current_resource.data.excerpt ? current_resource.data.excerpt : make_excerpt(current_resource.data.description))
     - if current_resource.data.nofollow
       meta name="robots" content=current_resource.data.nofollow.presence || "noindex, nofollow"
     - else
@@ -16,25 +16,25 @@ html lang=::I18n.language_territory
       meta property=name content=value
     - if current_resource.respond_to?(:tags)
       meta name="keywords" content=current_resource.tags.join(', ')
+    - if data.site.google.try(:verification)
+      meta name="google-site-verification" content=data.site.google.verification
+    - if data.site.yandex.try(:verification)
+      meta name="yandex-verification" content=data.site.yandex.verification    = javascript_include_tag :screen
     = stylesheet_link_tag :screen
-    = javascript_include_tag :screen
-    link rel="canonical" href=canonicalize_url(current_resource.url)
+    link rel="canonical" type="text/html" href=canonicalize_url(current_resource.url)
+    link rel="author" type="text/plain" href="/humans.txt"
+    link rel="icon" type="image/x-icon" href="/favicon.ico"
+    link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"
     = feed_tag :atom, '/atom.xml', title: "#{data.site.title} (Atom)"
     = feed_tag :rss, '/rss.xml', title: "#{data.site.title} (RSS)"
-    link[href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"]
-    - if data.site.google.try(:verification)
-    meta name="google-site-verification" content=data.site.google.verification
-    - if data.site.yandex.try(:verification)
-      meta name="yandex-verification" content=data.site.yandex.verification
-    link type="text/plain" rel="author" href="/humans.txt"
   body class=page_classes
-    .b-root
+    .b-root *current_resource.schema.to_html_attributes
       header.b-header
-        nav.b-navigation
-          = link_to(t('site.title'), root_path, class: 'b-title')
+        nav.b-navigation(itemscope itemtype="http://schema.org/SiteNavigationElement")
+          = link_to(t('site.title'), root_path, class: 'b-title', itemprop: 'url')
           ul.b-menu
             - navigation_resources.each do |resource|
-              li.b-menu__item= link_to(resource.navigation_title, resource.url, class: 'nav-link')
+              li.b-menu__item = link_to(resource.navigation_title, resource.url, class: 'nav-link', itemprop: "url")
       .b-contents
         = yield_content :header
         .b-contents__wrapper

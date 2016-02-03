@@ -1,5 +1,5 @@
 = wrap_layout :layout do
   main.b-single(itemtype="ItemPage" itemscope)
-    header.post-header: h1.post-title itemprop="name" = current_page.data.page_title.presence || current_page.data.title
+    header.post-header: h1.post-title&name = current_page.data.page_title.presence || current_page.data.title
     .post-content = yield
     = partial 'blog/social_buttons'

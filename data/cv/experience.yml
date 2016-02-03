@@ -26,6 +26,8 @@
   summary: |-
     Design & Architecture of service.
     Developing realtime data-processing application.
+  achievements:
+  - My own Startup
   responsibilities:
   - Backend Development
   - Frontend Development
@@ -47,6 +49,12 @@
   - Backend Development
   skills: [Ruby, Ruby on Rails, MySQL, RabbitMQ, OpenADR]
 - company: {name: Provectus IT, Inc}
+  location:
+    country:
+      name: Россия
+    locality:
+      name: Kazan
+    name: Kazan, Россия
   title: Technical Lead
   summary: Worked for AutoGrid Systems
   responsibilities:
@@ -58,12 +66,6 @@
   - officially certified OpenADR 2.0a server
   - officially certified OpenADR 2.0b server, first in the world
   skills: [OpenADR, Ruby, Ruby on Rails, RSpec, Backend Development]
-  location:
-    country:
-      name: Россия
-    locality:
-      name: Kazan
-    name: Kazan, Россия
   start_date: 2013-10-01
   end_date: 2014-07-01
 - company:
@@ -100,14 +102,16 @@
     name: Санкт-Петербург, Россия
   title: CTO/Senior Web Developer
   summary: CTO, development
+  achievements:
+  - My first own Startup :-)
   responsibilities:
-  - participate in writing a business plan
-  - architecture of the server software (system service, written in Ruby)
-  - database architecture
-  - development of the server software
-  - development of client software
+  - Business Plan
+  - System Architecture
+  - Database architecture
+  - Backend Development
+  - Frontend Development
+  - UI Design
   - imposition layouts prototype
-  - participated in UI design
   skills: [MongoDB, PostgreSQL, Ruby, JavaScript, CoffeeScript, Haml, Sass, Compass]
   start_date: 2010-02-01
   end_date: 2011-02-01

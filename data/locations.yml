@@ -1,0 +1,23 @@
+LED:
+  name: Санкт-Петербург, Россия
+  country:
+    name: Россия
+    code: RU
+  locality:
+    name: Россия
+SFO:
+  country:
+    name: USA
+    code: US
+  administrative_area:
+    name: California
+    code: CA
+  locality:
+    name: San Francisco
+TLL:
+  name: Tallinn, Estonia
+  country:
+    name: Estonia
+    code: EE
+  locality:
+    name: Tallinn

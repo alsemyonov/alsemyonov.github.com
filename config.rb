@@ -84,3 +84,25 @@ activate :blog do |blog|
     }
   }
 end
+
+activate :directory_indexes
+# ready do
+#   # weby = app.extensions[:weby]
+#   redirects = {}
+#   app.extensions[:blog].values.each do |blog|
+#     blog_data = blog.data
+#     blog_data.articles.each do |article|
+#       article_redirects = {
+#         '/post/%s/' % [article.slug] => {to: article.url.gsub(/.html$/, '')},
+#         '/%04i/%02i/%s/' % [article.date.year, article.date.month, article.slug] => {to: article.url.gsub(/.html$/, '')},
+#         '/%04i/%02i/' % [article.date.year, article.date.month] => {to: '/blog/%04i/%02i/' % [article.date.year, article.date.month]},
+#         '/%04i/' % [article.date.year] => {to: '/blog/%04i/' % [article.date.year]}
+#       }
+#       redirects.merge!(article_redirects)
+#     end
+#   end
+#   redirects.sort_by { |url, _| url }.each do |url, options|
+#     puts("rewrite ^#{url}$ #{options[:to]} permanent;")
+#     # redirect(url, options)
+#   end
+# end

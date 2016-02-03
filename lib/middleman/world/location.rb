@@ -1,4 +1,5 @@
 require 'middleman/world/object'
+require 'middleman/world/country'
 
 module Middleman
   class World
