@@ -1,16 +1,15 @@
 ---
 title: Здесь был Алекс
 pageable: false
+priority: 1
 ---
 
 .b-map
   section.b-map__person
     .media
-      .media-left
-        = image_tag('alsemyonov.jpg', class: 'media-object img-circle', width: 200, height: 200, alt: t('index.photo.alt'), title: t('index.photo.alt'))
+      .media-left = image_tag('alsemyonov.jpg', class: 'media-object img-circle', width: 200, height: 200, alt: t('index.photo.alt'), title: t('index.photo.alt'))
       .media-body
-        .media-heading
-          h2 Здравствуй, <code>%username%</code>!
+        .media-heading: h2 Здравствуй, <code>%username%</code>!
         = partial 'about/me'
   section.b-map__blog.h-feed
     h2.p-name = link_to t('site.navigation.blog'), '/blog', class: 'u-url'
