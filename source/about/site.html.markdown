@@ -2,6 +2,8 @@
 title: About this site
 ---
 
+[ ![Codeship Status for alsemyonov/alsemyonov.github.com](https://codeship.com/projects/b4c9d280-a68f-0133-2c7c-1a5a40261798/status?branch=master)](https://codeship.com/projects/129976)
+
 ## Features
 
 *   [x] Static site built using [Middleman][].
