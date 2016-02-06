@@ -25,9 +25,7 @@ module Middleman
         result = ''
         result += tag(:meta, itemprop: 'addressLocality', content: locality.name) if locality
         result += tag(:meta, itemprop: 'addressCountry', content: country.name) if country
-        if name
-          result += tag(:meta, itemprop: 'name', content: name)
-        end
+        result += tag(:meta, itemprop: 'name', content: name) if name
         content_tag(:span, result, itemprop: prop, itemscope: true, itemtype: 'http://schema.org/PostalAddress')
       end
     end

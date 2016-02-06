@@ -65,7 +65,7 @@ module SiteBlogging
       # map: [[tag, tag count]] -> [[tag, tag weight]]
       count.map do |tag, count|
         # logarithmic distribution
-        weight = (Math.log(count) - Math.log(min))/(Math.log(max) - Math.log(min))
+        weight = (Math.log(count) - Math.log(min)) / (Math.log(max) - Math.log(min))
 
         [tag, weight]
       end

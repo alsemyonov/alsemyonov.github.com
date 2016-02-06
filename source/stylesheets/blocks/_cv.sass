@@ -53,3 +53,11 @@
   .b-social
     i
       @extend .fa-li
+
+$badges-margin: .5em
+.b-coderwall-list
+  @extend .list-inline
+  li
+    @extend .list-inline-item
+    &:not(:last-child)
+      margin: 0 $badges-margin $badges-margin 0

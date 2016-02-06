@@ -31,7 +31,7 @@ module Middleman
              to: 'self.class'
 
     def to_html(partial = partial_name)
-      partial(partial, locals: {local_name => self})
+      partial(partial, locals: { local_name => self })
     end
   end
 end

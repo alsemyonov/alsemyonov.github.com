@@ -1,6 +1,7 @@
 ---
 pageable: true
 layout: blog
+menu: false
 ---
 
 - case page_type
@@ -11,6 +12,6 @@ layout: blog
 - when 'year'
   - interval = l Date.new(year, 1, 1), format: :year
 
-h1 = t('calendar.title', interval: interval)
+h1 = title(t('calendar.title', interval: interval))
 
 = partial 'blog/articles', locals: {articles: page_articles}

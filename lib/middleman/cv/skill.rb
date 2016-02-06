@@ -16,7 +16,7 @@ class Middleman::CV
     end
 
     def to_html
-      attributes = {id: "skill-#{title.parameterize}", class: 'b-skill p-skill', itemprop: 'itemListElement'}
+      attributes = { id: "skill-#{title.parameterize}", class: 'b-skill p-skill', itemprop: 'itemListElement' }
       result = if tags.include?(title)
                  link_to(title, tag_path(title), attributes)
                else

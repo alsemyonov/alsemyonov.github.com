@@ -60,7 +60,7 @@ module Cycles
   #       <span style="background-color:<%= current_cycle %>"><%= item %></span>
   #     </div>
   #   <% end %>
-  def current_cycle(name = "default")
+  def current_cycle(name = 'default')
     cycle = get_cycle(name)
     cycle.current_value if cycle
   end
@@ -83,7 +83,7 @@ module Cycles
   #     </tr>
   #   <% end %>
   #   </table>
-  def reset_cycle(name = "default")
+  def reset_cycle(name = 'default')
     cycle = get_cycle(name)
     cycle.reset if cycle
   end
@@ -107,7 +107,7 @@ module Cycles
     def to_s
       value = @values[@index].to_s
       @index = next_index
-      return value
+      value
     end
 
     private
@@ -126,16 +126,17 @@ module Cycles
   end
 
   private
+
   # The cycle helpers need to store the cycles in a place that is
   # guaranteed to be reset every time a page is rendered, so it
   # uses an instance variable of ActionView::Base.
   def get_cycle(name)
-    @_cycles = Hash.new unless defined?(@_cycles)
-    return @_cycles[name]
+    @_cycles = {} unless defined?(@_cycles)
+    @_cycles[name]
   end
 
   def set_cycle(name, cycle_object)
-    @_cycles = Hash.new unless defined?(@_cycles)
+    @_cycles = {} unless defined?(@_cycles)
     @_cycles[name] = cycle_object
   end
 end

@@ -10,9 +10,7 @@ module Middleman
         "world/#{local_name}"
       end
 
-      def present?
-        name.present?
-      end
+      delegate :present?, to: :name
     end
   end
 end

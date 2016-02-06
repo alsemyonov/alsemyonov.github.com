@@ -46,7 +46,7 @@ module Middleman
     end
 
     def list_of(property, options = {})
-      content_tag(:ul, public_send(property).map(&:to_html).join, {class: "b-#{property}-list"}.merge(options))
+      content_tag(:ul, public_send(property).map(&:to_html).join, { class: "b-#{property}-list" }.merge(options))
     end
   end
 end

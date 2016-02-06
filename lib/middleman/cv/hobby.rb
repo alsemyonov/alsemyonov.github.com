@@ -3,7 +3,7 @@ require 'middleman/cv/object'
 class Middleman::CV
   class Hobby < Object
     def initialize(cv, attrs = {})
-      attrs = {title: attrs} if attrs.is_a?(String)
+      attrs = { title: attrs } if attrs.is_a?(String)
       super(cv, attrs)
     end
 

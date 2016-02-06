@@ -1,6 +1,6 @@
 module SiteUrls
   def cgi_escape(string)
-    CGI::escape(string)
+    CGI.escape(string)
   end
 
   def canonicalize_url(url)

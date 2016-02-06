@@ -64,6 +64,11 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
     section#skills.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
       h3&name = t('cv.sections.skills')
       = cv.list_of(:skills)
+      ul.b-coderwall-list
+        - config[:achievements].each do |achievement|
+          li
+            a href="http://coderwall.com/alsemyonov"
+              img src=achievement.badge width="42" height="42" alt=achievement.name  title=achievement.description
     section#languages.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
       h3&name = t('cv.sections.languages')
       = cv.list_of(:languages)

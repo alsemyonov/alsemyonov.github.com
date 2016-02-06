@@ -5,6 +5,10 @@ module SiteNavigation
   end
 
   def navigation_resources
-    sitemap.root.children.select { |resource| resource.try(:menu?) }
+    sitemap.roots.map do |root|
+      root.children.select do |resource|
+        resource.menu? && !resource.year?
+      end
+    end.flatten
   end
 end

@@ -1,18 +1,16 @@
+- one_child = resource.children.size == 1
 - if resource.navigatable?
-  li class="b-sitemap-resource b-sitemap-resource_#{resource.resource_type}"
-    = link_to(resource.navigation.title, resource.url)
+  li class="b-sitemap-resource b-sitemap-resource_#{resource.resource_type} #{'b-sitemap-resource_single' if one_child}"
+    = link_to(resource.navigation.label, resource.url)
     - if resource.description
       p = resource.description
-    - if false && environment.development?
+    /- if environment.development?
       details
-        - if resource.page_type != 'page'
-          p = inspect resource.page_type
-          p = inspect resource.navigation_key
         - if environment.development?
           = debug resource.data.to_hash, resource.data.present?
     - if resource.children.any?
-      ul
+      ul.b-sitemap__children class=('.b-sitemap__children_single' if one_child)
         - resource.children.sort.each do |child|
           = partial 'sitemap/resource', locals: { resource: child }
-- elsif false && environment.development?
+/- elsif environment.development?
   li class="b-sitemap-resource b-sitemap-resource_#{resource.resource_type}": p Hidden #{link_to(resource.title, resource.url)}

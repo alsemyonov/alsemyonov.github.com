@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-return unless __FILE__ == $0
+return unless __FILE__ == $PROGRAM_NAME
 
 require 'dotenv'
 require 'yaml'

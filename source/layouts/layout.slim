@@ -3,30 +3,20 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
   head
     meta[charset="utf-8"]
     title = yield_content(:title).presence || current_page.data.title.presence || data.site.title
-    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
-    meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
-    meta[name="viewport" content="width=device-width, initial-scale=1"]
-    meta name="description" content=(current_resource.data.excerpt ? current_resource.data.excerpt : make_excerpt(current_resource.data.description))
-    - if current_resource.data.nofollow
-      meta name="robots" content=current_resource.data.nofollow.presence || "noindex, nofollow"
-    - else
-      meta name="robots" content="index, follow"
-    meta name="author" content=data.author.name
+    - current_resource.to_meta.each do |meta|
+      meta *meta
     - ogp_tags do |name, value|
       meta property=name content=value
-    - if current_resource.respond_to?(:tags)
-      meta name="keywords" content=current_resource.tags.join(', ')
-    - if data.site.google.try(:verification)
-      meta name="google-site-verification" content=data.site.google.verification
-    - if data.site.yandex.try(:verification)
-      meta name="yandex-verification" content=data.site.yandex.verification    = javascript_include_tag :screen
+    link rel="canonical" type="text/html" href=current_resource.canonical_url
     = stylesheet_link_tag :screen
-    link rel="canonical" type="text/html" href=canonicalize_url(current_resource.url)
-    link rel="author" type="text/plain" href="/humans.txt"
-    link rel="icon" type="image/x-icon" href="/favicon.ico"
-    link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"
-    = feed_tag :atom, '/atom.xml', title: "#{data.site.title} (Atom)"
-    = feed_tag :rss, '/rss.xml', title: "#{data.site.title} (RSS)"
+    = favicon_tag '/favicon.ico'
+    = favicon_tag '/favicon.ico', rel: 'shortcut icon'
+    = feed_tag :atom, '/index.atom', title: "#{data.site.title} (Atom)"
+    = feed_tag :rss, '/index.rss', title: "#{data.site.title} (RSS)"
+    - (data.site.links || []).each do |link|
+      link *link
+    - (current_resource.data['links'] || []).each do |link|
+      link *link
   body class=page_classes
     .b-root *current_resource.schema.to_html_attributes
       header.b-header
@@ -34,13 +24,18 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
           = link_to(t('site.title'), root_path, class: 'b-title', itemprop: 'url')
           ul.b-menu
             - navigation_resources.each do |resource|
-              li.b-menu__item = link_to(resource.navigation_title, resource.url, class: 'nav-link', itemprop: "url")
+              li.b-menu__item = link_to(resource.navigation.label, resource.url, class: 'nav-link', itemprop: "url")
       .b-contents
         = yield_content :header
+        = partial 'metadata'
         .b-contents__wrapper
           = yield
-          .b-search-form = partial 'search_form'
-      .b-root__footer
+        .b-search-form = partial 'search_form'
+          /
+
+            - page_articles))
+          /= debug current_resource.locals.to_hash.except('blog_controller', 'articles')
+      /.b-root__footer
     footer.b-root-footer: .b-footer
       .b-footer__wrapper
         .b-footer__columns

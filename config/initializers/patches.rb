@@ -36,7 +36,7 @@ module I18n
   LANGUAGE_TERRITORIES = {
     en: 'en_US',
     ru: 'ru_RU'
-  }
+  }.freeze
 
   def language_territory
     LANGUAGE_TERRITORIES[locale.to_sym]
