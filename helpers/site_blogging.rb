@@ -6,6 +6,10 @@ module SiteBlogging
     text
   end
 
+  def blog_categories
+    blog.articles.each_with_object(Hash.new { |hash, category| hash[category] = 0 }) { |article, collector| collector[article.data.category] += 1 }
+  end
+
   def tags(page)
     page.tags.map { |tag| link_to(tag, tag_path(tag)) }.join(', ')
   end

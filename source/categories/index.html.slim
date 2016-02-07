@@ -1,0 +1,13 @@
+---
+title: Категории
+layout: blog
+---
+
+h1 = title(current_resource.title)
+
+ul
+  - blog_categories.each do |category, counter|
+    li
+      => link_to(category, "#{category.parameterize}.html")
+      span.b-blog-archive-link__amount<
+        | (#{counter})
