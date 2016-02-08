@@ -4,18 +4,18 @@
 - article = current_resource
 = wrap_layout :blog do
   article.b-article&mainEntityOfPage
-    h2.b-article__title itemprop="name headline"= link_to article.title, article, rel: 'canonical'
+    h1.b-article__title itemprop="name headline"= link_to article.title, article, rel: 'canonical'
     - if article.data.image
       div&image(itemscope itemtype="http://schema.org/ImageObject")
         = image_tag(article.data.image, itemprop: 'url')
     .b-article__body&articleBody = yield
     = partial 'blog/keywords', locals: {keywords: article.tags}
     p.b-article__meta
-      - if current_page.author
+      - if current_resource.author
         span&author[itemscope itemtype="http://schema.org/Person"]
           ' ©
-          = link_to current_page.author.url, itemprop: 'url' do
-            span&name = current_page.author.name
+          = link_to current_resource.author.url, itemprop: 'url' do
+            span&name = current_resource.author.name
         ' ,
       time.b-article__date-published&datePublished> datetime=article.date.xmlschema = l(article.date, format: :long)
       time.b-article__date-modified&dateModified datetime=article.date.xmlschema

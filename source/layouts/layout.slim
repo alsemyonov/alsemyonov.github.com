@@ -2,17 +2,13 @@ doctype 5
 html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# website: http://ogp.me/ns/website#"
   head
     meta[charset="utf-8"]
-    title = yield_content(:title).presence || current_page.data.title.presence || data.site.title
+    title = yield_content(:title).presence || current_resource.data.title.presence || data.site.title
     - current_resource.to_meta.each do |meta|
       meta *meta
     - ogp_tags do |name, value|
       meta property=name content=value
     link rel="canonical" type="text/html" href=current_resource.canonical_url
     = stylesheet_link_tag :screen
-    = favicon_tag '/favicon.ico'
-    = favicon_tag '/favicon.ico', rel: 'shortcut icon'
-    = feed_tag :atom, '/index.atom', title: "#{data.site.title} (Atom)"
-    = feed_tag :rss, '/index.rss', title: "#{data.site.title} (RSS)"
     - (data.site.links || []).each do |link|
       link *link
     - (current_resource.data['links'] || []).each do |link|
@@ -27,15 +23,10 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
               li.b-menu__item = link_to(resource.navigation.label, resource.url, class: 'nav-link', itemprop: "url")
       .b-contents
         = yield_content :header
-        = partial 'metadata'
         .b-contents__wrapper
           = yield
         .b-search-form = partial 'search_form'
-          /
-
-            - page_articles))
-          /= debug current_resource.locals.to_hash.except('blog_controller', 'articles')
-      /.b-root__footer
+      .b-root__footer
     footer.b-root-footer: .b-footer
       .b-footer__wrapper
         .b-footer__columns

@@ -1,7 +1,7 @@
 ---
 title: Про Алекса Семёнова
 layout: page
-navigation: false
+menu: false
 published: true
 ---
 

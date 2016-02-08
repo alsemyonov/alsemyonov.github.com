@@ -1,7 +1,12 @@
 ---
 title: Категории
 layout: blog
+menu: false
 ---
+
+- if environment.development?
+  = frontmatter
+  = current_resource.menu?
 
 h1 = title(current_resource.title)
 

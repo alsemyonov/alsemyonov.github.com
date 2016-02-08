@@ -15,7 +15,7 @@ xml.rss 'xmlns:atom': 'http://www.w3.org/2005/Atom' do
     xml.subtitle data.site.description
     xml.link absolute_url(blog_url)
     xml.atom :link, href: blog_url, rel: 'alternate', type: 'text/html'
-    xml.atom :link, href: absolute_url(current_page.path), rel: 'self', type: 'application/atom+xml'
+    xml.atom :link, href: absolute_url(current_resource.path), rel: 'self', type: 'application/atom+xml'
     xml.atom :link, href: absolute_url('/rss.xml'), rel: 'alternate', type: 'application/rss+xml'
     unless blog.articles.empty?
       xml.pubDate(blog.articles.first.date.to_time.iso8601)
