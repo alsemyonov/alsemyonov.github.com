@@ -5,3 +5,6 @@ og:
   locale: ru_RU
   image:
     '': https://al.semyonov.us/images/alsemyonov.jpg
+twitter:
+  site: "@alsemyonov"
+  card: summary

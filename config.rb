@@ -25,6 +25,8 @@ I18n.locale = :ru
 activate :i18n, mount_at_root: :ru, path: '/:locale/', locales: [:ru, :en]
 activate :ogp do |ogp|
   ogp.namespaces = {
+    twitter: data.ogp.twitter,
+    # from data/ogp/fb.yml
     fb: data.ogp.fb,
     # from data/ogp/fb.yml
     og: data.ogp.og
