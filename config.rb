@@ -35,8 +35,8 @@ activate :ogp do |ogp|
 end
 activate :weby
 
-require './helpers/coder_wall_helpers'
-config[:achievements] = CoderWallHelpers.achievements_of('alsemyonov')
+# require './helpers/coder_wall_helpers'
+# config[:achievements] = CoderWallHelpers.achievements_of('alsemyonov')
 
 ## Routes
 

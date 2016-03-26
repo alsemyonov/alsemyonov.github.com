@@ -1,0 +1,31 @@
+---
+title: Сниму однокомнатную квартиру в центре петербурга
+description: Сниму однокомнатную квартиру на Владимирской, Достоевской, Маяковской, Звенигородской
+menu:
+  title: Сниму квартиру!
+position: 0
+priority: 1
+ogp:
+  og:
+    title: Алекс Семёнов. Резюме (Сurriculum vitæ)
+---
+
+.rent-container
+  .rent__heading
+    h2.card-title
+      ' Сниму квартиру
+      small.text-muted однокомнатную, в центре Санкт-Петербурга
+  .rent-me
+    .rent-me__main
+      .card = partial 'rent/main'
+    .rent-me__relationships
+      .card = partial 'rent/relationships'
+    .rent-me__pay
+      .card = partial 'rent/pay'
+  .rent-me
+    .rent-me__activities
+      .card
+        = partial 'rent/activities'
+        = partial 'rent/map'
+    .rent__need
+      .card = partial 'rent/need'

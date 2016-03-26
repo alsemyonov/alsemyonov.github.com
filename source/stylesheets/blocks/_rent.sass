@@ -1,0 +1,107 @@
+.rent-container
+  @extend .container
+
+  width: 1000px
+  height: 700px
+  //width: 700px
+  //height: 500px
+
+  overflow: scroll
+  font-size: 70%
+  outline: 1px red solid
+  .card
+    border-radius: 0
+    overflow: hidden
+  .card-block
+    padding: .75rem
+
+  ul.commas
+    display: inline
+    margin: 0
+    li
+      display: inline
+      margin: 0
+      &:after
+        &:last-child
+          content: '.\a0'
+        content: ',\a0'
+.rent-comment
+  font-size: 75%
+  @extend .text-muted
+
+.rent-icon-list
+  @extend .list-unstyled
+  @extend .fa-ul
+  margin-bottom: 0
+  li
+    i
+      @extend .fa-li
+      @extend .fa
+  dl
+    margin-bottom: .25rem
+    dt
+      font-size: 120%
+    dd
+      @extend .rent-comment
+      margin-bottom: .25rem
+
+.rent__heading
+  h1, h3
+    display: inline
+.rent-me
+  @extend .row
+.rent-me__main
+  @extend .col-md-4
+  ul
+    font-size: 120%
+.rent-me__relationships
+  @extend .col-md-4
+  ul
+    @extend .rent-icon-list
+    li i
+      @extend .fa-check
+      color: $brand-success
+    dl
+      dt
+        font-size: 150%
+      dd
+        @extend .rent-comment
+.rent-me__pay
+  @extend .col-md-4
+  i
+    @extend .fa
+    @extend .fa-credit-card
+    color: $brand-info
+  .additional
+    @extend .rent-comment
+.rent-me__activities
+  @extend .col-md-6
+  ul
+    @extend .rent-icon-list
+    dl
+      dt
+        i
+          @extend .fa
+          @extend .fa-li
+      dd
+        @extend .rent-comment
+.rent-me__details
+  @extend .col-md-6
+  ul
+    @extend .rent-icon-list
+.rent-apartment
+  @extend .row
+.rent__need
+  @extend .col-md-6
+  ul
+    @extend .rent-icon-list
+.rent__want
+  @extend .col-md-6
+  ul
+    @extend .rent-icon-list
+
+.rent-me__facts
+  @extend .list-unstyled
+.rent-me__comment
+  @extend .text-muted
+  display: inline

@@ -64,7 +64,7 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
     section#skills.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
       h3&name = t('cv.sections.skills')
       = cv.list_of(:skills)
-      ul.b-coderwall-list
+      /ul.b-coderwall-list
         - config[:achievements].each do |achievement|
           li
             a href="http://coderwall.com/alsemyonov"

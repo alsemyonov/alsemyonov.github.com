@@ -8,11 +8,21 @@ description: > # this means to ignore newlines until unindent
   Это личный сайт Алекса (Александра Семёнова).
   Я программирую, пишу статьи, иногда занимаюсь различными мероприятиями.
   Всё, что опубликовано на этом сайте, является моим личным мнением.
+meta:
+  name:
+    google-site-verification: ZQxszSrlDM3n_Iuke8g6KKUh4v9tfupDbfThdGYwLtc
+    yandex-verification: 43e4fed0df577a4e
+    openstat-verification: 23c6ae084acb2e8247d609e78d9731f601658e6a
+  http-equiv:
+    X-UA-Compatible: IE=edge
+    Content-Type: text/html; charset=utf-8
 metas:
 - name: google-site-verification
   content: ZQxszSrlDM3n_Iuke8g6KKUh4v9tfupDbfThdGYwLtc
 - name: yandex-verification
   content: 43e4fed0df577a4e
+- name: openstat-verification
+  content: 23c6ae084acb2e8247d609e78d9731f601658e6a
 - http-equiv: X-UA-Compatible
   content: IE=edge
 - http-equiv: Content-Type

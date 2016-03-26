@@ -21,6 +21,12 @@ module CoderWallHelpers
       raise(ArgumentError, 'Invalid username')
     end
 
-    response['badges'].map { |badge| Achievement.new(badge) }
+    if response['badges']
+      response['badges'].map { |badge| Achievement.new(badge) }
+    end
+  end
+
+  def load_achievements_of(username)
+
   end
 end
