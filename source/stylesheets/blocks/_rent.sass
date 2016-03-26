@@ -12,6 +12,8 @@
   .card
     border-radius: 0
     overflow: hidden
+  .card-img
+    border-radius: 0
   .card-block
     padding: .75rem
 
@@ -50,12 +52,14 @@
     display: inline
 .rent-me
   @extend .row
-.rent-me__main
+.rent-me__left
   @extend .col-md-4
+.rent-me__right
+  @extend .col-md-8
+.rent-me__main
   ul
     font-size: 120%
 .rent-me__relationships
-  @extend .col-md-4
   ul
     @extend .rent-icon-list
     li i
@@ -67,15 +71,15 @@
       dd
         @extend .rent-comment
 .rent-me__pay
-  @extend .col-md-4
   i
     @extend .fa
     @extend .fa-credit-card
     color: $brand-info
+  p
+    margin-bottom: .25rem
   .additional
     @extend .rent-comment
 .rent-me__activities
-  @extend .col-md-6
   ul
     @extend .rent-icon-list
     dl
@@ -86,17 +90,11 @@
       dd
         @extend .rent-comment
 .rent-me__details
-  @extend .col-md-6
   ul
     @extend .rent-icon-list
 .rent-apartment
   @extend .row
 .rent__need
-  @extend .col-md-6
-  ul
-    @extend .rent-icon-list
-.rent__want
-  @extend .col-md-6
   ul
     @extend .rent-icon-list
 
