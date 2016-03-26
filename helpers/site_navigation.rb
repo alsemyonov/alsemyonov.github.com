@@ -7,7 +7,7 @@ module SiteNavigation
   def navigation_resources
     sitemap.roots.map do |root|
       root.children.select do |resource|
-        resource.menu? && !resource.year?
+        resource.menu? && resource.published?
       end
     end.flatten
   end
