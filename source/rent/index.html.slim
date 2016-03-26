@@ -8,24 +8,23 @@ priority: 1
 ogp:
   og:
     title: Алекс Семёнов. Резюме (Сurriculum vitæ)
+layout: none
 ---
 
 .rent-container
-  .rent__heading
-    h2.card-title
-      ' Сниму квартиру
-      small.text-muted однокомнатную, в центре Санкт-Петербурга
   .rent-me
     .rent-me__left
-      .rent-me__main: .card = partial 'rent/main'
-      .rent-me__relationships: .card = partial 'rent/relationships'
-      .rent-me__pay
-        .card
-          = partial 'rent/pay'
-          img.card-img src='where.png' width='301' alt="На Владимирской, Достоевской, Маяковской, Невском проспекте, Площади Восстания" style="width: 100%"
+      .card
+        .card-header
+          h4
+            ' Сниму квартиру
+            small.text-muted однокомнатную, в центре <nobr>Санкт-Петербурга</nobr>
+        .card-block
+          .rent-me__main = partial 'rent/main'
+          .rent-me__relationships = partial 'rent/relationships'
+          .rent-me__activities = partial 'rent/activities'
     .rent-me__right
-      .rent-me__activities
-        .card
-          .card-block
-            = partial 'rent/activities'
-            = partial 'rent/need'
+      .card
+        .rent-me__pay = partial 'rent/pay'
+        img.card-img src='where_long_2.png' alt="На Владимирской, Достоевской, Маяковской, Невском проспекте, Площади Восстания" style="width: 100%"
+        .rent__need.card-block = partial 'rent/need'

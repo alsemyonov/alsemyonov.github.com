@@ -1,5 +1,7 @@
 .rent-container
   @extend .container
+  margin: 0
+  padding-top: 5px
 
   width: 1000px
   height: 700px
@@ -17,16 +19,6 @@
   .card-block
     padding: .75rem
 
-  ul.commas
-    display: inline
-    margin: 0
-    li
-      display: inline
-      margin: 0
-      &:after
-        &:last-child
-          content: '.\a0'
-        content: ',\a0'
 .rent-comment
   font-size: 75%
   @extend .text-muted
@@ -53,9 +45,15 @@
 .rent-me
   @extend .row
 .rent-me__left
-  @extend .col-md-4
+  @extend .col-md-5
+  > .card
+    height: 687px
+    margin-bottom: 0
 .rent-me__right
-  @extend .col-md-8
+  @extend .col-md-7
+  > .card
+    height: 687px
+    margin-bottom: 0
 .rent-me__main
   ul
     font-size: 120%
