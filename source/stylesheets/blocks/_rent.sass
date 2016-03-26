@@ -1,19 +1,19 @@
 .rent-container
   @extend .container
   margin: 0
-  padding-top: 5px
 
   width: 1000px
   height: 700px
   //width: 700px
   //height: 500px
 
-  overflow: scroll
+  overflow: hidden
   font-size: 70%
   outline: 1px red solid
   .card
     border-radius: 0
     overflow: hidden
+    margin: 0
   .card-img
     border-radius: 0
   .card-block
@@ -46,17 +46,23 @@
   @extend .row
 .rent-me__left
   @extend .col-md-5
+  padding: 0
   > .card
-    height: 687px
+    height: 700px
     margin-bottom: 0
 .rent-me__right
   @extend .col-md-7
+  padding: 0
   > .card
-    height: 687px
+    height: 700px
     margin-bottom: 0
+    border-left: 0
 .rent-me__main
   ul
-    font-size: 120%
+    @extend .list-unstyled
+    .rent-me__facts, .b-social__phone
+      font-size: 150%
+
 .rent-me__relationships
   ul
     @extend .rent-icon-list
@@ -95,9 +101,3 @@
 .rent__need
   ul
     @extend .rent-icon-list
-
-.rent-me__facts
-  @extend .list-unstyled
-.rent-me__comment
-  @extend .text-muted
-  display: inline

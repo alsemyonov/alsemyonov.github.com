@@ -16,15 +16,16 @@ layout: none
     .rent-me__left
       .card
         .card-header
-          h4
+          h3
             ' Сниму квартиру
             small.text-muted однокомнатную, в центре <nobr>Санкт-Петербурга</nobr>
         .card-block
-          .rent-me__main = partial 'rent/main'
-          .rent-me__relationships = partial 'rent/relationships'
-          .rent-me__activities = partial 'rent/activities'
+          = partial 'rent/main'
+          = partial 'rent/relationships'
+          = partial 'rent/activities'
     .rent-me__right
       .card
-        .rent-me__pay = partial 'rent/pay'
+        .card-block
+          = partial 'rent/pay'
         img.card-img src='where_long_2.png' alt="На Владимирской, Достоевской, Маяковской, Невском проспекте, Площади Восстания" style="width: 100%"
-        .rent__need.card-block = partial 'rent/need'
+        .card-block = partial 'rent/need'
