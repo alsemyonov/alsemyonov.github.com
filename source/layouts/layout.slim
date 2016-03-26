@@ -20,7 +20,7 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
           = link_to(t('site.title'), root_path, class: 'b-title', itemprop: 'url')
           ul.b-menu
             - navigation_resources.each do |resource|
-              li.b-menu__item = link_to(resource.navigation.label, resource.url, class: 'nav-link', itemprop: "url")
+              li.b-menu__item class=page_classes(resource.path, prefix: 'b-menu__item') = link_to(resource.navigation.label, resource.url, class: 'nav-link', itemprop: 'url')
       .b-contents
         = yield_content :header
         .b-contents__wrapper

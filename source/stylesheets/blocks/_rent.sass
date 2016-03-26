@@ -1,15 +1,18 @@
+$rent-height: 700px
+$rent-main-height: 138px
+$rent-header-height: 124px
+
 .rent-container
   @extend .container
-  margin: 0
+  margin: 10px
 
-  width: 1000px
-  height: 700px
-  //width: 700px
+  min-width: 1000px
+  height: $rent-height
+  //width: $rent-height
   //height: 500px
 
   overflow: hidden
   font-size: 70%
-  outline: 1px red solid
   .card
     border-radius: 0
     overflow: hidden
@@ -18,9 +21,12 @@
     border-radius: 0
   .card-block
     padding: .75rem
+  .card-header
+    height: $rent-header-height
+    margin: 0
 
 .rent-comment
-  font-size: 75%
+  font-size: 85%
   @extend .text-muted
 
 .rent-icon-list
@@ -42,26 +48,35 @@
 .rent__heading
   h1, h3
     display: inline
-.rent-me
-  @extend .row
+
 .rent-me__left
   @extend .col-md-5
   padding: 0
   > .card
-    height: 700px
+    height: $rent-height
     margin-bottom: 0
+
 .rent-me__right
   @extend .col-md-7
   padding: 0
   > .card
-    height: 700px
+    height: $rent-height
     margin-bottom: 0
     border-left: 0
+  .card-img
+    height: $rent-main-height
+
 .rent-me__main
+  height: $rent-main-height - 12px
+  border-bottom: 1px solid #e5e5e5
+  margin-bottom: $card-spacer-y
   ul
     @extend .list-unstyled
-    .rent-me__facts, .b-social__phone
-      font-size: 150%
+  .rent-me__facts
+    font-size: 150%
+    margin-bottom: 0
+    .personality, .email
+      display: block
 
 .rent-me__relationships
   ul
@@ -74,15 +89,22 @@
         font-size: 150%
       dd
         @extend .rent-comment
+
 .rent-me__pay
   i
     @extend .fa
     @extend .fa-credit-card
     color: $brand-info
+  h3
+    color: $brand-info
+    small
+      color: $body-color
+
   p
     margin-bottom: .25rem
   .additional
     @extend .rent-comment
+    margin: 0
 .rent-me__activities
   ul
     @extend .rent-icon-list
@@ -101,3 +123,10 @@
 .rent__need
   ul
     @extend .rent-icon-list
+
+.b-header
+  .b-menu
+    .b-menu__item_rent
+      a
+        color: $alert-danger-text
+        font-weight: bold

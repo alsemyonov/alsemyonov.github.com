@@ -9,5 +9,7 @@ cv:
   title: CV
 software:
   title: ПО
+blog:
+  title: Блог
 rent:
   title: Сниму квартиру!

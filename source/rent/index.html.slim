@@ -1,31 +1,30 @@
 ---
 title: Сниму однокомнатную квартиру в центре петербурга
-description: Сниму однокомнатную квартиру на Владимирской, Достоевской, Маяковской, Звенигородской
+description: Сниму однокомнатную квартиру на Владимирской, Достоевской, Маяковской, Звенигородской. 27 лет, русский, холост, без детей и животных. Готов платить до 30000₽.
 menu:
   title: Сниму квартиру!
 position: 0
 priority: 1
 ogp:
   og:
-    title: Алекс Семёнов. Резюме (Сurriculum vitæ)
-layout: none
+    title: Алекс Семёнов снимет квартиру в центре Питера за 25000₽
+    image: /rent/alsemyonov-rents-an-apartment.png
 ---
 
 .rent-container
-  .rent-me
+  .row
     .rent-me__left
       .card
-        .card-header
-          h3
-            ' Сниму квартиру
-            small.text-muted однокомнатную, в центре <nobr>Санкт-Петербурга</nobr>
+        h3.card-header
+          ' Сниму квартиру
+          small.text-muted однокомнатную, в центре <nobr>Санкт-Петербурга</nobr>
         .card-block
           = partial 'rent/main'
           = partial 'rent/relationships'
           = partial 'rent/activities'
     .rent-me__right
       .card
-        .card-block
-          = partial 'rent/pay'
+
+        = partial 'rent/pay'
         img.card-img src='where_long_2.png' alt="На Владимирской, Достоевской, Маяковской, Невском проспекте, Площади Восстания" style="width: 100%"
         .card-block = partial 'rent/need'
