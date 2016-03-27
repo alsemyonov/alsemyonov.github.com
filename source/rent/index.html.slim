@@ -5,18 +5,17 @@ menu:
   title: Сниму квартиру!
 position: 0
 priority: 1
-layout: page
 ogp:
   og:
     title: Алекс Семёнов снимет квартиру в центре Питера за 25000₽
     image: https://al.semyonov.us/rent/alsemyonov-rents-an-apartment2.png
 ---
 
-.rent-container
+main.rent-container(itemtype="ItemPage" itemscope)
   .row
     .rent-me__left
-      .card
-        h3.card-header
+      header.card
+        h3.card-header.post-title&name
           ' Сниму квартиру
           small.text-muted однокомнатную, в центре <nobr>Санкт-Петербурга</nobr>
         .card-block
@@ -29,3 +28,5 @@ ogp:
         = partial 'rent/pay'
         img.card-img src='where_long_2.png' alt="На Владимирской, Достоевской, Маяковской, Невском проспекте, Площади Восстания" style="width: 100%"
         .card-block = partial 'rent/need'
+  .row
+    .col-md-12 = partial 'blog/social_buttons'

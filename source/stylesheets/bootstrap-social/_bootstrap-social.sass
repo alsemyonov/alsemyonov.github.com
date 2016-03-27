@@ -11,6 +11,8 @@
 @import bootstrap-social/mixins
 @import bootstrap-social/classes
 
+// Redis uses inverted icon, so adding it here after classes declared
+// All other colors are in bootstrap-social/colors
 $social-colors: map-merge($social-colors, (reddit: #eff7ff))
 
 // Nicknames
@@ -26,3 +28,17 @@ $social-colors: map-merge($social-colors, (reddit: #eff7ff))
 
 .fa-xmpp
   @extend .fa-lightbulb-o
+
+.fa-rocketbank
+  background:
+    color: transparent
+    image: url('https://s3.amazonaws.com/s3.rocketbank.ru/newsletters/new-app/favicon-96x96.png')
+    position:
+      x: 50%
+      y: 50%
+    repeat:
+      x: no-repeat
+      y: no-repeat
+    size: contain
+  width: 16px
+  height: 16px
