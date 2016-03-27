@@ -5,7 +5,7 @@ site_author_email = data.author.email
 xml.instruct!
 xml.feed xmlns: 'http://www.w3.org/2005/Atom' do
   xml.title data.site.title
-  xml.subtitle data.site.description
+  xml.subtitle strip_tags(data.site.description)
   xml.link href: blog_url, rel: 'alternate', type: 'text/html'
   xml.link href: data.site.url + '/index.atom', rel: 'self', type: 'application/atom+xml'
   xml.link href: data.site.url + '/index.rss', rel: 'alternate', type: 'application/rss+xml'

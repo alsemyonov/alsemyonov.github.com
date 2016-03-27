@@ -12,7 +12,7 @@ xml.instruct!
 xml.rss 'xmlns:atom': 'http://www.w3.org/2005/Atom' do
   xml.channel do
     xml.title data.site.title
-    xml.subtitle data.site.description
+    xml.subtitle strip_tags(data.site.description)
     xml.link absolute_url(blog_url)
     xml.atom :link, href: blog_url, rel: 'alternate', type: 'text/html'
     xml.atom :link, href: absolute_url(current_resource.path), rel: 'self', type: 'application/atom+xml'
