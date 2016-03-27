@@ -28,9 +28,7 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
                     span&name = resource.navigation.label
       .b-contents
         = yield_content :header
-        .b-contents__wrapper
-          = yield
-        .b-search-form = partial 'search_form'
+        .b-contents__wrapper = yield
       .b-root__footer
     footer.b-root-footer: .b-footer
       .b-footer__wrapper
@@ -45,4 +43,6 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
                     = username
           .b-footer__disclaimer
             p = data.site.description
+            p Если вы искали какую-то конкретную информацию, но не смогли её найти, попробуйте воспользоваться поиском Яндекса по этому сайту:
+            = partial 'search_form'
     = partial 'analytics'
