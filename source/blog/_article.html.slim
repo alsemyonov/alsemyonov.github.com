@@ -1,5 +1,5 @@
 li.b-article-item.p-entry.h-entry
-  time.dt-published.b-article-item__time datetime=article.date.xmlschema = l(article.date.to_date, format: :long)
+  time.dt-published.b-article-item__time datetime=article.date.xmlschema = l(article.date.to_date, format: :short)
   = link_to article.title, article, class: 'b-article-item__title p-name u-url'
   /- if article.author
     span&author[itemscope itemtype="http://schema.org/Person"]

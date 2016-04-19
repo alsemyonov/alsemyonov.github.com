@@ -3,7 +3,7 @@
 - collection_partial ||= 'blog/articles_list'
 
 = wrap_layout :paginated do
-  ul.b-articles-list = partial collection_partial, locals: {articles: page_articles, partial: partial}
+  ul.b-articles-list = partial collection_partial, locals: { articles: page_articles, partial: partial }
 
 p.rss-subscribe
   = t('blog.subscribe.action', rss: rss_link, atom: atom_link)

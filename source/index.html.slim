@@ -20,7 +20,7 @@ links:
         = partial 'about/me'
   section.b-map__blog.h-feed
     h2.p-name = link_to t('site.navigation.blog'), '/blog', class: 'u-url'
-    = partial 'blog/articles', locals: {articles: page_articles, collection_partial: 'blog/articles_yearly'}
+    .b-articles-list_titles= partial 'blog/articles', locals: {articles: page_articles, collection_partial: 'blog/articles_yearly'}
   section.b-map__projects
     h2 = link_to t('site.navigation.software'), '/software'
     = partial 'software/list'
