@@ -47,7 +47,4 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
             p Если вы искали какую-то конкретную информацию, но не смогли её найти, попробуйте воспользоваться поиском Яндекса по этому сайту:
             = partial 'search_form'
     = partial 'analytics'
-    = javascript_include_tag 'https://static.yandex.net/yobject/v2/_/loader.js'
-    javascript:
-      var root = document.getElementsByClassName ? document.getElementsByClassName('b-contents__wrapper')[0] : document.body;
-      ya.yobject.load(root);
+    = javascript_include_tag 'https://static.yandex.net/yobject/v2/_/loader.js', :screen
