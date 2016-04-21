@@ -28,3 +28,7 @@ en:
   index:
     photo:
       alt: "Alex in the usual environment"
+  pagination:
+    previous: "Previous page"
+    pagination: "Page %{page} of %{of}"
+    next: "Next page"
