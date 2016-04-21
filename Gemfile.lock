@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/alsemyonov/weby
-  revision: 3a84e58179934b0d83545f971669bc49be70181f
+  revision: 1abfc4bcd928d8ff5d417495a33090dd1d19b043
   branch: master
   specs:
     weby (0.0.1)
