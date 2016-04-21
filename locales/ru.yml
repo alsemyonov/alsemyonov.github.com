@@ -35,7 +35,7 @@ ru:
       es: Испанский
   author:
     name: Алекс Семёнов
-    email: al@semyonov.us
+    email: alex@semyonov.us
   date:
     formats:
       default: "%d.%m.%Y"

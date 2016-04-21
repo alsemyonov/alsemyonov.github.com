@@ -47,8 +47,9 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
           i
           = link_to('+7-981-197-07-00', 'tel:+79811970700', class: 'p-tel', itemprop: 'telephone')
         li.b-social.b-social_email
-          i
-          = mail_to('al@semyonov.us', 'al@semyonov.us', itemprop: 'email', class: 'u-email')
+          a.u-email&email *mail_attrs('alex@semyonov.us', subject: 'Job opportunity for Alex Semyonov', body: "Alex,\n\nhi! I want to propose you a new job")
+            i
+            | alex@semyonov.us
         li.b-social.b-social_url
           i
           = link_to('al.semyonov.us', 'https://al.semyonov.us/', rel: 'me', itemprop: 'url', class: 'u-url')
