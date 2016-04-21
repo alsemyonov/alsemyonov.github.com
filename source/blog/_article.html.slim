@@ -4,6 +4,6 @@ li.b-article-item.p-entry.h-entry
   /- if article.author
     span&author[itemscope itemtype="http://schema.org/Person"]
       ' ©
-      = link_to article.author.url, itemprop: 'url' do
+      a&url href=article.author.url
         span&name = article.author.name
   /= link_to('comments', article.url + '#disqus_thread')

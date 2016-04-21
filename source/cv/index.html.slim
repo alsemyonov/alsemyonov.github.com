@@ -11,7 +11,7 @@ ogp:
 
 main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
   .b-cv__header.p-contact.h-card
-    = image_tag 'alsemyonov.jpg', width: 200, height: 200, class: 'b-cv__image', itemprop: 'image'
+    img.b-cv__image&image width=200 height=200 src=image_path('alsemyonov.jpg')
     h1 Здравствуйте!
     h2.lead
       ' Меня зовут
@@ -44,24 +44,29 @@ main.b-cv.h-resume(itemscope itemtype="http://schema.org/Person")
       h3 = t('cv.sections.contacts')
       ul.b-contacts-list.p-contact
         li.b-social.b-social_phone
-          i
-          = link_to('+7-981-197-07-00', 'tel:+79811970700', class: 'p-tel', itemprop: 'telephone')
+          a.p-tel&telephone href='tel:+79811970700'
+            i
+            | +7-981-197-07-00
         li.b-social.b-social_email
           a.u-email&email *mail_attrs('alex@semyonov.us', subject: 'Job opportunity for Alex Semyonov', body: "Alex,\n\nhi! I want to propose you a new job")
             i
             | alex@semyonov.us
         li.b-social.b-social_url
-          i
-          = link_to('al.semyonov.us', 'https://al.semyonov.us/', rel: 'me', itemprop: 'url', class: 'u-url')
+          a.u-url&url%me href='https://al.semyonov.us/'
+            i
+            | al.semyonov.us
         li.b-social.b-social_github
-          i
-          = link_to('alsemyonov', 'https://github.com/alsemyonov', rel: 'me', itemprop: 'url')
+          a.u-url&url%me href='https://github.com/alsemyonov'
+            i
+            | alsemyonov
         li.b-social.b-social_linkedin
-          i
-          = link_to('alsemyonov', 'https://linkedin.com/in/alsemyonov', rel: 'me', itemprop: 'url')
+          a.u-url&url%me href='https://linkedin.com/in/alsemyonov'
+            i
+            | alsemyonov
         li.b-social.b-social_skype
-          i
-          = link_to('alsemyonov', 'skype:alsemyonov?chat', rel: 'me', itemprop: 'url')
+          a.u-url&url%me href='skype:alsemyonov?chat'
+            i
+            | alsemyonov
     section#skills.b-cv__section(itemscope itemtype="http://schema.org/ItemList")
       h3&name = t('cv.sections.skills')
       = cv.list_of(:skills)

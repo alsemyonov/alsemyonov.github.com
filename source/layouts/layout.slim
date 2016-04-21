@@ -7,7 +7,7 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
       meta *meta
     - ogp_tags do |name, value|
       meta property=name content=value
-    link rel="canonical" type="text/html" href=current_resource.canonical_url
+    link%canonical type="text/html" href=current_resource.canonical_url
     = stylesheet_link_tag :screen
     - (data.site.links || []).each do |link|
       link *link
@@ -18,13 +18,13 @@ html lang=::I18n.language_territory  prefix="og: http://ogp.me/ns# fb: http://og
       header.b-header
         nav.b-navigation(itemscope itemtype="http://schema.org/SiteNavigationElement")
           div(itemscope itemtype="http://schema.org/ItemList")
-            span(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
-              = link_to(root_path, class: 'b-title', itemprop: 'url') do
+            span&itemListElement(itemscope itemtype="http://schema.org/ListItem")
+              a.b-title&url href=root_path
                 span&name = t('site.title')
             ul.b-menu
               - navigation_resources.each do |resource|
-                li.b-menu__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class=page_classes(resource.path, prefix: 'b-menu__item'))
-                  = link_to(resource.url, class: 'nav-link', itemprop: 'url') do
+                li.b-menu__item&itemListElement(itemscope itemtype="http://schema.org/ListItem" class=page_classes(resource.path, prefix: 'b-menu__item'))
+                  a.nav-link&url href=url_for(resource)
                     span&name = resource.navigation.label
       .b-contents
         = yield_content :header

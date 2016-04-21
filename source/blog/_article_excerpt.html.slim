@@ -1,11 +1,11 @@
 article.b-article-excerpt.h-entry
-  h2.b-article-excerpt__title = link_to article.title, article, class: 'u-url p-name', rel: 'canonical'
+  h2.b-article-excerpt__title: a.u-url.p-name%canonical href=url_for(article) = article.title
   .p-content = article.body
   p.b-article-excerpt__meta
     - if article.author
       span&author[itemscope itemtype="http://schema.org/Person"]
         ' ©
-        = link_to article.author.url, itemprop: 'url' do
+        a&url href=article.author.url
           span&name = article.author.name
         ' ,
     time.dt-published datetime=article.date.xmlschema = l(article.date.to_date, format: :long)

@@ -4,7 +4,7 @@
 - article = current_resource
 = wrap_layout :blog do
   article.b-article&mainEntityOfPage
-    h1.b-article__title itemprop="name headline"= link_to article.title, article, rel: 'canonical'
+    h1.b-article__title&name&headline: a%canonical href=url_for(article) = article.title
     - if article.data.image
       div&image(itemscope itemtype="http://schema.org/ImageObject")
         = image_tag(article.data.image, itemprop: 'url')
@@ -14,7 +14,7 @@
       - if current_resource.author
         span&author[itemscope itemtype="http://schema.org/Person"]
           ' ©
-          = link_to current_resource.author.url, itemprop: 'url' do
+          a&url href=current_resource.author.url
             span&name = current_resource.author.name
         ' ,
       time.b-article__date-published&datePublished> datetime=article.date.xmlschema = l(article.date, format: :long)
