@@ -1,19 +1,39 @@
 ---
-- company: {name: Skuuper}
+- company:
+    name: Toptal
+    url: https://toptal.com/
   id: 681367197
   is_current: true
+  location:
+    country: {name: USA}
+    locality: {name: San Francisco}
+    name: San Francisco, USA
+  start_date: 2016-05-16
+  title: Code Pimp
+  responsibilities:
+  - Backend Development
+  - Code Pimping
+  skills: [Ruby on Rails, Ruby, PostgreSQL]
+- company:
+    name: Skuuper
+    url: https://skuuper.com/
+  id: 681367197
+  is_current: false
   location:
     country: {name: Estonia}
     locality: {name: Tallinn}
     name: Tallinn, Estonia
   start_date: 2015-06-01
+  end_date: 2016-04-30
   title: Software Engineer
   responsibilities:
   - System Architecture
   - Backend Development
   - Frontend Development
   skills: [Ruby on Rails, Ruby, PostgreSQL, RabbitMQ, JSON API]
-- company: {name: Cerebelo Ltd}
+- company:
+    name: Cerebelo Ltd
+    url: https://cerebelo.info/
   id: 262224210
   is_current: true
   location:
@@ -34,7 +54,9 @@
   - System Architecture
   skills: [Ruby on Rails, RSpec, Resque, Linked Data, web services and APIs]
   title: Co-founder, Architect, Lead Developer
-- company: {name: AutoGrid Systems}
+- company:
+    name: AutoGrid Systems
+    url: http://www.auto-grid.com/
   location:
     country:
       code: ru
@@ -48,7 +70,9 @@
   - System Architecture
   - Backend Development
   skills: [Ruby, Ruby on Rails, MySQL, RabbitMQ, OpenADR]
-- company: {name: Provectus IT, Inc}
+- company:
+    name: Provectus IT, Inc
+    url: http://provectus.com/
   location:
     country:
       name: Россия

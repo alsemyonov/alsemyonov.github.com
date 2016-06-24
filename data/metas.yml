@@ -1,12 +1,26 @@
+- http-equiv: Content-Type
+  content: text/html; charset=utf-8
+- http-equiv: X-UA-Compatible
+  content: IE=edge
+- name: viewport
+  content: width=device-width, initial-scale=1, shrink-to-fit=no
 - name: google-site-verification
   content: ZQxszSrlDM3n_Iuke8g6KKUh4v9tfupDbfThdGYwLtc
 - name: yandex-verification
   content: 6b4e465cd4a8c337
 - name: openstat-verification
   content: 23c6ae084acb2e8247d609e78d9731f601658e6a
-- http-equiv: X-UA-Compatible
-  content: IE=edge
-- http-equiv: Content-Type
-  content: text/html; charset=utf-8
-- name: viewport
-  content: width=device-width, initial-scale=1, shrink-to-fit=no
+- name: application-name
+  content: Здесь был Алекс
+- name: msapplication-square70x70logo
+  content: /images/small.jpg
+- name: msapplication-square150x150logo
+  content: /images/medium.jpg
+- name: msapplication-wide310x150logo
+  content: wide.jpg
+- name: msapplication-square310x310logo
+  content: large.jpg
+- name: msapplication-TileColor
+  content: #ffffff
+- name: msapplication-notification
+  content: "frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed=https://al.semyonov.us/index.rss&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=https://al.semyonov.us/index.rss&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=https://al.semyonov.us/index.rss&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=https://al.semyonov.us/index.rss&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=https://al.semyonov.us/index.rss&amp;id=5; cycle=1"

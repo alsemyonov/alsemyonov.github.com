@@ -10,7 +10,11 @@ li.b-experience.p-experience.h-event
       span.b-experience__at => t('cv.experience.at')
       strong.b-experience__company.p-org.h-card&organizer(itemscope itemtype='http://schema.org/Organization')
         i
-        span.p-name&name => experience.company.name
+        span.p-name&name
+          - if experience.company.url
+            = link_to(experience.company.name, experience.company.url, itemprop: 'url')
+          - else
+            => experience.company.name
         = experience.location.to_meta(:address) if experience.location
       = experience.status_icon
     p.summary = experience.summary
