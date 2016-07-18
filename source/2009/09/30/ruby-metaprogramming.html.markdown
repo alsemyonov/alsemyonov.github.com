@@ -19,50 +19,50 @@ Ruby содержит множество методов для динамиче�
 
 ### Получение, установка и удаление переменных
 
-* `Object#instance_variable_get`
-* `Object#instance_variable_set`
-* `Object#remove_instance_variable`
-* `Module#class_variable_get`
-* `Module#class_variable_set`
-* `Module#remove_class_variable`
+* [`Object#instance_variable_get`](http://www.rubydoc.info/stdlib/core/Object#instance_variable_get-instance_method)
+* [`Object#instance_variable_set`](http://www.rubydoc.info/stdlib/core/Object#instance_variable_set-instance_method)
+* [`Object#remove_instance_variable`](http://www.rubydoc.info/stdlib/core/Object#remove_instance_variable-instance_method)
+* [`Module#class_variable_get`](http://www.rubydoc.info/stdlib/core/Module#class_variable_get-instance_method)
+* [`Module#class_variable_set`](http://www.rubydoc.info/stdlib/core/Module#class_variable_set-instance_method)
+* [`Module#remove_class_variable`](http://www.rubydoc.info/stdlib/core/Module#remove_class_variable-instance_method)
 
 ### Получение, установка и удаление констант (и классов)
 
-* `Module#const_get`
-* `Module#const_set`
-* `Module#remove_const`
+* [`Module#const_get`](http://www.rubydoc.info/stdlib/core/Module#const_get-instance_method)
+* [`Module#const_set`](http://www.rubydoc.info/stdlib/core/Module#const_set-instance_method)
+* [`Module#remove_const`](http://www.rubydoc.info/stdlib/core/Module#remove_const-instance_method)
 
 ### Объявление и удаление методов
 
-* `Module#define_method`
-* `Module#remove_method`
+* [`Module#define_method`](http://www.rubydoc.info/stdlib/core/Module#define_method-instance_method)
+* [`Module#remove_method`](http://www.rubydoc.info/stdlib/core/Module#remove_method-instance_method)
 
 ### Выполнение кода, построенного «на лету»
 
-* `Object#send`
-* `Object#instance_eval`
-* `Module#module_eval (синоним Module#class_eval)`
-* `Kernel#eval`
-* `Kernel#method_missing`
+* [`Object#send`](http://www.rubydoc.info/stdlib/core/Object#send-instance_method)
+* [`Object#instance_eval`](http://www.rubydoc.info/stdlib/core/Object#instance_eval-instance_method)
+* [`Module#module_eval`](http://www.rubydoc.info/stdlib/core/Module#module_eval-instance_method) (синоним [`Module#class_eval`](http://www.rubydoc.info/stdlib/core/Module#class_eval-instance_method))
+* [`Kernel#eval`](http://www.rubydoc.info/stdlib/core/Kernel#eval-instance_method)
+* [`Kernel#method_missing`](http://www.rubydoc.info/stdlib/core/Kernel#method_missing-instance_method)
 
 ### Методы интроспекции (рефлексии, отражения)
 
 Интроспекция — важная часть метапрограммирования, позволяющая изучать объекты, получая их структуру и данные
 
-* `Object#class`
-* `Object#instance_variables`
-* `Object#methods`
-* `Object#private_methods`
-* `Object#public_methods`
-* `Object#singleton_methods`
-* `Module#class_variables`
-* `Module#constants`
-* `Module#included_modules`
-* `Module#instance_methods`
-* `Module#name`
-* `Module#private_instance_methods`
-* `Module#protected_instance_methods`
-* `Module#public_instance_methods`
+* [`Object#class`](http://www.rubydoc.info/stdlib/core/Object#class-instance_method)
+* [`Object#instance_variables`](http://www.rubydoc.info/stdlib/core/Object#instance_variables-instance_method)
+* [`Object#methods`](http://www.rubydoc.info/stdlib/core/Object#methods-instance_method)
+* [`Object#private_methods`](http://www.rubydoc.info/stdlib/core/Object#private_methods-instance_method)
+* [`Object#public_methods`](http://www.rubydoc.info/stdlib/core/Object#public_methods-instance_method)
+* [`Object#singleton_methods`](http://www.rubydoc.info/stdlib/core/Object#singleton_methods-instance_method)
+* [`Module#class_variables`](http://www.rubydoc.info/stdlib/core/Module#class_variables-instance_method)
+* [`Module#constants`](http://www.rubydoc.info/stdlib/core/Module#constants-instance_method)
+* [`Module#included_modules`](http://www.rubydoc.info/stdlib/core/Module#included_modules-instance_method)
+* [`Module#instance_methods`](http://www.rubydoc.info/stdlib/core/Module#instance_methods-instance_method)
+* [`Module#name`](http://www.rubydoc.info/stdlib/core/Module#name-instance_method)
+* [`Module#private_instance_methods`](http://www.rubydoc.info/stdlib/core/Module#private_instance_methods-instance_method)
+* [`Module#protected_instance_methods`](http://www.rubydoc.info/stdlib/core/Module#protected_instance_methods-instance_method)
+* [`Module#public_instance_methods`](http://www.rubydoc.info/stdlib/core/Module#public_instance_methods-instance_method)
 
 ## Выполнение кода в строках и блоках
 
@@ -143,7 +143,7 @@ method_name = 'size'
 
 Мы можем передать имя метода в виде строки `'size'` или символа `:size`
 
-Полезное свойство метода `send` — возможность вызывать приватные методы, как например метод `Module#define_method`.
+Полезное свойство метода `send` — возможность вызывать приватные методы, как например метод [`Module#define_method`](http://www.rubydoc.info/stdlib/core/Module#define_method-instance_method).
 
 ``` ruby
 Array.define_method(:ducky) { puts 'ducky' }
