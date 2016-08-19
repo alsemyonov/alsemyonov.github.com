@@ -1,0 +1,131 @@
+$rent-height: 800px
+$rent-main-height: 138px
+$rent-header-height: 124px
+
+.rent-container
+  @extend .container
+
+  width: 1000px
+  min-height: $rent-height
+  //width: $rent-height
+  //height: 500px
+
+  overflow: hidden
+  font-size: 70%
+  .card
+    border-radius: 0
+    overflow: hidden
+    margin: 0
+  .card-img
+    border-radius: 0
+  .card-block
+    padding: .75rem
+  .card-header
+    height: $rent-header-height
+    margin: 0
+
+.rent-comment
+  font-size: 85%
+  @extend .text-muted
+
+.rent-icon-list
+  @extend .list-unstyled
+  @extend .fa-ul
+  margin-bottom: 0
+  li
+    i
+      @extend .fa-li
+      @extend .fa
+  dl
+    margin-bottom: .25rem
+    dt
+      font-size: 120%
+    dd
+      @extend .rent-comment
+      margin-bottom: .25rem
+
+.rent__heading
+  h1, h3
+    display: inline
+
+.rent-me__left
+  @extend .col-md-5
+  padding: 0
+  > .card
+    min-height: $rent-height
+    margin-bottom: 0
+
+.rent-me__right
+  @extend .col-md-7
+  padding: 0
+  > .card
+    min-height: $rent-height
+    margin-bottom: 0
+    border-left: 0
+  .card-img
+    height: $rent-main-height
+
+.rent-me__main
+  height: $rent-main-height - 12px
+  border-bottom: 1px solid #e5e5e5
+  margin-bottom: $card-spacer-y
+  ul
+    @extend .list-unstyled
+  .rent-me__facts
+    font-size: 150%
+    margin-bottom: 0
+    .personality, .email
+      display: block
+
+.rent-me__relationships
+  ul
+    @extend .rent-icon-list
+    li i
+      @extend .fa-check
+      color: $brand-success
+    dl
+      dt
+        font-size: 150%
+      dd
+        @extend .rent-comment
+
+.rent-me__pay
+  i
+    @extend .fa
+    @extend .fa-credit-card
+    color: $brand-info
+  h3
+    color: $brand-info
+    small
+      color: $body-color
+
+  p
+    margin-bottom: .25rem
+  .additional
+    @extend .rent-comment
+    margin: 0
+.rent-me__activities
+  ul
+    @extend .rent-icon-list
+    dl
+      dt
+        i
+          @extend .fa
+          @extend .fa-li
+      dd
+        @extend .rent-comment
+.rent-me__details
+  ul
+    @extend .rent-icon-list
+.rent-apartment
+  @extend .row
+.rent__need
+  ul
+    @extend .rent-icon-list
+
+.b-header
+  .b-menu
+    .b-menu__item_rent
+      a
+        color: $alert-danger-text
+        font-weight: bold
