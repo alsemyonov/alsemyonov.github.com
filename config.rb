@@ -35,6 +35,7 @@ activate :ogp do |ogp|
   ogp.base_url = ENV['URL']
   ogp.blog = true
 end
+activate :sprockets
 activate :weby
 
 # require './helpers/coder_wall_helpers'

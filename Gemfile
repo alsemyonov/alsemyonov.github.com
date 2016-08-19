@@ -11,7 +11,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'rake'
 
 ## Core
-gem 'middleman', '~> 4.1.1'
+gem 'middleman', '~> 4.1.10'
 
 ## OGP
 gem 'middleman-ogp', git: 'https://github.com/alsemyonov/middleman-ogp', branch: :master
@@ -48,7 +48,7 @@ end
 
 ## Assets
 gem 'middleman-autoprefixer'
-gem 'middleman-sprockets', '~> 4.0.0.rc.1', git: 'https://github.com/middleman/middleman-sprockets.git'
+gem 'middleman-sprockets', '~> 4.0.0'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'font-awesome-sass'
 source 'https://rails-assets.org/' do
