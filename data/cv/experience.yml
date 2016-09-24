@@ -1,37 +1,5 @@
 ---
 - company:
-    name: Toptal
-    url: https://toptal.com/
-  id: 681367197
-  is_current: true
-  location:
-    country: {name: USA}
-    locality: {name: San Francisco}
-    name: San Francisco, USA
-  start_date: 2016-05-16
-  title: Code Pimp
-  responsibilities:
-  - Backend Development
-  - Code Pimping
-  skills: [Ruby on Rails, Ruby, PostgreSQL]
-- company:
-    name: Skuuper
-    url: https://skuuper.com/
-  id: 681367197
-  is_current: false
-  location:
-    country: {name: Estonia}
-    locality: {name: Tallinn}
-    name: Tallinn, Estonia
-  start_date: 2015-06-01
-  end_date: 2016-04-30
-  title: Software Engineer
-  responsibilities:
-  - System Architecture
-  - Backend Development
-  - Frontend Development
-  skills: [Ruby on Rails, Ruby, PostgreSQL, RabbitMQ, JSON API]
-- company:
     name: Cerebelo Ltd
     url: https://cerebelo.info/
   id: 262224210
@@ -55,6 +23,39 @@
   skills: [Ruby on Rails, RSpec, Resque, Linked Data, web services and APIs]
   title: Co-founder, Architect, Lead Developer
 - company:
+    name: Toptal
+    url: https://toptal.com/
+  id: 681367197
+  is_current: false
+  location:
+    country: {name: Россия}
+    locality: {name: Санкт-Петербург}
+    name: San Francisco, USA
+  start_date: 2016-05-16
+  end_date: 2016-09-30
+  title: Code Pimp
+  responsibilities:
+  - Backend Development
+  - Code Pimping
+  skills: [Ruby on Rails, Ruby, PostgreSQL]
+- company:
+    name: Skuuper
+    url: https://skuuper.com/
+  id: 681367197
+  is_current: false
+  location:
+    country: {name: Estonia}
+    locality: {name: Tallinn}
+    name: Tallinn, Estonia
+  start_date: 2015-06-01
+  end_date: 2016-04-30
+  title: Software Engineer
+  responsibilities:
+  - System Architecture
+  - Backend Development
+  - Frontend Development
+  skills: [Ruby on Rails, Ruby, PostgreSQL, RabbitMQ, JSON API]
+- company:
     name: AutoGrid Systems
     url: http://www.auto-grid.com/
   location:
@@ -77,8 +78,8 @@
     country:
       name: Россия
     locality:
-      name: Kazan
-    name: Kazan, Россия
+      name: Казань
+    name: Казань, Россия
   title: Technical Lead
   summary: Worked for AutoGrid Systems
   responsibilities:

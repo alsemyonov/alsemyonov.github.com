@@ -1,5 +1,7 @@
-article.b-article-excerpt.h-entry
-  h2.b-article-excerpt__title: a.u-url.p-name%canonical href=url_for(article) = article.title
+article.b-article-excerpt.h-entry class=('b-article-excerpt_draft' unless article.published?)
+  h2.b-article-excerpt__title
+    i.b-article-status
+    a.u-url.p-name%canonical href=url_for(article) = article.title
   .p-content = article.body
   p.b-article-excerpt__meta
     - if article.author

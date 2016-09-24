@@ -8,6 +8,12 @@
   color: #999
 .b-article-excerpt
   @extend .b-article
+.b-article-excerpt_draft
+  color: $text-muted
+  .b-article-status
+    @extend .pull-left
+    @extend .fa
+    @extend .fa-pencil
 .b-article-excerpt__title
   @extend .b-article__title
 .b-article-excerpt__meta
