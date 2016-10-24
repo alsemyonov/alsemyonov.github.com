@@ -1,7 +1,7 @@
 # Site settings
-host: al.semyonov.us
+host: alex.semyonov.us
 scheme: https
-url: https://al.semyonov.us # the base hostname & protocol for your site
+url: https://alex.semyonov.us # the base hostname & protocol for your site
 baseurl: ''
 title: Здесь был Алекс
 description: > # this means to ignore newlines until unindent

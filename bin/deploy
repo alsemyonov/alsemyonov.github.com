@@ -3,4 +3,4 @@ set -euo pipefail
 IFS=$'\n\t'
 
 ./bin/middleman build -e production
-rsync -r ./build/ alsemyonov@cerebelo.info:/w/al.semyonov.us/current/public/
+rsync -r ./build/ alsemyonov@cerebelo.info:/w/alex.semyonov.us/current/public/

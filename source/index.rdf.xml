@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://al.semyonov.us/owl#"
-     xml:base="https://al.semyonov.us/owl"
+<rdf:RDF xmlns="https://alex.semyonov.us/owl#"
+     xml:base="https://alex.semyonov.us/owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,7 +12,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <owl:Ontology rdf:about="https://al.semyonov.us/owl">
+    <owl:Ontology rdf:about="https://alex.semyonov.us/owl">
         <owl:imports rdf:resource="http://topbraid.org/schema/"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
     </owl:Ontology>
@@ -143,17 +143,17 @@
     
 
 
-    <!-- https://al.semyonov.us/#I -->
+    <!-- https://alex.semyonov.us/#I -->
 
-    <owl:NamedIndividual rdf:about="https://al.semyonov.us/#I">
+    <owl:NamedIndividual rdf:about="https://alex.semyonov.us/#I">
         <rdf:type rdf:resource="http://schema.org/Person"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://al.semyonov.us/blog/ -->
+    <!-- https://alex.semyonov.us/blog/ -->
 
-    <rdf:Description rdf:about="https://al.semyonov.us/blog/">
+    <rdf:Description rdf:about="https://alex.semyonov.us/blog/">
         <ya:creationDate xml:lang="ru">2008-09-02T03:03</ya:creationDate>
         <dc:title xml:lang="ru">Блог разработчика веба</dc:title>
     </rdf:Description>
@@ -170,8 +170,8 @@
         <ya:middleName xml:lang="ru">Андреевич</ya:middleName>
         <foaf:dateOfBirth xml:lang="ru">1988-06-03</foaf:dateOfBirth>
         <foaf:gender xml:lang="ru">male</foaf:gender>
-        <foaf:homepage xml:lang="ru">https://al.semyonov.us/</foaf:homepage>
-        <foaf:img xml:lang="ru">https://al.semyonov.us/images/alsemyonov.jpg) %&gt;</foaf:img>
+        <foaf:homepage xml:lang="ru">https://alex.semyonov.us/</foaf:homepage>
+        <foaf:img xml:lang="ru">https://alex.semyonov.us/images/alsemyonov.jpg) %&gt;</foaf:img>
         <foaf:jabberID xml:lang="ru">rotuka@talkr.im</foaf:jabberID>
         <foaf:mbox xml:lang="ru">alex@semyonov.us</foaf:mbox>
         <foaf:msnChatID xml:lang="ru">alsemyonov@live.ru</foaf:msnChatID>
@@ -179,7 +179,7 @@
         <foaf:nick xml:lang="ru">alsemyonov</foaf:nick>
     </rdf:Description>
     <rdf:Description>
-        <foaf:weblog rdf:resource="https://al.semyonov.us/blog/"/>
+        <foaf:weblog rdf:resource="https://alex.semyonov.us/blog/"/>
     </rdf:Description>
     
 

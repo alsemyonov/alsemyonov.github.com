@@ -7,7 +7,7 @@ $(function () {
   hljs.initHighlightingOnLoad();
 
   var root = document.getElementsByClassName ? document.getElementsByClassName('b-contents__wrapper')[0] : document.body;
-  ya.yobject.load(root, { domainSearch: 'https://al.semyonov.us/search/?searchid=2252973&text={0}&web=0' });
+  ya.yobject.load(root, { domainSearch: 'https://alex.semyonov.us/search/?searchid=2252973&text={0}&web=0' });
 
   var yaBrowserUpdater = new ya.browserUpdater.init({
     "lang": "ru",

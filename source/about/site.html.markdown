@@ -82,10 +82,10 @@ It exposes several common data vocabularies:
 [sitemaps.org]: http://www.sitemaps.org/ "The Sitemaps protocol"
 [schema.org]: http://www.schema.org/ "schema.org microdata vocabulary"
 
-[root_url]: https://al.semyonov.us/ "The Main Page of Site"
-[robots.txt]: https://al.semyonov.us/robots.txt "The Robots Exclusion Protocol endpoint"
-[sitemap.xml]: https://al.semyonov.us/sitemap.xml "Sitemap Protocol endpoint"
-[humans.txt]: https://al.semyonov.us/humans.txt "The Humans.txt"
+[root_url]: https://alex.semyonov.us/ "The Main Page of Site"
+[robots.txt]: https://alex.semyonov.us/robots.txt "The Robots Exclusion Protocol endpoint"
+[sitemap.xml]: https://alex.semyonov.us/sitemap.xml "Sitemap Protocol endpoint"
+[humans.txt]: https://alex.semyonov.us/humans.txt "The Humans.txt"
 
 *[OGP]: The Open Graph protocol
 *[YAML]: YAML Ain't Markup Language

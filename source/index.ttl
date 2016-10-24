@@ -7,4 +7,4 @@
 <#me> a foaf:Person ;
    foaf:name "Alex Semyonov" ;
    foaf:knows <https://example.edu/p/Alice#MSc> ;
-   foaf:img <https://al.semyonov.us/images/alsemyonov.jpg> .
+   foaf:img <https://alex.semyonov.us/images/alsemyonov.jpg> .
