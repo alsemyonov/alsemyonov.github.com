@@ -44,3 +44,24 @@ module I18n
 
   module_function :language_territory
 end
+
+require 'middleman-deploy/strategies/git/base'
+module Middleman
+  module Deploy
+    module Strategies
+      module Git
+        class Base
+          protected
+
+          def add_signature_to_commit_message(base_message)
+            signature = "#{Middleman::Deploy::PACKAGE} #{Middleman::Deploy::VERSION}"
+            time      = "#{Time.now.utc}"
+
+            "#{base_message} at #{time} by #{signature} [skip ci]"
+          end
+        end
+      end
+    end
+  end
+end
+
