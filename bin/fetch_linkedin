@@ -9,7 +9,7 @@ require 'pathname'
 require 'active_support'
 require 'active_support/core_ext'
 
-Dotenv.load('.env')
+Dotenv.load('.env') if File.exist?('.env')
 
 ROOT = Pathname.new(File.expand_path('../..', __FILE__))
 EXPERIENCE_FILE = ROOT.join('data/cv/experience.yml')

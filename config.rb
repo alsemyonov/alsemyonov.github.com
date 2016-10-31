@@ -7,7 +7,7 @@ require 'bundler/setup'
 Bundler.require(:default)
 
 require 'dotenv'
-Dotenv.load!('.env')
+Dotenv.load!('.env') if File.exist?('.env')
 
 require 'active_support'
 require './config/initializers/patches'
