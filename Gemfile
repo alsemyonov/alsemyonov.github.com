@@ -28,6 +28,9 @@ gem 'middleman-livereload'
 # Post-process
 gem 'middleman-minify-html'
 
+# Deployment
+gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy.git', branch: :master
+
 # General
 gem 'activesupport'
 gem 'russian'

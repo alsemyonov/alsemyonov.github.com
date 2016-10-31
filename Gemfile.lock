@@ -15,6 +15,16 @@ GIT
       middleman-core (~> 4.1.7)
       redcarpet (~> 3.3.4)
 
+GIT
+  remote: https://github.com/middleman-contrib/middleman-deploy.git
+  revision: 243ab38b08896cd5a37d6845a01a5761b934a898
+  branch: master
+  specs:
+    middleman-deploy (2.0.0.pre.alpha)
+      middleman-core (>= 3.2)
+      net-sftp
+      ptools
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -150,6 +160,9 @@ GEM
     multi_json (1.12.1)
     multi_test (0.1.2)
     multipart-post (2.0.0)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (3.2.0)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -168,6 +181,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    ptools (1.3.3)
     rack (1.6.4)
     rack-livereload (0.3.16)
       rack
@@ -233,6 +247,7 @@ DEPENDENCIES
   middleman (~> 4.1.10)
   middleman-autoprefixer
   middleman-blog
+  middleman-deploy!
   middleman-livereload
   middleman-minify-html
   middleman-ogp!
@@ -254,4 +269,4 @@ DEPENDENCIES
   weby!
 
 BUNDLED WITH
-   1.12.5
+   1.13.5
