@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Здесь был Алекс</title>
+  <subtitle>Это личный сайт Алекса (Александра Семёнова). Я программирую, пишу статьи, организую мероприятия. Всё, что опубликовано на этом сайте, является моим личным мнением и соответствует я-манифесту.
+</subtitle>
+  <link href="https://alex.semyonov.us/" rel="alternate" type="text/html"/>
+  <link href="https://alex.semyonov.us/index.atom" rel="self" type="application/atom+xml"/>
+  <link href="https://alex.semyonov.us/index.rss" rel="alternate" type="application/rss+xml"/>
+  <updated>2015-12-19T21:00:00+00:00</updated>
+  <generator>Middleman v4.1.10</generator>
+  <id>https://alex.semyonov.us/</id>
+  <author>
+    <name>Алекс Семёнов</name>
+    <email>alex@semyonov.us</email>
+  </author>
+  <entry>
+    <id>https://alex.semyonov.us/2015/12/20/manifest.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2015/12/20/manifest.html" type="text/html"/>
+    <published>2015-12-19T21:00:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Я-манифест</title>
+    <summary type="html">&lt;p&gt;Последние два года я всё чаще слышу, что следует использовать «&lt;em&gt;я-высказывания&lt;/em&gt;» для упрощения коммуникации и снижения конфликтности ситуации. На мой субъективный взгляд, это — довольно успешный приём, применение которого действительно позволяет &lt;em&gt;нек...&lt;/em&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Последние два года я всё чаще слышу, что следует использовать «&lt;em&gt;я-высказывания&lt;/em&gt;» для упрощения коммуникации и снижения конфликтности ситуации. На мой субъективный взгляд, это — довольно успешный приём, применение которого действительно позволяет &lt;em&gt;некоторым людям&lt;/em&gt; воспринимать информацию &lt;em&gt;проще и приемлемее&lt;/em&gt;. Однако, с моей точки зрения, этот приём так же сильно &lt;em&gt;усложняет жизнь и коммуникацию&lt;/em&gt; той стороны, которая хочет выразить свои чувства и эмоции, а так же &lt;em&gt;вместо конкретной проблемы&lt;/em&gt; выделяет некую &lt;em&gt;абстрактную&lt;/em&gt; проблему, которую собеседнику &lt;em&gt;проще воспринять и/или проигнорировать&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Я понимаю, что услышать о чужой (моей) проблеме гораздо проще, чем услышать открытое выражение моих эмоций. Некоторым людям гораздо проще воспринять, что у меня есть проблемы, связанные с &lt;em&gt;(дальше можно просто опустить, потому что человек, слышащий о моей проблеме готов, возможно, пожалеть меня, но не очень готов воспринять ту информацию, которую я пытаюсь донести)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Я считаю, что «&lt;em&gt;я-высказывания&lt;/em&gt;» не только усложняют коммуникацию, но и делают её более запутанной, более некомфортной для меня, желающего выразить собственное мнение, более сложной для восприятия моим собеседником (потому что вместо конкретной эмоции мне приходится превращать её в нечто абстрактное, удобное и комфортное для восприятия).&lt;/p&gt;
+
+&lt;p&gt;Отныне и до тех пор, пока я прямо не заявлю иное, я заявляю, что:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;всё, произносимое мною, является выражением моего личного субъективного мнения, основанного на моём личном опыте и моих личных эмоциях&lt;/strong&gt;;&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;всё, что я произношу вслух, пишу в личной переписке или доношу иными способами передачи информации, является исключительно моим личным субъективным мнением&lt;/strong&gt;;&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;в случае необходимости высказаться от лица некоей группы&lt;/strong&gt; (будь то группа людей, находящихся рядом и участвующих в беседе, или организации, представителем которой я являюсь, или более общей группы, включающей в себя некоторое неопределённое количество людей)&lt;strong&gt;, я обязан уточнить отдельно, от лица какой конкретно группы я пытаюсь сейчас говорить&lt;/strong&gt; (напр. «как сотрудник ООО „Рога и Копыта“», «как мужчина», «как участник движения „за право на молодость“», «как гражданин Российской Федерации»);&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;в случае необходимости апеллировать к какому-то конкретному своду правил и или законов, я также обязан уточнить отдельно, на что я ссылаюсь&lt;/strong&gt; (напр. «с точки зрения уголовного кодекса Российской Федерации», «исходя из Международной Классификации Болезней 10-го пересмотра»)&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;В случае, когда я заявляю что-либо, не указывая свою принадлежность к группе и санкционированное представительство этой группы, либо не ссылаясь на конкретный свод законов или правил, я прошу &lt;strong&gt;считать все мои высказывания моим личным субъективным мнением&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Я приведу конкретные примеры из личной практики:&lt;/p&gt;
+
+&lt;p&gt;Если я говорю:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;«&lt;em&gt;ты неправ&lt;/em&gt;», то любителей «&lt;em&gt;я-высказываний&lt;/em&gt;» я прошу воспринимать это выражение как «&lt;em&gt;мне кажется неверным высказанное тобой мнение&lt;/em&gt;»;
+&lt;/li&gt;&lt;li&gt;«&lt;em&gt;ты поступил неправильно&lt;/em&gt;» — «&lt;em&gt;мне кажется, что поступать подобным образом неправильно&lt;/em&gt;»;
+&lt;/li&gt;&lt;li&gt;«&lt;em&gt;ты делаешь мне неприятно&lt;/em&gt;» — «&lt;em&gt;мне неприятно, когда люди поступают со мной подобным образом&lt;/em&gt;»;
+&lt;/li&gt;&lt;li&gt;«&lt;em&gt;ты постоянно не слушаешь меня&lt;/em&gt;» — «&lt;em&gt;я испытываю сильный дискомфорт от того, что ощущаю, что моя речь постоянно не воспринимается собеседником&lt;/em&gt;».
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Сравните, пожалуйста фразы слева и справа. Я слышал определение «&lt;em&gt;я-высказываний&lt;/em&gt;», как «&lt;em&gt;открытого выражения эмоций&lt;/em&gt;», но по факту я вижу, что то, что ощущается — &lt;strong&gt;то, что хочется высказать открыто&lt;/strong&gt; — приходится завуалировать в формулу, которая позволяет моему собеседнику воспринять информацию, которую я хочу открыто донести до него, &lt;strong&gt;говоря от первого лица и выражая моё личное мнение&lt;/strong&gt;, в &lt;em&gt;удобной, комфортной, смягчённой и обобщённой&lt;/em&gt; форме. То есть &lt;strong&gt;вместо открытого выражения эмоций&lt;/strong&gt;, я должен &lt;em&gt;использовать специальную формулу&lt;/em&gt;, позволяющую моему собеседнику воспринять это сообщение:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;как &lt;strong&gt;не относящееся к нему лично&lt;/strong&gt;, хотя моя эмоция вызвана &lt;strong&gt;конкретно этим собеседником&lt;/strong&gt;,
+&lt;/li&gt;&lt;li&gt;как нечто &lt;strong&gt;более мягкое&lt;/strong&gt;, чем я испытываю, хотя я испытываю &lt;strong&gt;ровно то, что говорю&lt;/strong&gt;,
+&lt;/li&gt;&lt;li&gt;как нечто, относящееся к &lt;strong&gt;широкому кругу людей&lt;/strong&gt;, хотя эта эмоция вызвана &lt;strong&gt;конкретно этим человеком&lt;/strong&gt;, а в случае общения с другим собеседником я могу испытывать совсем другие эмоции,
+&lt;/li&gt;&lt;li&gt;как &lt;strong&gt;нечто абстрактное&lt;/strong&gt;, хотя эта эмоция вызвана &lt;strong&gt;конкретными действиями&lt;/strong&gt; моего конкретного собеседника.
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Поэтому отныне и впредь, пока не сказано иное, &lt;strong&gt;я буду выражать свои эмоции так, как я их чувствую&lt;/strong&gt;, а не так, как будет проще воспринять моему собеседнику. И это будет &lt;strong&gt;открытое выражение моих личных субъективных эмоций&lt;/strong&gt;, а не &lt;em&gt;завуалированная и усложнённая по определённой формуле попытка показать что-то неконкретное, что, якобы, может быть вызвано кем угодно при общении со мной&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Всё вышесказанное является &lt;strong&gt;моим личным субъективным мнением&lt;/strong&gt;. Я прошу воспринимать все мои последующие высказывания &lt;em&gt;в соответствии с этим манифестом&lt;/em&gt;, который я обозначу как «&lt;strong&gt;я-манифест&lt;/strong&gt;».&lt;/p&gt;
+</content>
+    <category term="kommunikatsiya" label="коммуникация" scheme="https://alex.semyonov.us/tags"/>
+    <category term="emotsii" label="эмоции" scheme="https://alex.semyonov.us/tags"/>
+    <category term="psihologicheskie-gruppy" label="психологические группы" scheme="https://alex.semyonov.us/tags"/>
+    <category term="psihologicheskie-priyomy" label="психологические приёмы" scheme="https://alex.semyonov.us/tags"/>
+    <category term="activism" label="activism" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/11/25/artlebedev-typograf-ruby-on-rails.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/11/25/artlebedev-typograf-ruby-on-rails.html" type="text/html"/>
+    <published>2009-11-25T05:08:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Ставим рубиновый типограф на Рельсы</title>
+    <summary type="html">&lt;p&gt;В продолжение &lt;a href="../../24/artlebedev-typograf-ruby"&gt;вчерашней темы&lt;/a&gt;, добавил простой способ типографить избранные поля в модели ActiveRecord.&lt;/p&gt;
+
+&lt;p&gt;Достаточно написать в нужной модели примерно следующее:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Article &amp;lt; ActiveRecord::Base
+  typograf :title, use_p: false, use_br: false
+  typograf...&lt;/code&gt;&lt;/pre&gt;</summary>
+    <content type="html">&lt;p&gt;В продолжение &lt;a href="../../24/artlebedev-typograf-ruby"&gt;вчерашней темы&lt;/a&gt;, добавил простой способ типографить избранные поля в модели ActiveRecord.&lt;/p&gt;
+
+&lt;p&gt;Достаточно написать в нужной модели примерно следующее:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Article &amp;lt; ActiveRecord::Base
+  typograf :title, use_p: false, use_br: false
+  typograf :content, :teaser
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;И тогда каждый раз перед сохранением (конкретнее, перед проверкой правильности полей) будет проходить типографирование этих полей, посредством Типографа студии Артемия Лебедева.&lt;/p&gt;
+
+&lt;p&gt;Поддерживается &lt;a href="http://www.rubydoc.info/gems/als_typograf"&gt;несколько возможных синтаксисов&lt;/a&gt; объявления моделей для типографирования:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;для одного конкретного поля:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;typograf :content
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;можно указать параметры для типографирования этого поля:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;typograf :content, entity_type: AlsTypograf::NO_ENTITIES
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;для нескольких полей сразу (тоже с возможностью объявить параметры типографирования, общие для всех объявленных полей):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;typograf :skills, :achievements, :additional,
+         use_br: false,
+         use_p: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;для нескольких полей сразу (но с объявлением параметров для каждого конкретного поля):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;typograf foo: {entity_type: AlsTypograf::HTML_ENTITIES},
+         bar: {use_p: true, use_br: false},
+         baz: {max_nobr: 5},
+         some_other_field_name: {}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Все эти варианты могут комбинироваться друг с другом внутри одной модели произвольное количество раз (но если параметры типографирования для одного и того же поля были указаны в вызовах несколько раз, будут применяться только последние).&lt;/p&gt;
+</content>
+    <category term="ruby" label="Ruby" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ruby-on-rails" label="Ruby on Rails" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/tags"/>
+    <category term="studiya-artemiya-lebedeva" label="Студия Артемия Лебедева" scheme="https://alex.semyonov.us/tags"/>
+    <category term="tipografika" label="типографика" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/11/24/artlebedev-typograf-ruby.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/11/24/artlebedev-typograf-ruby.html" type="text/html"/>
+    <published>2009-11-24T03:06:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Типограф студии Артемия Лебедева с отблеском Рубина</title>
+    <summary type="html">&lt;p&gt;Понадобилось мне &lt;a href="http://www.artlebedev.ru/kovodstvo/sections/62/"&gt;типографировать тексты&lt;/a&gt;, добавляемые в админке одного из приложений. Поиск в интернете ни одного годного типографа на Ruby не показал.
+Зато, я вспомнил, что студия Артемия Лебедева позволяет типографировать тексты с помощью их &lt;a href="http://www.artlebedev.ru/tools/typograf/webservice/"&gt;веб-...&lt;/a&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Понадобилось мне &lt;a href="http://www.artlebedev.ru/kovodstvo/sections/62/"&gt;типографировать тексты&lt;/a&gt;, добавляемые в админке одного из приложений. Поиск в интернете ни одного годного типографа на Ruby не показал.
+Зато, я вспомнил, что студия Артемия Лебедева позволяет типографировать тексты с помощью их &lt;a href="http://www.artlebedev.ru/tools/typograf/webservice/"&gt;веб-сервиса&lt;/a&gt;. Поэтому, я написал &lt;a href="https://github.com/alsemyonov/als_typograf" title="AlsTypograf"&gt;маленькую обёртку к их сервису&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Пользоваться очень просто.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Установите:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;gem install als_typograf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;В коде приложения используйте метод &lt;code&gt;process&lt;/code&gt; модуля &lt;code&gt;AlsTypograf&lt;/code&gt; следующим образом:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;require &amp;#39;als_typograf&amp;#39;
+AlsTypograf.process(&amp;#39;- Это что, &amp;quot;Типограф&amp;quot;?&amp;#39;) # &amp;quot;&amp;lt;p&amp;gt;— Это что, «Типограф»?&amp;lt;/p&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Обёртка поддерживает несколько опций, предоставляемых веб-сервисом Студии, их можно подставлять как к конкретному запросу:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;AlsTypograf.process(&amp;#39;- Это что, &amp;quot;Типограф&amp;quot;?&amp;#39;, use_p: false, use_br: true)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;так и выставлять глобально, для всех запросов на типографирование:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;AlsTypograf.encoding = 'CP1251' # По-умолчанию используется кодировка UTF-8
+AlsTypograf.html_entities! # Заставляет использовать сущности HTML, такие как: &amp;amp;nbsp;, &amp;amp;mdash; &amp;amp;hellip;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href="http://www.rubydoc.info/github/alsemyonov/als_typograf"&gt;Документация для рубинового типографа&lt;/a&gt; хранится (и автоматически обновляется при любых изменениях) на сервисе &lt;a href="http://www.rubydoc.info/"&gt;rubydoc.info&lt;/a&gt;, который весьма рекомендую всем разработчикам.&lt;/p&gt;
+</content>
+    <category term="ruby" label="Ruby" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/tags"/>
+    <category term="studiya-artemiya-lebedeva" label="Студия Артемия Лебедева" scheme="https://alex.semyonov.us/tags"/>
+    <category term="tipografika" label="типографика" scheme="https://alex.semyonov.us/tags"/>
+    <category term="udobstvo" label="удобство" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/09/30/ruby-metaprogramming.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/09/30/ruby-metaprogramming.html" type="text/html"/>
+    <published>2009-09-30T09:01:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Метапрограммирование в Ruby</title>
+    <summary type="html">&lt;h2&gt;Что такое метапрограммирование?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Metaprogramming is the writing of computer programs that write or manipulate other programs (or themselves) as their data, or that do part of the work at compile time that would otherwise be done at runtime. In many...&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    <content type="html">&lt;h2&gt;Что такое метапрограммирование?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Metaprogramming is the writing of computer programs that write or manipulate other programs (or themselves) as their data, or that do part of the work at compile time that would otherwise be done at runtime. In many cases, this allows programmers to get more done in the same amount of time as they would take to write all the code manually, or it gives programs greater flexibility to efficiently handle new situations without recompilation. (via Wikipedia)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Это руководство перечисляет все стандартные методы Ruby, используемые для метапрограммирования, а так же приводит примеры их обычного употребления. В конце мы получим пример использования метапрограммирования для динамического создания классов, соответствующих таблицам в БД, включающих методы, соответствующие полям таблицы, на манер &lt;code&gt;ActiveRecord&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Инструментарий метапрограммиста&lt;/h2&gt;
+
+&lt;p&gt;Ruby содержит множество методов для динамического создания кода. Ознакомимся с ними:&lt;/p&gt;
+
+&lt;h3&gt;Получение, установка и удаление переменных&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#instance_variable_get-instance_method"&gt;&lt;code&gt;Object#instance_variable_get&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#instance_variable_set-instance_method"&gt;&lt;code&gt;Object#instance_variable_set&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#remove_instance_variable-instance_method"&gt;&lt;code&gt;Object#remove_instance_variable&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#class_variable_get-instance_method"&gt;&lt;code&gt;Module#class_variable_get&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#class_variable_set-instance_method"&gt;&lt;code&gt;Module#class_variable_set&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#remove_class_variable-instance_method"&gt;&lt;code&gt;Module#remove_class_variable&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Получение, установка и удаление констант (и классов)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#const_get-instance_method"&gt;&lt;code&gt;Module#const_get&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#const_set-instance_method"&gt;&lt;code&gt;Module#const_set&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#remove_const-instance_method"&gt;&lt;code&gt;Module#remove_const&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Объявление и удаление методов&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#define_method-instance_method"&gt;&lt;code&gt;Module#define_method&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#remove_method-instance_method"&gt;&lt;code&gt;Module#remove_method&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Выполнение кода, построенного «на лету»&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#send-instance_method"&gt;&lt;code&gt;Object#send&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#instance_eval-instance_method"&gt;&lt;code&gt;Object#instance_eval&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#module_eval-instance_method"&gt;&lt;code&gt;Module#module_eval&lt;/code&gt;&lt;/a&gt; (синоним &lt;a href="http://www.rubydoc.info/stdlib/core/Module#class_eval-instance_method"&gt;&lt;code&gt;Module#class_eval&lt;/code&gt;&lt;/a&gt;)
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Kernel#eval-instance_method"&gt;&lt;code&gt;Kernel#eval&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Kernel#method_missing-instance_method"&gt;&lt;code&gt;Kernel#method_missing&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h3&gt;Методы интроспекции (рефлексии, отражения)&lt;/h3&gt;
+
+&lt;p&gt;Интроспекция — важная часть метапрограммирования, позволяющая изучать объекты, получая их структуру и данные&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#class-instance_method"&gt;&lt;code&gt;Object#class&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#instance_variables-instance_method"&gt;&lt;code&gt;Object#instance_variables&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#methods-instance_method"&gt;&lt;code&gt;Object#methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#private_methods-instance_method"&gt;&lt;code&gt;Object#private_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#public_methods-instance_method"&gt;&lt;code&gt;Object#public_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Object#singleton_methods-instance_method"&gt;&lt;code&gt;Object#singleton_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#class_variables-instance_method"&gt;&lt;code&gt;Module#class_variables&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#constants-instance_method"&gt;&lt;code&gt;Module#constants&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#included_modules-instance_method"&gt;&lt;code&gt;Module#included_modules&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#instance_methods-instance_method"&gt;&lt;code&gt;Module#instance_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#name-instance_method"&gt;&lt;code&gt;Module#name&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#private_instance_methods-instance_method"&gt;&lt;code&gt;Module#private_instance_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#protected_instance_methods-instance_method"&gt;&lt;code&gt;Module#protected_instance_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://www.rubydoc.info/stdlib/core/Module#public_instance_methods-instance_method"&gt;&lt;code&gt;Module#public_instance_methods&lt;/code&gt;&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;h2&gt;Выполнение кода в строках и блоках&lt;/h2&gt;
+
+&lt;p&gt;Вы могли слышать о методе eval, позволяющем выполнять строку или блок как код на Ruby. Когда нужно выполнить код внутри контекста какого-то объекта, можно использовать методы &lt;code&gt;instance_eval&lt;/code&gt; и &lt;code&gt;module_eval&lt;/code&gt; (синоним &lt;code&gt;class_eval&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Метод &lt;code&gt;instance_eval&lt;/code&gt; выполняет код в контексте существующего объекта.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;[1, 2, 3, 4].instance_eval(&amp;#39;size&amp;#39;) # вернёт 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В примере мы передали методу &lt;code&gt;instance_eval&lt;/code&gt; строку &lt;code&gt;&amp;#39;size&amp;#39;&lt;/code&gt;, что интерпретировалось как получение метода &lt;code&gt;:size&lt;/code&gt; массивом. Это эквивалентно следующему вызову:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;[1, 2, 3, 4].size
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Кроме того, вы можете передавать методу &lt;code&gt;instance_eval&lt;/code&gt; блок.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;# Получаем среднее арифметическое чисел в массиве
+[1, 2, 3, 4].instance_eval { inject(:+) / size.to_f } # вернёт 2.5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Методы &lt;code&gt;inject(:+)&lt;/code&gt; и &lt;code&gt;size.to_f&lt;/code&gt; вроде бы «висят в воздухе» и не относятся ни к какому объекту, однако они выполняются в блоке, в контексте объекта, поэтому они интерпретируются как &lt;code&gt;self.inject(:+)&lt;/code&gt; и &lt;code&gt;self.size.to_f&lt;/code&gt; где &lt;code&gt;self&lt;/code&gt; — наш массив.&lt;/p&gt;
+
+&lt;p&gt;В то время как &lt;code&gt;instance_eval&lt;/code&gt; выполняет код в контексте объекта, метод &lt;code&gt;module_eval&lt;/code&gt; выполняет код в контексте модуля или класса.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;Fixnum.module_eval do
+  def to_word
+    if (0..3).include? self
+      [&amp;#39;ничего&amp;#39;, &amp;#39;один&amp;#39;, &amp;#39;пара&amp;#39;, &amp;#39;несколько&amp;#39;][self]
+    elsif self &amp;gt; 3
+      &amp;#39;много&amp;#39;
+    elsif self &amp;lt; 0
+      &amp;#39;отрицательно&amp;#39;
+    end
+  end
+end
+1.to_word # вернёт &amp;#39;один&amp;#39;
+2.to_word # вернёт &amp;#39;пара&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мы видим, как &lt;code&gt;module_eval&lt;/code&gt; заново открывает существующий класс &lt;code&gt;Fixnum&lt;/code&gt; и добавляет в него новый метод. Само по себе это не очень интересно, и мы можем сделать это иначе:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Fixnum
+  def to_word
+    # ...
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Лучшее применение этому методу мы найдём при динамическом генерировании кода. Добавим метод &lt;code&gt;create_multiplier&lt;/code&gt;, который позволит динамически генерировать методы-умножители с теми именами, которые вы захотите.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Fixnum
+  def self.create_multiplier(name, num)
+    module_eval &amp;quot;def #{name}; self * #{num}; end&amp;quot;
+  end
+end
+
+Fixnum.create_multiplier(&amp;#39;multiply_by_pi&amp;#39;, Math::PI)
+4.multiply_by_pi # вернёт 12.5663706143592 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Пример выше создаёт метод класса (или  «метод-синглетон») &lt;code&gt;create_multiplier&lt;/code&gt;, с помощью которого мы сможем создавать методы, применимые к любому объекту класса &lt;code&gt;Fixnum&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Использование &lt;code&gt;send&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Метод &lt;code&gt;send&lt;/code&gt; работает почти как &lt;code&gt;instance_eval&lt;/code&gt;, поскольку вызывает метод объекта, переданный в качестве параметра. Он удобен, когда мы динамически получаем имя необходимого метода в виде строки или символа.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;method_name = &amp;#39;size&amp;#39;
+[1, 2, 3, 4].send(method_name) # вернёт 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мы можем передать имя метода в виде строки &lt;code&gt;&amp;#39;size&amp;#39;&lt;/code&gt; или символа &lt;code&gt;:size&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Полезное свойство метода &lt;code&gt;send&lt;/code&gt; — возможность вызывать приватные методы, как например метод &lt;a href="http://www.rubydoc.info/stdlib/core/Module#define_method-instance_method"&gt;&lt;code&gt;Module#define_method&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;Array.define_method(:ducky) { puts &amp;#39;ducky&amp;#39; }
+# NoMethodError: private method `define_method&amp;#39; called for Array:Class
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Используя &lt;code&gt;send&lt;/code&gt; получаем:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;Array.send(:define_method, :ducky) { puts &amp;#39;ducky&amp;#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Создание методов&lt;/h2&gt;
+
+&lt;p&gt;Как мы видим в примере выше, мы можем создавать методы классов с помощью &lt;code&gt;define_method&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Array
+  define_method(:multiply) do |arg|
+    collect { |i| i * arg }
+  end
+end
+
+[1, 2, 3, 4].multiply(16) # returns [16, 32, 48, 64]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;method_missing&lt;/h2&gt;
+
+&lt;p&gt;Метод &lt;code&gt;method_missing&lt;/code&gt;, объявленный в классе, вызывается в случае получения экземпляром класса несуществующего метода. Это может быть использовано для выполнения этих отсутвующих методов, вместо отправки ошибки &lt;code&gt;NoMethodError&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Fixnum
+  def method_missing(meth)
+    method_name = meth.id2name
+    if method_name =~ /^multiply_by_(\d+)$/
+      self * $1.to_i
+    else
+      raise NoMethodError, &amp;quot;undefined method `#{method_name}&amp;#39; for #{self}:#{self.class}&amp;quot;
+    end
+  end
+end
+
+16.multiply_by_64 # вернёт 1024
+16.multiply_by_x # ошибка NoMethodError
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Как работает метод &lt;code&gt;attr_accessor&lt;/code&gt;?&lt;/h2&gt;
+
+&lt;p&gt;Многие из нас используют &lt;code&gt;attr_accessor&lt;/code&gt; в классах, однако не все понимают, какую работу он за нас выполняет. &lt;code&gt;attr_accessor&lt;/code&gt; динамически генерирует &lt;em&gt;getter&lt;/em&gt; и &lt;em&gt;setter&lt;/em&gt; для переменной экземпляра. Давайте посмотрим на примере.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Person
+  attr_accessor :first_name
+end
+
+john = Person.new
+john.first_name = &amp;#39;John&amp;#39;
+john.instance_variables # вернёт [&amp;quot;@first_name&amp;quot;]
+john.methods.grep /first_name/ # вернёт [&amp;quot;first_name&amp;quot;, &amp;quot;first_name=&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Также мы видим,  что &lt;code&gt;attr_accessor&lt;/code&gt; создаёт переменную экземпляра &lt;code&gt;@first_name&lt;/code&gt; и два метода: &lt;em&gt;getter&lt;/em&gt; &lt;code&gt;first_name&lt;/code&gt;и &lt;em&gt;setter&lt;/em&gt; &lt;code&gt;first_name=&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Реализация&lt;/h3&gt;
+
+&lt;p&gt;Все классы наследуют методы &lt;code&gt;Module&lt;/code&gt;, поэтому мы поместим методы сюда.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;class Module
+  # First using define_method
+  def attr1(symbol)
+    instance_var = (&amp;#39;@&amp;#39; + symbol.to_s)
+    define_method(symbol) { instance_variable_get(instance_var) }
+    define_method(symbol.to_s + &amp;quot;=&amp;quot;) { |val| instance_variable_set(instance_var, val) }
+  end
+
+  # Second using module_eval
+  def attr2(symbol)
+    module_eval &amp;quot;def #{symbol}; @#{symbol}; end&amp;quot;
+    module_eval &amp;quot;def #{symbol}=(val); @#{symbol} = val; end&amp;quot;
+  end
+end
+
+class Person
+  attr1 :name
+  attr2 :phone
+end
+
+person = Person.new
+person.name = &amp;#39;John Smith&amp;#39;
+person.phone = &amp;#39;555-2344&amp;#39;
+person # returns
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;define_method&lt;/code&gt; и &lt;code&gt;module_eval&lt;/code&gt; оба вернут один и тот же результат.&lt;/p&gt;
+
+&lt;h2&gt;Пример использования: Active Record для бедных&lt;/h2&gt;
+
+&lt;p&gt;Те, кто знаком с Ruby on Rails, уже догадываются, как можно реализовать класс &lt;code&gt;ActiveRecord&lt;/code&gt;, который пройдётся по полям таблицы и добавит классу соответствующие методы &lt;em&gt;getter&lt;/em&gt; и &lt;em&gt;setter&lt;/em&gt; для полей таблицы.&lt;/p&gt;
+
+&lt;p&gt;Мы можем пойти дальше и динамически создать классы, соответствующие таблицам.&lt;/p&gt;
+
+&lt;p&gt;В этом примере мы создадим &lt;code&gt;ActiveRecord&lt;/code&gt; для бедных. Этот класс соединится с базой данных MySQL, создаст динамически классы, соответствующие каждой таблице, а так же наполнит эти классы методами &lt;em&gt;getter&lt;/em&gt; и &lt;em&gt;setter&lt;/em&gt;, соответсвующими полям таблицы.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;require &amp;#39;rubygems&amp;#39;
+require &amp;#39;mysql&amp;#39;
+
+class PoorMan
+  # сохраним список сгенерированных классов в переменной класса
+  class &amp;lt;&amp;lt; self; attr_reader :generated_classes; end
+  @generated_classes = []
+
+  def initialize(attributes = nil)
+    if attributes
+      attributes.each_pair do |key, value|
+        instance_variable_set(&amp;#39;@&amp;#39; + key, value)
+      end
+    end
+  end
+
+  def self.connect(host, user, password, database)
+    @@db = Mysql.new(host, user, password, database)
+
+    # пройдёмся по списку таблиц и создадим классы для них
+    @@db.list_tables.each do |table_name|
+      class_name = table_name.split(&amp;#39;_&amp;#39;).collect { |word| word.capitalize }.join
+
+      # создаём класс для таблицы, используя Module#const_set
+      @generated_classes &amp;lt;&amp;lt; klass = Object.const_set(class_name, Class.new(PoorMan))
+      klass.module_eval do
+        @@fields = []
+        @@table_name = table_name
+
+        def fields; @@fields; end
+      end
+
+      # пройдёмся по списку полей таблицы и создадим методы getter и setter для них
+      @@db.list_fields(table_name).fetch_fields.each do |field|
+        # добавляем getter и setter
+        klass.send :attr_accessor, field.name
+
+        # добавляем имя поля в список полей
+        klass.module_eval { @@fields &amp;lt;&amp;lt; field.name }
+      end
+    end
+  end
+
+  # получаем строку таблицы по идентификатору
+  def self.find(id)
+    result = @@db.query(&amp;quot;select * from #{@@table_name} where id = #{id} limit 1&amp;quot;)
+    attributes = result.fetch_hash
+    new(attributes) if attributes
+  end
+
+  # получаем все строки
+  def self.all
+    result = @@db.query(&amp;quot;select * from #{@@table_name}&amp;quot;)
+    found = []
+    while(attributes = result.fetch_hash) do
+      found &amp;lt;&amp;lt; new(attributes)
+    end
+    found
+  end
+end
+
+# соединяем класс PoorMan с базой данных, всё остальное он сделает самостоятельно
+PoorMan::connect(&amp;#39;host&amp;#39;, &amp;#39;user&amp;#39;, &amp;#39;password&amp;#39;, &amp;#39;database&amp;#39;)
+
+# печатаем список сгенерированных классов
+p PoorMan::generated_classes
+
+# получаем пользователя с идентификатором 1
+user = Users.find(1)
+
+# получаем всех пользователей
+Users.all
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Оригинал статьи: &lt;a href="http://weare.buildingsky.net/2009/08/25/rubys-metaprogramming-toolbox"&gt;Ruby’s metaprogramming toolbox&lt;/a&gt;, автор — Corban Brook&lt;/p&gt;
+
+&lt;p&gt;Некоторые примеры могут не работать на Ruby &amp;lt; 1.8.7&lt;/p&gt;
+</content>
+    <category term="ruby" label="Ruby" scheme="https://alex.semyonov.us/tags"/>
+    <category term="metaprogrammirovanie" label="Метапрограммирование" scheme="https://alex.semyonov.us/tags"/>
+    <category term="perevody" label="Переводы" scheme="https://alex.semyonov.us/tags"/>
+    <category term="programmirovanie" label="программирование" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/09/15/tinymce-integration-ruby-on-rails.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/09/15/tinymce-integration-ruby-on-rails.html" type="text/html"/>
+    <published>2009-09-15T16:08:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Интеграция WYSiWYG-редактора TinyMCE в рельсовые приложения</title>
+    <summary type="html">&lt;p&gt;Вчера закончил работу (ну, её было не очень много) по переделыванию &lt;a href="http://github.com/kete/tiny_mce" title="Плагин TinyMCE для Ruby on Rails"&gt;плагина TinyMCE для рельсов&lt;/a&gt; в &lt;a href="http://gemcutter.org/gems/tiny_mce" title="гем tiny_mce на GemCutter"&gt;полноценный gem&lt;/a&gt;. &lt;span style="background-color: #ffffff;"&gt;Теперь редактировать текстовые данные в рельсовых приложениях ещё проще.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Достаточно вставить в &lt;code&gt;environment.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;config.gem 'tiny_mce...&lt;/code&gt;&lt;/pre&gt;</summary>
+    <content type="html">&lt;p&gt;Вчера закончил работу (ну, её было не очень много) по переделыванию &lt;a href="http://github.com/kete/tiny_mce" title="Плагин TinyMCE для Ruby on Rails"&gt;плагина TinyMCE для рельсов&lt;/a&gt; в &lt;a href="http://gemcutter.org/gems/tiny_mce" title="гем tiny_mce на GemCutter"&gt;полноценный gem&lt;/a&gt;. &lt;span style="background-color: #ffffff;"&gt;Теперь редактировать текстовые данные в рельсовых приложениях ещё проще.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Достаточно вставить в &lt;code&gt;environment.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;config.gem &amp;#39;tiny_mce&amp;#39;, source: &amp;#39;http://gemcutter.org/&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В нужный &lt;em&gt;контроллер&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;uses_tiny_mce only: [:new, :create, :edit, :update]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В &lt;em&gt;обёртку&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;include_tiny_mce_if_needed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;А в &lt;em&gt;представлении&lt;/em&gt; указать у нужного поля текста класс &lt;code&gt;mceEditor&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt; form_for @page do |f|
+  f.text_area :content, class: &amp;#39;mceEditor&amp;#39;
+ end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;После этого остановите свой проект, наберите в командной строке &lt;code&gt;rake gems:install&lt;/code&gt;, запустите проект снова — файлы для TinyMCE автоматически установятся в нужное место. Если вы обновите гем (например, в связи с обновлением кода TinyMCE его авторами) — удалите &lt;code&gt;public/javascript/tiny_mce&lt;/code&gt;, перезапустите приложение и новые файлы лягут в нужное место.&lt;/p&gt;
+
+&lt;p&gt;Всё, теперь пользователи вашего сайта смогут вытворять всякие ужасы с текстом, а так же рвать вашу вёрстку и делать прочие непотребности. &lt;em&gt;Наслаждайтесь!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Ссылки проекта:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://github.com/krasivotokak/tiny_mce" title="tiny_mce на ГитХабе"&gt;Код&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href="http://rdoc.info/projects/krasivotokak/tiny_mce/" title="tiny_mce на RDoc"&gt;Документация&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+</content>
+    <category term="ruby" label="Ruby" scheme="https://alex.semyonov.us/tags"/>
+    <category term="rubygems" label="RubyGems" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ruby-on-rails" label="Ruby on Rails" scheme="https://alex.semyonov.us/tags"/>
+    <category term="tinymce" label="TinyMCE" scheme="https://alex.semyonov.us/tags"/>
+    <category term="wysiwyg" label="WYSIWYG" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/08/03/setup-py-uninstall.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/08/03/setup-py-uninstall.html" type="text/html"/>
+    <published>2009-08-03T17:09:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Удаление программ с помощью setup.py</title>
+    <summary type="html">&lt;p&gt;Некоторые программы написанные на Питоне (например, &lt;a href="https://fedorahosted.org/lekhonee/"&gt;Lekhonee&lt;/a&gt;) поставляются с файликом &lt;a title="The Setup Script" href="http://docs.python.org/distutils/setupscript.html"&gt;setup.py&lt;/a&gt;, с помощью которого довольно просто устанавливаются
+&lt;/p&gt;&lt;pre&gt;&lt;code class="bash"&gt;python setup.py build
+sudo python setup.py install&lt;/code&gt;&lt;/pre&gt;
+А вот удалить такую программу достаточно сложно, ...</summary>
+    <content type="html">&lt;p&gt;Некоторые программы написанные на Питоне (например, &lt;a href="https://fedorahosted.org/lekhonee/"&gt;Lekhonee&lt;/a&gt;) поставляются с файликом &lt;a title="The Setup Script" href="http://docs.python.org/distutils/setupscript.html"&gt;setup.py&lt;/a&gt;, с помощью которого довольно просто устанавливаются
+&lt;pre&gt;&lt;code class="bash"&gt;python setup.py build
+sudo python setup.py install&lt;/code&gt;&lt;/pre&gt;
+А вот удалить такую программу достаточно сложно, ибо команды &lt;code class="bash"&gt;sudo python setup.py uninstall&lt;/code&gt; нету. Ну, не предусмотрели его любители красивого кода на питоне. Красивое, ведь, лучше, чем некрасивое, ага? А код на Питоне, видимо, настолько красивый, что удалять его со своего компьютера — грех смертный.&lt;/p&gt;
+
+&lt;p&gt;Тем не менее, способ удаления таких программ есть, и он довольно прост:
+&lt;pre&gt;&lt;code class="bash"&gt;sudo python setup.py install --record files.txt
+cat files.txt | sudo xargs rm -rf
+&lt;/code&gt;&lt;/pre&gt;
+На самом деле, неприятно удивляет это питоновское стандартное средство установки программ. Но, оказывается, бывает и такое.
+&lt;h2&gt;А если подумать перед установкой…&lt;/h2&gt;
+…то можно использовать уже упоминавшийся в блоге checkinstall:
+&lt;pre&gt;&lt;code class="bash"&gt;sudo checkinstall python setup.py install&lt;/code&gt;&lt;/pre&gt;
+Тогда деинсталлировать это приложение можно будет как обычно, с помощью apt:
+&lt;pre&gt;&lt;code class="bash"&gt;sudo apt-get purge lekhonee&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</content>
+    <category term="build" label="build" scheme="https://alex.semyonov.us/tags"/>
+    <category term="checkinstall" label="checkinstall" scheme="https://alex.semyonov.us/tags"/>
+    <category term="install" label="install" scheme="https://alex.semyonov.us/tags"/>
+    <category term="python" label="Python" scheme="https://alex.semyonov.us/tags"/>
+    <category term="setup-py" label="setup.py" scheme="https://alex.semyonov.us/tags"/>
+    <category term="uninstall" label="uninstall" scheme="https://alex.semyonov.us/tags"/>
+    <category term="pamyatka" label="памятка" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/06/16/ubuntu-price.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/06/16/ubuntu-price.html" type="text/html"/>
+    <published>2009-06-16T00:04:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Сколько стоит Ubuntu?</title>
+    <summary type="html">&lt;p&gt;Да, я знаю что Ubuntu распространяется бесплатно. Сегодня меня заинтересовало другое.&lt;/p&gt;
+
+&lt;p&gt;Сколько стоила бы аналогичная система, построенная из платных аналогов.&lt;/p&gt;
+
+&lt;p&gt;Посмотрим, что мы получаем в комплекте с Ubuntu:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;операционную систему на базе ядра GNU...&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    <content type="html">&lt;p&gt;Да, я знаю что Ubuntu распространяется бесплатно. Сегодня меня заинтересовало другое.&lt;/p&gt;
+
+&lt;p&gt;Сколько стоила бы аналогичная система, построенная из платных аналогов.&lt;/p&gt;
+
+&lt;p&gt;Посмотрим, что мы получаем в комплекте с Ubuntu:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;операционную систему на базе ядра GNU/Linux;
+&lt;/li&gt;&lt;li&gt;приятную, расширяемую и настраиваемую графическую оболочку;
+&lt;/li&gt;&lt;li&gt;набор Офисных приложений:
+
+&lt;ul&gt;
+&lt;li&gt;редактор текстов (который в платных аналогах любят называть текстовым процессором);
+&lt;/li&gt;&lt;li&gt;приложение электронных таблиц;
+&lt;/li&gt;&lt;li&gt;редактор презентаций;
+&lt;/li&gt;&lt;li&gt;мощное приложение для ведения переписки, календаря и заметок + ещё одно, исключительно для заметок но более удобное;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;&lt;li&gt;два графических редактора: растровый и векторный;
+&lt;/li&gt;&lt;li&gt;кучу игрушек и прочих приятных мелочей.
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Внушительный список, не правда ли? Сколько вы готовы заплатить за такой набор? А теперь посчитаем, что нам предлагают производители коммерческого &lt;abbr title="Программное обеспечение"&gt;ПО&lt;/abbr&gt;:&lt;/p&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Тип &lt;abbr title="Программное обеспечение"&gt;ПО&lt;/abbr&gt;&lt;/th&gt;
+&lt;th&gt;Ubuntu&lt;/th&gt;
+&lt;th style="text-align: right"&gt;&lt;/th&gt;
+&lt;th&gt;Windows&lt;/th&gt;
+&lt;th style="text-align: right"&gt;&lt;/th&gt;
+&lt;th&gt;OS X&lt;/th&gt;
+&lt;th style="text-align: right"&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Ядро системы&lt;/td&gt;
+&lt;td&gt;GNU/Linux&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$0,00&lt;/td&gt;
+&lt;td&gt;Windows Vista Home Premium&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$239,95&lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;OS X 1.5.6&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$129,00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Офисный пакет&lt;/td&gt;
+&lt;td&gt;OpenOffice, Evolution или KOffice, Kontact&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$0,00&lt;/td&gt;
+&lt;td&gt;Office Home and Student 2007&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$149,95&lt;sup id="fnref2"&gt;&lt;a href="#fn2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;iWork 09&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$79,00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Растровый графический редактор&lt;/td&gt;
+&lt;td&gt;GIMP или Krita (из KOffice)&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$0,00&lt;/td&gt;
+&lt;td&gt;Adobe Photoshop CS4&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$699,00&lt;/td&gt;
+&lt;td&gt;Adobe Photoshop CS4&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$699,00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Векторный графический редактор&lt;/td&gt;
+&lt;td&gt;Draw (из OpenOffice), Inkscape или Karbon (из KOffice)&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$0,00&lt;/td&gt;
+&lt;td&gt;Adobe Illustrator CS4&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$599,00&lt;/td&gt;
+&lt;td&gt;Adobe Illustrator CS4&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$599,00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Итого:&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$0,00&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$1687,45&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style="text-align: right"&gt;$1506,00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;Берём среднее арифметическое от стоимости комплектов под Windows и OS X и получаем $1596,725.&lt;/p&gt;
+
+&lt;p&gt;Можно сколько угодно говорить о неточном соответствии возможностей тех или иных программ, представленных в сравнении, однако потребности большинства пользователей «ВКонтакте» и «Одноклассников» Ubuntu легко покрывает.&lt;/p&gt;
+
+&lt;p&gt;У меня нету лишних полутора тысяч долларов, которые я отдал бы за ту толику функциональности, которая не предоставлена бесплатными аналогами. А вы?&lt;/p&gt;
+
+&lt;div class="footnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id="fn1"&gt;
+&lt;p&gt;На русском сайте корпорации Microsoft найти цену на какие-либо продукты &lt;em&gt;нереально&lt;/em&gt;!&amp;nbsp;&lt;a href="#fnref1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn2"&gt;
+&lt;p&gt;См. &lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&amp;nbsp;&lt;a href="#fnref2" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/tags"/>
+    <category term="windows" label="Windows" scheme="https://alex.semyonov.us/tags"/>
+    <category term="os-x" label="OS X" scheme="https://alex.semyonov.us/tags"/>
+    <category term="openoffice" label="OpenOffice" scheme="https://alex.semyonov.us/tags"/>
+    <category term="koffice" label="KOffice" scheme="https://alex.semyonov.us/tags"/>
+    <category term="microsoft-office" label="Microsoft Office" scheme="https://alex.semyonov.us/tags"/>
+    <category term="iwork" label="iWork" scheme="https://alex.semyonov.us/tags"/>
+    <category term="gimp" label="GIMP" scheme="https://alex.semyonov.us/tags"/>
+    <category term="inkscape" label="Inkscape" scheme="https://alex.semyonov.us/tags"/>
+    <category term="photoshop" label="PhotoShop" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/04/21/rotuka-ubuntu-russian-translators.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/04/21/rotuka-ubuntu-russian-translators.html" type="text/html"/>
+    <published>2009-04-21T13:05:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>rotuka @ Ubuntu Russian Translators</title>
+    <summary type="html">&lt;p&gt;Сегодня пришло письмо, что &lt;a href="http://launchpad.net/~rotuka"&gt;меня&lt;/a&gt; утвердили в &lt;a href="https://launchpad.net/~ubuntu-l10n-ru"&gt;группе переводчиков Ubuntu на русский&lt;/a&gt;. Приятно.&lt;/p&gt;
+
+&lt;p&gt;И я даже отличился в свежевыходящем Зайцелопе. В апплете-индикаторе новых сообщений я указан, как один из переводчиков.&lt;/p&gt;
+</summary>
+    <content type="html">&lt;p&gt;Сегодня пришло письмо, что &lt;a href="http://launchpad.net/~rotuka"&gt;меня&lt;/a&gt; утвердили в &lt;a href="https://launchpad.net/~ubuntu-l10n-ru"&gt;группе переводчиков Ubuntu на русский&lt;/a&gt;. Приятно.&lt;/p&gt;
+
+&lt;p&gt;И я даже отличился в свежевыходящем Зайцелопе. В апплете-индикаторе новых сообщений я указан, как один из переводчиков.&lt;/p&gt;
+</content>
+    <category term="l10n" label="l10n" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu-loco-team" label="Ubuntu Loco Team" scheme="https://alex.semyonov.us/tags"/>
+    <category term="russkiy-yazyk" label="русский язык" scheme="https://alex.semyonov.us/tags"/>
+    <category term="log" label="Log" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/04/01/using-cucumber-with-fatory_girl-or-create_time_zone_conversion_attribute-epic-fail.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/04/01/using-cucumber-with-fatory_girl-or-create_time_zone_conversion_attribute-epic-fail.html" type="text/html"/>
+    <published>2009-04-01T02:06:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Совместное использование Cucumber и Factory_Girl или роковая ошибка create_time_zone_conversion_attribute?</title>
+    <summary type="html">&lt;p&gt;Недавно открыл для себя &lt;a title="Cucumber — making BDD fun!" href="http://cukes.info/"&gt;Cucumber&lt;/a&gt; — утилиту для описания поведения вашего приложения. Весьма хорошая штука, доложу вам. Но о ней конкретно я расскажу как-нибудь потом.&lt;/p&gt;
+
+&lt;p&gt;Ещё я использую вместо стендовых данных (известных также как fixtures) замечате...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Недавно открыл для себя &lt;a title="Cucumber — making BDD fun!" href="http://cukes.info/"&gt;Cucumber&lt;/a&gt; — утилиту для описания поведения вашего приложения. Весьма хорошая штука, доложу вам. Но о ней конкретно я расскажу как-нибудь потом.&lt;/p&gt;
+
+&lt;p&gt;Ещё я использую вместо стендовых данных (известных также как fixtures) замечательный гем от &lt;a href="http://thoughtbot.com/"&gt;ThoughtBot&lt;/a&gt; под названием &lt;a href="http://thoughtbot.com/projects/factory_girl"&gt;Factory Girl&lt;/a&gt; — он позволяет делать «заготовки» моделей и ваще очень крут (о нём — как вы, может быть, уже догадались — тоже в другой раз).&lt;/p&gt;
+
+&lt;p&gt;Но вот соединить их при тестировании одного проекта оказалось не так-то просто! При тестировании функционала каждый сценарий, начиная со второго использования метода Factory.create вылетал с ошибкой. Как показал бэктрэйс — ошибка случалась в функции ActiveRecord::Base.create_time_zone_conversion_attribute? Гугл рассказал мне, что разработчики рельсов &lt;a href="https://rails.lighthouseapp.com/projects/8994/tickets/785-caching-models-fails-in-development"&gt;решают эту проблему&lt;/a&gt; уже &lt;a href="https://rails.lighthouseapp.com/projects/8994/tickets/1339"&gt;очень долго&lt;/a&gt;, и хотя &lt;a href="https://rails.lighthouseapp.com/attachments/60054/prevent_class_method_and_variable_nukeing_on_AR_reset_subclasses.diff"&gt;патч, решающий её&lt;/a&gt;, давно найден — всё никак не вольют его в основной код. И на то есть веские причины, а именно — утечка &lt;del&gt;мозгов&lt;/del&gt; &lt;ins&gt;памяти&lt;/ins&gt; в production-режиме.&lt;/p&gt;
+
+&lt;p&gt;Тем не менее, при тестировании функционала эта утечка памяти не так критична, потому как тестовый сервер Cucumber&amp;#39;а запускается и останавливается регулярно — при каждом прогоне, а сервер приложения висит довольно долго и может отъесть довольно большой кусок памяти и подавиться им. Ну, надоели вступительные слова, вот…
+&lt;h2&gt;…решение проблемы:&lt;/h2&gt;
+Необходимо поместить в директорию &lt;code&gt;lib&lt;/code&gt; файл &lt;code&gt;activerecord_reset_sublass_fix.rb&lt;/code&gt;, а так же добавить его вызов в файл &lt;code&gt;config/environments/test.rb&lt;/code&gt; &lt;a title="fix for create_time_zone_conversion_attribute? problem" href="http://gist.github.com/88826"&gt;следующим образом&lt;/a&gt;:
+&lt;script src="http://gist.github.com/88826.js" type="text/javascript"&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+    <category term="cucumber" label="Cucumber" scheme="https://alex.semyonov.us/tags"/>
+    <category term="factory-girl" label="Factory Girl" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ruby-on-rails" label="Ruby on Rails" scheme="https://alex.semyonov.us/tags"/>
+    <category term="backend-development" label="Backend Development" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2009/02/09/ubuntu-compiz.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2009/02/09/ubuntu-compiz.html" type="text/html"/>
+    <published>2009-02-09T00:03:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Ubuntu + Compiz — удобно и красиво!</title>
+    <summary type="html">&lt;p&gt;Очень давно не писал в блог. Сегодня взглянул в очередной раз на черновики и решил, что буду их выкладывать потихоньку. Ну и что, что недописано (и вообще, пора менять слова «компиз фьюжн» на просто «компиз»). Будет рассказ по-частям :-)&lt;/p&gt;
+
+&lt;p&gt;Расскажу...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Очень давно не писал в блог. Сегодня взглянул в очередной раз на черновики и решил, что буду их выкладывать потихоньку. Ну и что, что недописано (и вообще, пора менять слова «компиз фьюжн» на просто «компиз»). Будет рассказ по-частям :-)&lt;/p&gt;
+
+&lt;p&gt;Расскажу о композитном менеджере окон &lt;a href="http://compiz-fusion.org/" title="Compiz Fusion"&gt;Compiz Fusion&lt;/a&gt;. Его историю можете прочитать на сайте проекта, а меня интересует конкретно его применение.&lt;/p&gt;
+
+&lt;!--more--&gt; 
+
+&lt;p&gt;Для начала, разберёмся, что же это вообще такое? Компиз — это менеджер окон, использующий для отрисовки OpenGL и повзоляющий производить над окнами всякие визуальные преобразования. За &lt;a href="http://wiki.compiz-fusion.org/" title="Compiz Fusion Wiki"&gt;кратким обзором и скриншотами&lt;/a&gt; опять отправляю на сайт проекта. А с теми, кого скриншоты уже порадовали, приступим к установке:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="bash"&gt;sudo apt-get update
+sudo apt-get install compiz compizconfig-settings-manager simple-ccsm emerald fusion-icon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;После того, как всё установится, необходимо запустить Fusion Icon (Приложения → Системные → Compiz Fusion Icon). В вашем системном лотке (трее) появится иконка с логотипом Compiz Fusion (эдакий синенький кубик со стрелочкой). По нажатию на нём правой кнопкой выпадает менюшка, из которой вы можете выбрать менеджер окон (Select Window Manager), декоратор (Select Window Decorator), а так же быстро перезагрузить менеджер окон, изменить несколько параметров прямо из меню, либо открыть менеджер настроек Compiz Fusion (и офигеть от их обилия (-; ), а так же открыть менеджер тем Emerald. Советую сразу добавить это приложение в автозапуск (Система → Параметры → Сеансы → Добавить; Имя: Compiz Fusion Icon, Команда: fusion-icon, Комментарий: иконка для запуска и управления Compiz Fusion). Теперь, выбирайте менеджер окон Compiz и декоратор Emerald и мы быстро пробежимся по появившимся у вас возможностям. Кстати, когда вы впервые выберете Compiz в качестве менеджера, экран меркнёт и появится окошко с предложением сохранить настройки, но без&amp;hellip; заголовка и кнопок закрытия. Не пугайтесь, согласитесь, оно хорошее (-; Заголовок появится буквально через пару-тройку секунд и останется с вами надолго (-;&lt;/p&gt;
+
+&lt;h2&gt;С первого взгляда&amp;hellip;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&amp;hellip;мы увидим, что у панелей появились тени. Ну, это конечно круто, но не сильно увеличивает удобство пользования системой, да?&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;Тогда нажмите на &lt;kbd&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt;&lt;/kbd&gt; и вы увидите, что стандартное переключение приложений заменено на новый, красивый, улучшенный переключатель, изображающий превьюшки запущенных приложений. Вы можете перематывать его и вперёд и назад (если нажимать &lt;kbd&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt;&lt;/kbd&gt; [Внимание!!! Данное утверждение верно в том, случае, если у вас не заняты системой кнопкосочетания &lt;kbd&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt;&lt;/kbd&gt; либо &lt;kbd&gt;&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Tab&lt;/kbd&gt;&lt;/kbd&gt;]).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/2009/02/09/ubuntu-compiz/application-switcher-300x135.png" alt="Показывает уменьшенное окно приложения" title="Переключатель приложений показывает уменьшенные окна приложений"&gt;&lt;/p&gt;
+
+&lt;p&gt;Кстати, если вы хотите пролистывать в переключателе также приложения, открытые на других ваших рабочих местах, добавьте &lt;kbd&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt;&lt;/kbd&gt; к описанным выше клавишам. Что же ещё интересного появилось у вас?&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;Попробуйте нажать &lt;kbd&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;→&lt;/kbd&gt;&lt;/kbd&gt; или &lt;kbd&gt;&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;←&lt;/kbd&gt;&lt;/kbd&gt; и снова будете приятно удивлены (-: Переход на другое рабочее место будет очень плавным и симпатичным. Кроме того, вы можете одновременно переходить на другое рабочее место и тащить за собой туда же окно приложения, активное в данный момент. Для этого стоит всего-лишь зажать ещё и кнопку Shift (т.&amp;nbsp;е. получится &lt;kbd&gt;&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;→&lt;/kbd&gt;&lt;/kbd&gt; или &lt;kbd&gt;&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;←&lt;/kbd&gt;&lt;/kbd&gt;). Остальные окна при этом останутся на своих местах. Если вам удобнее управляться с окнами мышкой (поначалу, у всех так, со временем вы можете изменить своё мнение), просто тащите окошко к правому краю экрана, и когда оно окажется за краем больше, чем наполовину, рабочая область сдвинется вправо, вслед за вашим окном.&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;Продолжим далее. Допустим, мы поработали в нескольких приложениях на разных рабочих местах, и забыли, где же конкретно открыто окно&amp;hellip; скажем, Пиджина. Стоит нажать &lt;kbd&gt;&lt;kbd&gt;Super&lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/kbd&gt; + &lt;kbd&gt;e&lt;/kbd&gt;&lt;/kbd&gt; и ваше рабочее место отодвинется вглубь монитора так, что вы сможете увидеть сразу все рабочие места. Вы даже сможете передвигать окна между ними. Не верите? Просто попробуйте! (-;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/2009/02/09/ubuntu-compiz/expo-300x187.png" alt="Открытые приложения на всех рабочих местах" title="Экспозиция отображает открытые приложения на всех рабочих местах"&gt;&lt;/p&gt;
+
+&lt;p&gt;Чтобы вернуться к какому-либо рабочему месту, вам нужно всего лишь щёлкнуть по нему мышкой. Или прокрутить скролл, пока оно не окажется подсвеченным. Или выбрать стрелочками. Чтобы вернуться на старое рабочее место, можете нажать Esc или щёлкнуть правой кнопкой мыши.&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;&lt;p&gt;Есть и другой способ быстро найти окно — нажать &lt;kbd&gt;&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;↑&lt;/kbd&gt;&lt;/kbd&gt;. При этом, на экране появятся все открытые вами окна, разбросанные мозайкой по всех поверхности экрана. Стрелками или мышкой вы можете выбрать любое из этих окон и после этого отпустить &lt;kbd&gt;&lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt;&lt;/kbd&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/2009/02/09/ubuntu-compiz/scale-300x187.png" alt="Открытые приложения на всех рабочих местах" title="Окна всех запущенных приложений"&gt;&lt;/p&gt;
+&lt;/li&gt;&lt;/ul&gt;
+
+&lt;div class="footnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id="fn1"&gt;
+&lt;p&gt;Если кто не знал, так линуксоиды называют кнопочку Win (с таким корявым окошком)&amp;nbsp;&lt;a href="#fnref1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    <category term="compiz-fusion" label="Compiz Fusion" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/tags"/>
+    <category term="udobstvo" label="удобство" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/"/>
+  </entry>
+  <entry>
+    <id>https://alex.semyonov.us/2008/11/04/sborka-prilozheniy-iz-iskhodnogo-koda-v-ubuntu.html</id>
+    <link rel="alternate" href="https://alex.semyonov.us/2008/11/04/sborka-prilozheniy-iz-iskhodnogo-koda-v-ubuntu.html" type="text/html"/>
+    <published>2008-11-04T02:05:00+00:00</published>
+    <updated>2016-11-02T09:55:11+00:00</updated>
+    <title>Сборка приложений из исходного кода в Ubuntu</title>
+    <summary type="html">&lt;p&gt;Вообще, в производных от Debian системах, в число которых входит и Ubuntu, не принято собирать приложения из исходных кодов. Этого, зачастую, можно избежать, потому как в репозиториях полно различных приложений, на все случаи жизни. По некоторым с...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Вообще, в производных от Debian системах, в число которых входит и Ubuntu, не принято собирать приложения из исходных кодов. Этого, зачастую, можно избежать, потому как в репозиториях полно различных приложений, на все случаи жизни. По некоторым сведениям, их больше, чем во всех остальных распространённых дистрибутивах линукса.&lt;/p&gt;
+
+&lt;p&gt;Два простых пути для установки приложений из меню, мышкой:
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Приложения&lt;/strong&gt; → &lt;strong&gt;Установка/удаление…&lt;/strong&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Система&lt;/strong&gt; → &lt;strong&gt;Админинстрирование&lt;/strong&gt; → &lt;strong&gt;Программа управления пакетами Synaptic&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+В первом интерфейсе все приложения снабжены своей иконкой, а так же небольшим сопроводительным текстом-описанием и рейтингом (статистика собирается анонимно со всех пользователей, которые разрешили использовать их данные). Во втором интерфейсе есть &lt;strong&gt;абсолютно все&lt;/strong&gt; пакеты, однако в нём проще запутаться и поставить или удалить не то, что требуется.&lt;/p&gt;
+
+&lt;p&gt;Однако, бывают случаи, когда необходимое вам приложение отсутствует в репозитории, например потому, что оно ещё не стабильно, либо распространяется &lt;strong&gt;только&lt;/strong&gt; в исходных кодах, либо его написал ваш сосед-программист, ну или по какой-то другой причине. Тогда придётся собирать его из исходников. Если вы обратитесь к любому руководству по сборке приложений, вы увидите три строки, известных (почти) любому пользователю линукса со стажем более полугода. А именно:
+&lt;pre lang="bash"&gt;./configure
+make
+sudo make install&lt;/pre&gt;
+Кратко о каждой из этих команд
+&lt;h2&gt;./configure&lt;/h2&gt;
+Эта команда подготавливает исходные коды к компиляции под конкретную платформу, а именно в вашей операционной системе. Она проверяет налицие необходимых программ (компиляторов, сборщиков и т. п.), библиотек, а так же заголовочных файлов (something.h). Достаточно часто случается, что в вашей системе недостаёт какого-нибудь необходимого приложения, либо файла заголовков, необходимого для компиляции программы. В таком случае, эта команда выведет сообщение об ошибке. Если у вас достаточный опыт, то вы, конечно же, легко определите, что заголовочный файл some_extra_thing.h находится в пакете extra_things_for_cool_nerds-dev, однако не всегда просто определить, что именно хочет от вас программа, чего ей не хватает.&lt;/p&gt;
+
+&lt;p&gt;Тогда нам на помощь придёт утилита под названием &lt;a href="apt://auto-apt"&gt;&lt;strong&gt;auto-apt&lt;/strong&gt;&lt;/a&gt;. Она хранит информацию о заголовочных файлах, которые имеются в репозиториях и поможет вам найти, в каком пакете хранится тот или иной заголовочный файл.&lt;/p&gt;
+
+&lt;p&gt;Если ./configure вывела вам сообщение о недостаче заголовочного файла &lt;em&gt;Xlib.h&lt;/em&gt;, воспользуйтесь командой
+&lt;pre lang="bash"&gt;auto-apt search Xlib.h&lt;/pre&gt;
+Она ответит вам следующим:
+&lt;pre lang="bash"&gt;usr/include/X11/Xlib.h libdevel/libx11-dev&lt;/pre&gt;
+Это обозначает, что нужный вам файл содержится в пакете libx11-dev, относящемся к категории libdevel (пакеты для разработки) и после установки пакета (&lt;strong&gt;sudo apt-get install libx11-dev&lt;/strong&gt;) будет лежать по адресу usr/include/X11/Xlib.h&lt;/p&gt;
+
+&lt;p&gt;Есть ещё более простой путь вызова ./configure, который сам предложит вам установить все необходимые пакеты
+&lt;pre lang="bash"&gt;auto-apt run ./configure&lt;/pre&gt;
+Вам нужно будет только следить за процессом установки и изредка нажимать &lt;strong&gt;Y&lt;/strong&gt; для установки необходимых пакетов.
+&lt;h2&gt;make&lt;/h2&gt;
+Это вторая и, пожалуй, главная команда из этой триады. Она выполняет компиляцию и сборку всех необходимых компонентов системы. Если ошибка появляется во время выполнения этой команды, скорее всего ошибка в коде, который вы пытаетесь собрать. В таком случае, остаётся только обратиться к разработчику программы. Но обычно, после успешного выполнения ./configure, здесь ошибок не бывает.
+&lt;h2&gt;make install&lt;/h2&gt;
+Этой командой вы устанавливаете приложение. Если вы хотите установить её для всех пользователей, общесистемно, вам необходимы права пользователя &lt;strong&gt;root&lt;/strong&gt;. В Ubuntu это решается вызовом этой команды после &lt;strong&gt;sudo&lt;/strong&gt;, то есть
+&lt;pre lang="bash"&gt;sudo make install&lt;/pre&gt;
+&lt;strong&gt;НО! При установке этим путём, вы можете нарушить целостность системы, поскольку эта команда не сохранит данные о том, какие файлы и куда были установлены.&lt;/strong&gt; Таким образом, удаление этой программы сможет принести вам много мороки. Чтобы облегчить возможноые страдания, была написана утилита под названием &lt;a href="apt://checkinstall"&gt;&lt;strong&gt;checkinstall&lt;/strong&gt;&lt;/a&gt;. Она проверяет, что и как хочет сделать команда &lt;strong&gt;make install&lt;/strong&gt;, а потом собирает по полученным сведениям deb-пакет и устанавливает его в систему (то есть, для удачного выполнения этой команды ей так же нужны права суперпользователя). Благодаря этому, вы сможете потом легко удалить ненужное вам более приложение, используя например Synaptic, упоминавшийся в начале статьи.
+&lt;h2&gt;Установка программ в пользовательский каталог&lt;/h2&gt;
+Бывает, что некоторые программы не нужны общесистемно, тогда нужно на этапе конфигурирования указать, что программа будет устанавливаться в пользовательский (или иной) каталог. Для этого, обычно, первая команда видоизменяется следующим образом:
+&lt;pre lang="bash"&gt;./configure --prefix=/home/$USER&lt;/pre&gt;
+Тогда команду &lt;strong&gt;make install&lt;/strong&gt; нужно вызывать без префикса &lt;strong&gt;sudo&lt;/strong&gt;.
+&lt;h2&gt;Выводы&lt;/h2&gt;
+Для упрощения установки программы из исходных кодов, в Ubuntu вы можете воспользоваться немного изменённым набором команд:
+&lt;pre lang="bash"&gt;auto-apt run ./configure
+make
+sudo checkinstall&lt;/pre&gt;
+для установки общесистемной, либо:
+&lt;pre lang="bash"&gt;auto-apt run ./configure --prefix=/home/$USER
+make
+make install&lt;/pre&gt;
+для установки в пользовательский каталог.&lt;/p&gt;
+</content>
+    <category term="auto-apt" label="auto-apt" scheme="https://alex.semyonov.us/tags"/>
+    <category term="checkinstall" label="checkinstall" scheme="https://alex.semyonov.us/tags"/>
+    <category term="configure" label="configure" scheme="https://alex.semyonov.us/tags"/>
+    <category term="make" label="make" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/tags"/>
+    <category term="ubuntu" label="Ubuntu" scheme="https://alex.semyonov.us/"/>
+  </entry>
+</feed>

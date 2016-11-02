@@ -1,0 +1,25 @@
+/* TEAM */
+
+  Author: Алекс Семёнов
+  Contact: alex@semyonov.us
+  Twitter: @alsemyonov
+  From: Санкт-Петербург, Россия
+  See: https://alex.semyonov.us/about#me
+
+/* THANKS */
+
+  Name: Middleman
+
+  Name: Twitter Bootstrap
+
+  Name: Font Awesome
+
+  Name: jQuery
+
+  Name: Highlight.js
+
+/* SITE */
+
+  Language: Russian
+  Standards: HTML 5, Microdata, schema.org, Linked Data, The Open Graph protocol, CSS 3
+  See: https://alex.semyonov.us/about/site

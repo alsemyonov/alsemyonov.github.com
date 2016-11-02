@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://alex.semyonov.us/sitemap.xml
+Host: https://alex.semyonov.us
